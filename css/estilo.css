@@ -137,7 +137,7 @@ body{
 	grid-area: banner;
 }
 #banner{
-	background-image: url("../media/banner.png");
+	background-image: url("../media/fondoformas.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
