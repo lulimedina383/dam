@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway";
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#edb78f), color-stop(#a7a374), color-stop(#6a896d), color-stop(#426a66), to(#334a52));
+  background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
+  color: #334A52;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectoresWeb a {
+  color: #334A52;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.sectoresWeb a :hover {
+  background-color: #334A52;
+  color: #EDB78F;
+  text-decoration: none;
+}
+
+#index1 {
+      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
+}
+
+#index2 {
+      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer";
+}
+/*# sourceMappingURL=estilo.css.map */

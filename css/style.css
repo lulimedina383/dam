@@ -1,0 +1,691 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Raleway';
+	background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
+	color: #334A52;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#index1{
+	grid-template-areas: 
+	"header header header"
+	"banner banner banner"
+	"indice indice indice"
+	"intro intro intro"
+	"blog blog blog"
+	"consulta consulta consulta"
+	"footer footer footer";
+}
+#index2{
+	grid-template-areas: 
+	"header header header"
+	"banner banner banner"
+	"indice indice indice"
+	"item1 item1 item1"
+	"item2 item2 item2"
+	"item3 item3 item3"
+	"item4 item4 item4"
+	"item5 item5 item5"
+	"footer footer footer";
+}
+#index3{
+	grid-template-areas: 
+	"header header header"
+	"banner banner banner"
+	"indice indice indice"
+	"exp exp exp"
+	"form form form"
+	"resul resul resul"
+	"op op op"
+	"footer footer footer";
+}
+#index4{
+	grid-template-areas: 
+	"header header header"
+	"banner banner banner"
+	"indice indice indice"
+	"ejer ejer ejer"
+	"ali ali ali"
+	"psico psico psico"
+	"influ influ influ"
+	"footer footer footer";
+}
+#index5{
+	grid-template-areas: 
+	"header header header"
+	"banner banner banner"
+	"yo yo yo"
+	"galeria galeria galeria"
+	"footer footer footer";
+}
+
+.sectoresWeb a{
+	color:#334A52;
+	font-weight: bold;
+	display: inline-block;
+	position:relative;
+	text-decoration: none;
+	padding: 0 10px;
+}
+.sectoresWeb a:hover{
+	background-color: #334A52;
+	color: #EDB78F ;
+	text-decoration: none;
+}
+#navbarNav{
+	background-color: #334A52;
+	position: fixed;
+	width: 100%;
+	z-index: 10;	
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+	justify-content: center;
+	margin: 0;
+	opacity: 0.8;
+}
+#navbarNav .nav-link{
+	color: #EDB78F;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 10px;
+	margin-top: 65px;
+	opacity: none;
+}
+#navbarNav img{
+	width: 1rem;
+}
+
+#navbarNav .nav-link:hover {
+	background-color:#EDB78F;
+	color:#334A52 ;
+	padding: 8px;
+}
+.dropdown a:hover{
+	color:#EDB78F ;
+}
+.dropdown{
+	margin-top: 60px;
+	color: #EDB78F;
+	margin-left: 5rem;
+}
+.dropdown-item{
+	font-family: 'Raleway';
+	font-size: 0.3em;
+}
+.dropdown-menu{
+	margin-right: 10rem;
+}
+
+#logo{
+	margin-top: 50px;
+	margin-right: 5rem;
+}
+#logo img{
+	width: 12rem;
+	border-radius: 15px;
+}
+.primeraParte{
+	grid-area: banner;
+}
+#banner{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	grid-template-areas: 
+	"img text"
+	"img text";
+	margin-top: 3%;
+	background-color: white;
+}
+.imgBanner{
+	grid-area: img;
+	margin: 10px;
+}
+.imgBanner img{
+	width: 600px;
+}
+.bannerInfo{
+	grid-area: text;
+	color: #334A52;
+	font-weight: bold;
+}
+.bannerInfo h6{
+	font-family: 'Staatliches';
+	font-size: 5em;
+}
+.bannerInfo h7{
+	font-family: 'Raleway';
+	font-size: 2em;
+}
+.bannerInfo img{
+	width: 100px;
+	margin: 1rem;
+}
+.primeraParte h1{
+	color:#334A52 ;
+	padding: 3px;
+	font-size: 5em;
+	font-family: 'Staatliches';
+	font-weight: bold;
+	text-align: center;	
+	background-image: url("../media/fondoformas.jpg");	
+}
+
+#indice{
+	padding: 1.5rem;
+	display: inline-block;
+	background-color:#334A52;
+	grid-area: indice;
+	text-align: center;
+}
+#indice h3{
+	color: #EDB78F;
+	font-family: 'Staatliches';
+	font-size: 30px;
+	text-align: center;
+}
+#indice a{
+	color:#EDB78F ; 
+	font-weight: bold;
+	text-decoration: none;
+}
+#indice a:hover{
+	color: #BAA89B; 
+}
+#indice ul{
+	list-style-image: url("../media/paraindice.png") ;
+	list-style-type: upper-latin;
+	list-style-position: inside;
+	align-items: 30px;
+	text-align: left;
+}
+.indi{
+	margin-left: 40%;
+}
+#indice img{
+	text-align: center;
+}	
+#introduccion{
+	grid-area: intro;
+}
+.sectoresWeb p{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.textos{
+	font-family: 'Raleway';
+	text-align: justify;
+	font-size: 1em;
+	margin-bottom: 15px;
+	margin-right: 3%;
+}
+.especial{
+	margin-right: 8%;
+	margin-left: 8%;
+	text-indent: 3em;
+}
+.titulosP{
+	font-family: 'Staatliches';
+	font-size: 1.5em;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+.listasP{
+	list-style-position: inside;
+	margin: 1em;
+	margin-right: 3%;
+}
+.fondoRosado{
+	margin-right: 3%;
+	margin-left:  3%;
+}
+.escritoP{
+	font-family: 'Raleway';
+	text-align: justify;
+	color: #334A52;
+	padding-bottom: 3%;
+	padding-top: 3%; 
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+.escritoP:hover{
+	color: #EDB78F;
+}
+.escritoP p{
+	margin-right: 10%;
+	margin-left: 10%;
+	font-weight: bold;
+}
+.lluvia{
+	text-align: center;
+	font-family: 'Staatliches';
+	font-size: 2em;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+.final{
+	text-align: center;
+	font-family: 'Staatliches';
+	font-size: 1.3em;
+}
+#tituloBlog{
+	margin-top: 0.5em;
+}
+#yo img{
+	border-radius: 10px;
+	height: 150px;
+}
+#galeria{
+	grid-area: galeria;
+}
+.unir2{
+	display: inline-block;
+}
+.unir{
+	background-color: #EDB78F;
+	border-radius: 10px;
+	margin-left: 25%;
+	margin-right: 25%
+}
+.unir:hover{
+	background-color: #334A52;
+}
+
+
+#linkBlog{
+	padding: 5px;
+	margin: 5px;
+}
+#linkBlog:hover{
+	background-color: #334A52;
+	color: #EDB78F;
+}
+.mayus{
+	font-weight: bolder;
+}
+.inline{
+	display: inline-block;
+	width: 50%;
+}
+.bloque{
+
+	display: inline-block;
+	width: 50%;
+}
+
+
+h3.inline2{
+	background-color:#334A52;
+	font-family: 'Staatliches';
+	text-align: center;
+	font-size: 60px;
+	color: #EDB78F;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+img{
+	width: 300px;
+}
+#blog{
+	grid-area: blog;
+	text-align: center;
+}
+#descripcion{
+	padding: 3%;
+}
+#fotoMia{
+	padding: 3%;
+}
+#fotoMia img{
+	border-radius: 20px;
+}
+h4{
+	font-size: 40px;
+	font-family: 'Raleway';
+}
+.logos{
+	width: 2.5rem;
+}
+#consulta{
+	grid-area: consulta;
+}
+#formulario{
+	background-image: url("../media/fondoformas.jpg");
+	color: #EDB78F;
+	font-weight: bolder;
+	font-family: 'Raleway';
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: left;
+	padding: 3%;
+	width: 50%;
+	border-radius: 20px;
+
+}
+#mensajeLindo{
+	padding: 3%;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+}
+#mensajeLindo img{
+	border-radius: 20px;
+}
+
+.logoFijo{
+	display: block;
+	position: fixed;
+	bottom: 0;
+	margin-left: 95%;
+}
+#gmail{
+	width: 40px;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	padding: 3%;
+}
+#item1{
+	grid-area: item1;
+}
+#item2{
+	grid-area: item2;
+}
+#item3{
+	grid-area: item3;
+}
+#item4{
+	grid-area: item4;
+}
+#item5{
+	grid-area: item5;
+}
+#explicacion{
+	grid-area: exp;
+}
+#formularioG{
+	grid-area: form;
+	text-align:center;
+}
+#miOpinion{
+	grid-area: op;
+}
+#alimentacion{
+	grid-area: ali;
+}
+#ejercitacion{
+	grid-area: ejer;
+}
+#influencers{
+	grid-area: influ;
+}
+#psicologia{
+	grid-area: psico;
+}
+#yo{
+	grid-area: yo;
+}
+footer{
+	background-color: #334A52;
+	padding: 10px;
+	width: 100%;
+	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+footer a{
+	color: #EDB78F;
+	font-weight: bold;
+	display: inline-block;
+	position:relative;
+	text-decoration: none;
+	padding: 0 10px;
+}
+footer a:hover {
+	background-color:#EDB78F ;
+	color:#334A52 ;
+	text-decoration: none;
+}
+.mayus{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.5em;
+	margin-top: 8px;
+}
+h4.mayus{
+	font-size: 2em;
+}
+.mayus a{
+	color: #334A52;
+	font-size: 0.7em;
+}
+.mayus a:hover{
+	text-decoration: none;
+	border-radius: 7px;
+}
+.card{
+	text-align: center;
+	margin: 1.5em;
+	color: #334A52;
+}
+.card p{
+	font-family: 'Raleway';
+}
+.card-title{
+	font-family: 'Staatliches';
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.card-text{
+	text-align: justify;
+	font-family: 'Raleway';
+
+}
+p span{
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.card .perfil{
+	background-color: #334A52; 
+	color: #EDB78F;
+	border-color: #334A52;
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+.card .perfil:hover{
+	background-color:#EDB78F; 
+	color: #334A52;
+	border-color:#EDB78F;
+	border-radius: 8px;
+}
+.fotos{
+	width: 25%;
+}
+.modal-content{
+	background-color:#EDB78F;
+	color: #334A52; 
+}
+.modal-content:hover{
+	background-color: #334A52;
+	color:#EDB78F; 
+}
+#exampleModal{
+	font-family: 'Raleway';
+}
+.modal-title{
+	font-family: 'Staatliches';
+}
+.modal-body{
+	text-align: justify;
+}
+.modal-footer{
+	font-family: 'Staatliches';
+}
+#boton:hover{
+    color: #EDB78F;
+    background-color: #334A52;
+    border-color: #EDB78F;
+}
+#boton{
+	font-family: 'Staatliches';
+    font-size: 1.3em;
+	color: #334A52;
+    background-color: #EDB78F;
+    border-color: #334A52;
+}
+#botonExtra{
+	margin-top: 10px;
+}
+.efect1{
+	transition: all 500ms ease-in-out;
+}
+.efect1:hover{
+	filter: blur(5px);
+}
+.efect2{
+	overflow:hidden;
+	transition: all 500ms ease-in-out;
+}
+.efect2:hover{
+	webkit-transform:scale(1.3);
+	transform:scale(1.3);
+}
+@media only screen and (min-width: 768px){
+	#index1{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"intro intro intro"
+		"blog blog blog"
+		"consulta consulta consulta"
+		"footer footer footer";
+	}
+	#index2{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"item1 item1 item1"
+		"item2 item2 item2"
+		"item3 item3 item3"
+		"item4 item4 item4"
+		"item5 item5 item5"
+		"footer footer footer";
+	}
+	#index3{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"exp exp exp"
+		"form form form"
+		"resul resul resul"
+		"op op op"
+		"footer footer footer";
+	}
+	#index4{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"ejer ejer ejer"
+		"ali ali ali"
+		"psico psico psico"
+		"influ influ influ"
+		"footer footer footer";
+	}
+	#index5{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"yo yo yo"
+		"galeria galeria galeria"
+		"footer footer footer";
+	}
+}
+@media only screen and (min-width: 1024px){
+	#index1{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		". indice ."
+		"intro intro intro"
+		"blog blog blog"
+		"consulta consulta consulta"
+		"footer footer footer";
+	}
+	#index2{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		". indice ."
+		"item1 item1 item1"
+		"item2 item2 item2"
+		"item3 item3 item3"
+		"item4 item4 item4"
+		"item5 item5 item5"
+		"footer footer footer";
+	}
+	#index3{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		". indice ."
+		"exp exp exp"
+		"form form form"
+		"resul resul resul"
+		"op op op"
+		"footer footer footer";
+	}
+	#index4{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		". indice ."
+		"ejer ejer ejer"
+		"ali ali ali"
+		"psico psico psico"
+		"influ influ influ"
+		"footer footer footer";
+	}
+	#index5{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"yo yo yo"
+		"galeria galeria galeria"
+		"footer footer footer";
+	}
+	.bloque{
+		width: 50%;
+	}
+	#indice{
+		border-radius: 13px;
+	}
+	.indi{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+

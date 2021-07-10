@@ -1,0 +1,172 @@
+@import "variables";
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: $fontPrincipal;
+	background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
+	color: $colorAzul;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.sectoresWeb{
+	a{
+		color:$colorAzul;
+		font-weight: bold;
+		display: inline-block;
+		position:relative;
+		text-decoration: none;
+		padding: 0 10px;
+		:hover{
+			background-color: $colorAzul;
+			color: $colorCrema;
+			text-decoration: none;
+		}
+	}
+	p{
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+}
+#navbarNav{
+	background-color: #334A52;
+	position: fixed;
+	width: 100%;
+	z-index: 10;	
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+	justify-content: center;
+	margin: 0;
+	opacity: 0.8;
+	.nav-link{
+		color: #EDB78F;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 0 10px;
+		margin-top: 65px;
+		opacity: none;
+		:hover {
+			background-color:#EDB78F;
+			color:#334A52 ;
+			padding: 8px;
+		}
+	}
+	img{
+		width: 1rem;
+	}
+}
+.dropdown{
+	margin-top: 60px;
+	color: #EDB78F;
+	margin-left: 5rem;
+	a:hover{
+		color:#EDB78F ;
+	}
+}
+.dropdown-item{
+	font-family: 'Raleway';
+	font-size: 0.3em;
+	#logo{
+		margin-top: 50px;
+		margin-right: 5rem;
+		img{
+			width: 12rem;
+			border-radius: 15px;
+		}	
+	}
+}
+.dropdown-menu{
+	margin-right: 10rem;
+}
+.primeraParte{
+	grid-area: banner;
+	h1{
+		color:#334A52 ;
+		padding: 3px;
+		font-size: 5em;
+		font-family: 'Staatliches';
+		font-weight: bold;
+		text-align: center;	
+		background-image: url("../media/fondoformas.jpg");	
+	}
+	#banner{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+		grid-template-areas: 
+		"img text"
+		"img text";
+		margin-top: 3%;
+		background-color: white;
+		.imgBanner{
+			grid-area: img;
+			margin: 10px;
+			img{
+				width: 600px;
+			}
+		}
+		.bannerInfo{
+			grid-area: text;
+			color: #334A52;
+			font-weight: bold;
+			h6{
+				font-family: 'Staatliches';
+				font-size: 5em;
+			}
+			h7{
+				font-family: 'Raleway';
+				font-size: 2em;
+			}
+			img{
+				width: 100px;
+				margin: 1rem;
+			}
+		}
+	}
+}
+#indice{
+	padding: 1.5rem;
+	display: inline-block;
+	background-color:#334A52;
+	grid-area: indice;
+	text-align: center;
+	h3{
+		color: #EDB78F;
+		font-family: 'Staatliches';
+		font-size: 30px;
+		text-align: center;
+	}
+	a{
+		color:#EDB78F ; 
+		font-weight: bold;
+		text-decoration: none;
+		:hover{
+			color: #BAA89B; 
+		}
+	}
+	ul{
+		list-style-image: url("../media/paraindice.png") ;
+		list-style-type: upper-latin;
+		list-style-position: inside;
+		align-items: 30px;
+		text-align: left;
+	}
+	img{
+		text-align: center;
+	}	
+	.indi{
+		margin-left: 40%;
+	}
+}

@@ -1,0 +1,11 @@
+@import "variables";
+#index1{
+	grid-template-areas: 
+	"header header header"
+	"banner banner banner"
+	"indice indice indice"
+	"intro intro intro"
+	"blog blog blog"
+	"consulta consulta consulta"
+	"footer footer footer";
+}
