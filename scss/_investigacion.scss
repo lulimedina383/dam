@@ -41,14 +41,14 @@
 }
 .efect1{
 	transition: all 500ms ease-in-out;
-	:hover{
+	&:hover{
 	filter: blur(5px);
 	}
 }
 .efect2{
 	overflow:hidden;
 	transition: all 500ms ease-in-out;
-	:hover{
+	&:hover{
 	-webkit-transform:scale(1.3);
 	transform:scale(1.3);
 	}
@@ -78,16 +78,22 @@
 			color: $colorBlanco;
 			padding: 1em;
 			justify-content: stretch;
-				align-content: stretch;
+			align-content: stretch;
 		}
 		#edad{
 			grid-area: edad;
+			overflow:scroll ;
+			height: 200px;
 		}
 		#actividadFisica{
 			grid-area: acF;
+			overflow:scroll;
+			height: 200px;
 		}
 		#sentimientos{
 			grid-area: sent;
+			overflow:scroll ;
+			height: 200px;
 		}
 		#negativos{
 			grid-area: nega;

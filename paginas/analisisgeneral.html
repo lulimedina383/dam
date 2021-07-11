@@ -2,76 +2,128 @@
 <html>
 <head>
 	<title>ANALISIS GENERAL</title>
+	
+	<!-- ENLACE CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	
+	<!-- TIPOGRAFIAS -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+
+	<!-- SEO -->
 </head>
 <body>
-	<div class="grid" id="index3">
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<div id="logo">
-							<a href="#"><img src="../media/logo2.png" alt="logo"></a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../index.html">PÁGINA PRINCIPAL</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="investigacion.html">INVESTIGACIÓN</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="recomendaciones.html">RECOMENDACIONES</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="blog.html">MÁS COSAS SOBRE MI</a>
-						</li>
-						<li class="nav-item">
-							<div class="dropdown" >
-			 					<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</a>
-			  					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			    					<a class="dropdown-item  a" href="#inicio">Inicio</a>
-			    					<a class="dropdown-item  a" href="#explicacion">Explicación</a>
-			    					<a class="dropdown-item  a" href="#formularioG">Google Form</a>
-			    					<a class="dropdown-item  a" href="#miOpinion">Mi Opinion</a>
-			  					</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<div class="primeraParte" id="inicio">
-			<h1 id="tituloBlog">ANÁLISIS GENERAL</h1>
-		</div>
-		<div id="indice">
-			<img src="../media/imgindice.jpg" alt="Actividad Física">
-			<h3>Indice de Navegación</h3>
-			<div class="indi">
-				<ul>
-					<li><a href="#explicacion">EXPLICACIÓN DEL ANÁLISIS</a>
-					</li>
-					<li><a href="#formularioG">FORMULARIO DE GOOGLE</a></li>
-					<li><a href="#miOpinion">MI OPINION</a></li>
-				</ul>
-			</div>
+	
+		
+		<!-- SIDEBAR -->
+		<div class="sidebar">
+			<a class="active" href="../index.html">HOME</a>
+			<a href="investigacion.html">Investigación</a>
+			<a href="recomendaciones.html">Recomendaciones</a>
+			<a href="blog.html">Blog</a>
 		</div>
 		
+		<div class="margin">
+			<div class="grid2" id="index3">
+				
+				<!-- CONSULTA -->
+				<div class="primeraParte" id="inicio">
+					<h1 id="tituloBlog">CONSULTA</h1>
+				</div>
+				
+				<!-- IMAGEN CON EFECTO -->
+				<div id="imgPersona2">
+					<img src="../media/imgPersona2_1.svg" alt="Persona haciendo act Fisica" onmousemove= "src='../media/imgPersona2_2.svg';" onmouseout=  "src= '../media/imgPersona2_1.svg';" >
+				</div>
 
-		<a href="mailto:deunaadolescenteparaelmundo@gmail.com" class="logoFijo"><img src="../media/gmail.png" alt="Logo Instagram" id="gmail"></a>
-		<footer>
-			<a href="#inicio">INICIO</a>
-			<a href="../paginas/index.html">PÁGINA PRINCIPAL</a>
-			<a href="investigacion.html">INVESTIGACIÓN</a>
-			<a href="recomendaciones.html">RECOMENDACIONES</a>
-			<a href="blog.html">MÁS COSAS SOBRE MI</a>
-		</footer>
-	</div>
+				<!-- FORMULARIO DE CONSULTA -->
+					<div class="container-flew form" id="formulario">
+						<form action="mailto:deunaadolescenteparaelmundo@gmail.com" method="POST" enctype="text/plain">
+						<div class="form-group">
+							<label for="nombre">NOMBRE y APELLIDO:</label>
+							<input class="form-control" type="text" name="nombre" placeholder="Ingresa tu nombre y apellido" id="nombre">
+						</div>
+						<div class="form-group">
+							<label for="correoelectronico">CORREO ELECTRÓNICO:</label>
+							<input class="form-control" type="email" name="email" placeholder="Ingresa tu email" id="correoElectronico" >
+						</div>
+						<div class="form-group">
+							<label for="edad">EDAD:</label>
+							<input class="form-group" type="number" name="edad" id="edad" min="0" max="100">
+						</div>
+						<div class="form-group">
+							<label for="sexo">SEXO: FEMENINO</label>
+							<input  type="radio" name="sexo" value="femenino" >
+							<label>MASCULINO</label>
+							<input  type="radio" name="sexo" value="masculino" >
+							<label>OTRO</label>
+							<input  type="radio" name="sexo" value="otro" >
+						</div>
+						<div class="form-group">
+							<label>CONSULTA:</label>
+							<textarea class="form-control" name="texto" rows="4" cols="40" placeholder="Escriba su consulta aquí"></textarea>
+						</div>
+						
+						<!-- MODAL DE AGRADECIMIENTO -->
+						<button type="submit" class="btn btn-dark" name="sube_form" value="ENVIAR">ENVIAR</button> 
+						<button type="reset" class="btn btn-dark"  name="resetear" value="Borrar todo">BORRAR TODO</button>
+						<div id="botonExtra">
+							<button type="button" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal">
+							¡NO TE VAYAS SIN LEER ESTE MENSAJE!
+							</button>
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  	<div class="modal-dialog" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title" id="exampleModalLabel">MENSAJE DE AGRADECIMIENTO</h5>
+							        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          			<span aria-hidden="true">&times;</span>
+							        		</button>
+							        		<button type="button" ></button>
+							      		</div>
+							      		<div class="modal-body">
+							      			Gracias por tomarte el tiempo de leer el contenido de mi web! Fue en verdad un trabajo extenso y tedioso, por lo que
+							      			el simple hecho de que lo observes es de gran valor sentimental para mi. 
+							      			Espero haya sido de tu agrado lo que trate de concientizar.
+							      			Si te gustó, no olvides compartir asi logramos que mi mensaje sea visto por muchas personas!!
+							      		<div class="modal-footer">
+							        		<button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					</form>
+					</div>
+
+					<!-- MENSAJE LINDO -->
+					<div class="bloque" id="mensajeLindo">
+						<img src="../media/logo.png" alt="Logo de la Web">
+						<p>Gracias por tomarte el tiempo de consultar!!</p>	
+						<img src="../media/humano.png" alt="Humano con los brazos levantados, simulando un abrazo" class="logos">
+						<p class="lluvia">Con dedicación, Lu</p>
+					</div>
+
+				<!-- ICONO GMAIL EMERGENTE -->
+				<a href="mailto:deunaadolescenteparaelmundo@gmail.com" class="logoFijo"><img src="../media/gmail.png" alt="Logo Instagram" id="gmail"></a>
+				
+				<!-- FOOTER -->
+				<footer>
+					<a href="#inicio">INICIO</a>
+					<a href="../paginas/index.html">PÁGINA PRINCIPAL</a>
+					<a href="investigacion.html">INVESTIGACIÓN</a>
+					<a href="recomendaciones.html">RECOMENDACIONES</a>
+					<a href="blog.html">MÁS COSAS SOBRE MI</a>
+				</footer>
+			</div>
+		</div>
+	
+	<!-- SCRIPT's -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"crossorigin="anonymous"></script>
 </body>
