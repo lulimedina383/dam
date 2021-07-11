@@ -1,0 +1,56 @@
+
+@media only screen and (min-width: 768px){
+	#index1{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"intro intro intro"
+		"blog blog blog"
+		"consulta consulta consulta"
+		"footer footer footer";
+	}
+	#index2{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"item1 item1 item1"
+		"item2 item2 item2"
+		"item3 item3 item3"
+		"item4 item4 item4"
+		"item5 item5 item5"
+		"footer footer footer";
+	}
+	#index3{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"exp exp exp"
+		"form form form"
+		"resul resul resul"
+		"op op op"
+		"footer footer footer";
+	}
+	#index4{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"indice indice indice"
+		"ejer ejer ejer"
+		"ali ali ali"
+		"psico psico psico"
+		"influ influ influ"
+		"footer footer footer";
+	}
+	#index5{
+		grid-template-areas: 
+		"header header header"
+		"banner banner banner"
+		"yo yo yo"
+		"galeria galeria galeria"
+		"footer footer footer";
+	}
+}
+

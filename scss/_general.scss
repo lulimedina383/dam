@@ -16,6 +16,61 @@ body{
 	align-content: center;
 	align-items: center;
 }
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	padding: 3%;
+}
+img{
+	width: 300px;
+}
+h4{
+	font-size: 40px;
+	font-family: 'Raleway';
+}
+.logos{
+	width: 2.5rem;
+}
+#mySidenav{
+	a{
+		position: absolute; 
+		left: -175px;
+		transition: 0.3s;
+		padding: 15px;
+		width: 230px;
+		text-decoration: none; 
+		font-size: 1em; 
+		color: white; 
+		border-radius: 0 5px 5px 0;
+		:hover{
+			left: 0;
+			padding-left: 50px;
+		}
+	}
+	#in {
+	  top: 100px;
+	  background-color: #04AA6D;
+	}
+
+	#an {
+	  top: 160px;
+	  background-color: #2196F3; 
+	}
+
+	#bl{
+	  top: 220px;
+	  background-color: #f44336; 
+	}
+
+	#re{
+	  top: 280px;
+	  background-color: #555
+	}
+}
+
 .sectoresWeb{
 	a{
 		color:$colorAzul;
@@ -26,7 +81,7 @@ body{
 		padding: 0 10px;
 		:hover{
 			background-color: $colorAzul;
-			color: $colorCrema;
+			color: $colorAmarillo;
 			text-decoration: none;
 		}
 	}
@@ -71,21 +126,21 @@ body{
 	a:hover{
 		color:#EDB78F ;
 	}
-}
-.dropdown-item{
-	font-family: 'Raleway';
-	font-size: 0.3em;
-	#logo{
-		margin-top: 50px;
-		margin-right: 5rem;
-		img{
-			width: 12rem;
-			border-radius: 15px;
-		}	
+	.dropdown-item{
+		font-family: 'Raleway';
+		font-size: 0.3em;
+		#logo{
+			margin-top: 50px;
+			margin-right: 5rem;
+			img{
+				width: 12rem;
+				border-radius: 15px;
+			}	
+		}
 	}
-}
-.dropdown-menu{
-	margin-right: 10rem;
+	.dropdown-menu{
+		margin-right: 10rem;
+	}
 }
 .primeraParte{
 	grid-area: banner;
@@ -109,12 +164,11 @@ body{
 		"img text"
 		"img text";
 		margin-top: 3%;
-		background-color: white;
 		.imgBanner{
 			grid-area: img;
 			margin: 10px;
 			img{
-				width: 600px;
+				width: 400px;
 			}
 		}
 		.bannerInfo{
@@ -168,5 +222,128 @@ body{
 	}	
 	.indi{
 		margin-left: 40%;
+	}
+}
+.textos{
+	font-family: 'Raleway';
+	text-align: justify;
+	font-size: 1em;
+	margin-bottom: 15px;
+	margin-right: 3%;
+}
+.especial{
+	margin-right: 8%;
+	margin-left: 8%;
+	text-indent: 3em;
+}
+.listasP{
+	list-style-position: inside;
+	margin: 1em;
+	margin-right: 3%;
+	font-family: $fontPrincipal;
+}
+.fondoRosado{
+	margin-right: 3%;
+	margin-left:  3%;
+}
+.escritoP{
+	font-family: 'Raleway';
+	text-align: justify;
+	color: #334A52;
+	padding-bottom: 3%;
+	padding-top: 3%; 
+	margin-bottom: 2%;
+	margin-top: 2%;
+	:hover{
+		color: #EDB78F;
+	}
+	p{
+		margin-right: 10%;
+		margin-left: 10%;
+		font-weight: bold;
+	}
+}
+.titulosP{
+	font-family: 'Staatliches';
+	font-size: 1.5em;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+.lluvia{
+	text-align: center;
+	font-family: 'Staatliches';
+	font-size: 2em;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+.final{
+	text-align: center;
+	font-family: 'Staatliches';
+	font-size: 1.3em;
+}
+h4.mayus{
+	font-size: 2em;
+}
+.mayus{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.5em;
+	margin-top: 8px;
+	a{
+		color: #334A52;
+		font-size: 0.7em;
+		:hover{
+			text-decoration: none;
+			border-radius: 7px;
+		}
+	}
+}
+.inline{
+	display: inline-block;
+	width: 50%;
+}
+.bloque{
+
+	display: inline-block;
+	width: 50%;
+}
+h3.inline2{
+	background-color:#334A52;
+	font-family: 'Staatliches';
+	text-align: center;
+	font-size: 60px;
+	color: #EDB78F;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.logoFijo{
+	display: block;
+	position: fixed;
+	bottom: 0;
+	margin-left: 95%;
+	#gmail{
+		width: 40px;
+	}
+}
+footer{
+	background-color: #334A52;
+	padding: 10px;
+	width: 100%;
+	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	a{
+		color: #EDB78F;
+		font-weight: bold;
+		display: inline-block;
+		position:relative;
+		text-decoration: none;
+		padding: 0 10px;
+		:hover {
+			background-color:#EDB78F ;
+			color:#334A52 ;
+			text-decoration: none;
+		}
 	}
 }
