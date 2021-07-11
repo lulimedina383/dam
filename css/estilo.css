@@ -140,7 +140,10 @@ h4 {
     font-family: 'Staatliches';
     font-weight: bold;
     text-align: center;
-    background-image: url("../media/fondoformas.jpg"); }
+    background-image: url("../media/fondoformas.jpg");
+    position: fixed;
+    width: 100%;
+    padding-right: 15%; }
   .primeraParte #banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,6 +300,8 @@ footer {
   padding: 10px;
   width: 100%;
   grid-area: footer;
+  grid-column: 1 / 3;
+  grid-grow: 4;
   display: flex;
   flex-direction: row;
   text-align: center; }
@@ -496,28 +501,28 @@ div.content {
 /** ALINEACION */
 /** INDEX 3 */
 #index3 {
-  grid-template-areas: "consulta consulta consulta" "form form img" "mensaje mensaje img" "footer footer footer";
+  grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
   grid-gap: 10px;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
 
 .margin {
   margin-left: 200px; }
 
-/** IMAGEN CON EFECTO */
-.imgPersona {
-  width: 400px;
-  text-align: center;
-  margin: 1%; }
-
 /** CONSULTA */
 .inicio {
-  grid-area: consulta; }
+  grid-area: consulta;
+  padding: 2%; }
 
 /** IMAGEN CON EFECTO */
 #imgPersona2 {
+  width: 300px;
+  text-align: center;
   border-radius: 20px;
-  grid-area: img; }
+  grid-area: img;
+  margin-top: 10%;
+  margin-bottom: 2%; }
 
 /** FORMULARIO DE CONSULTA */
 #formulario {
@@ -527,17 +532,28 @@ div.content {
   font-family: "Raleway";
   font-size: 1rem;
   font-weight: bold;
-  text-align: left;
   padding: 3%;
-  width: 50%;
-  grid-area: form;
+  margin: 3%;
+  border-radius: 15px;
+  text-align: left;
   /** MODAL DE AGRADECIMIENTO */ }
+  #formulario .btn {
+    background-color: #334A52;
+    color: #EDB78F;
+    font-family: "Raleway";
+    font-weight: bolder; }
+    #formulario .btn:hover {
+      background-color: #EDB78F;
+      color: #334A52; }
+  #formulario .container-flew .form {
+    grid-area: form; }
   #formulario #boton {
     font-family: 'Staatliches';
     font-size: 1.3em;
     color: #334A52;
     background-color: #EDB78F;
-    border-color: #334A52; }
+    border-color: #334A52;
+    margin-top: 2%; }
     #formulario #boton:hover {
       color: #EDB78F;
       background-color: #334A52;
@@ -567,7 +583,8 @@ div.content {
   font-size: 20px;
   grid-area: mensaje; }
   #mensajeLindo img {
-    border-radius: 15px; }
+    border-radius: 15px;
+    margin-bottom: 3.5%; }
 
 /** SIDEBAR */
 .sidebar {
@@ -577,18 +594,24 @@ div.content {
   background-color: #334A52;
   position: fixed;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  font-family: "Raleway"; }
   .sidebar a {
     display: block;
     color: white;
     padding: 16px; }
     .sidebar a.active {
       background-color: #EDB78F;
-      color: white; }
+      color: white;
+      font-weight: bolder;
+      text-decoration: none; }
     .sidebar a:hover:not(.active) {
       background-color: #555;
       color: white;
       text-decoration: none; }
+    .sidebar a img {
+      width: 20px;
+      padding-right: 5px; }
 
 @media screen and (max-width: 700px) {
   .sidebar {
