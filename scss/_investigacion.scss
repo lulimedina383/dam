@@ -33,7 +33,7 @@
 }
 #formularioG{
 	grid-area: form;
-	text-align:center;
+	text-align: $centro;
 }
 #miOpinion{
 	grid-area: op;
@@ -54,7 +54,11 @@
 }
 .resul{
 	padding: 2%;
-	.gridResul{
+	
+	
+	/** DEJE PREPARADA ESTA PARTE PARA CUANDO TENGA LAS RESPUESTAS DEL FORMULARIO */
+
+	/**.gridResul{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 20px;
@@ -79,20 +83,21 @@
 			justify-content: stretch;
 			align-content: stretch;
 		}
-		#edad{
-			grid-area: edad;
+		@mixin resultados(){
 			overflow:scroll ;
 			height: 200px;
+		}
+		#edad{
+			grid-area: edad;
+			@include resultados;
 		}
 		#actividadFisica{
 			grid-area: acF;
-			overflow:scroll;
-			height: 200px;
+			@include resultados;
 		}
 		#sentimientos{
 			grid-area: sent;
-			overflow:scroll ;
-			height: 200px;
+			@include resultados;
 		}
 		#negativos{
 			grid-area: nega;
@@ -145,6 +150,6 @@
 		#futuro{
 			grid-area: fut;
 		}
-	}	
+	}	*/
 }
 

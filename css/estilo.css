@@ -1,11 +1,16 @@
+@charset "UTF-8";
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 * {
   padding: 0;
   margin: 0; }
@@ -348,10 +353,58 @@ div.content {
   .margin {
     margin-left: 0; } }
 
+/** TAMAÑO TIPOGRAFIA */
+.mTop--1 {
+  font-size: 1em; }
+
+.mTop--2 {
+  font-size: 2em; }
+
+.mTop--3 {
+  font-size: 3em; }
+
+.mTop--4 {
+  font-size: 4em; }
+
+.mTop--5 {
+  font-size: 5em; }
+
+/* GROSOR TIPOGRAFIA */
+.type--thin {
+  font-family: "Raleway";
+  font-weight: 100; }
+
+.type--light {
+  font-family: "Raleway";
+  font-weight: 300; }
+
+.type--regular {
+  font-family: "Raleway";
+  font-weight: 400; }
+
+.type--bold {
+  font-family: "Raleway";
+  font-weight: 700; }
+
+/** TAMAÑOS */
+.text--xsm {
+  font-size: 1rem; }
+
+.text--sm {
+  font-size: 1.8rem; }
+
+.text--md {
+  font-size: 2.3rem; }
+
+.text--lg {
+  font-size: 3rem; }
+
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 #index1 {
   grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer"; }
 
@@ -454,6 +507,8 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 #index2 {
   grid-template-areas: "img img img" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
   grid-gap: 10px;
@@ -499,74 +554,108 @@ div.content {
     transform: scale(1.3); }
 
 .resul {
-  padding: 2%; }
-  .resul .gridResul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    justify-content: stretch;
-    align-content: stretch;
-    align-items: center;
-    grid-template-areas: "edad acF sen" "nega ali sana" "comen comenMal conf" "hoy opAf opAF" "ta redS redS" "del del maT" "salud est mat" "aE fut fut"; }
-    .resul .gridResul .contenedorR {
-      background-color: #334A52;
-      border-radius: 15px;
-      text-align: center;
-      color: white;
-      padding: 1em;
-      justify-content: stretch;
-      align-content: stretch; }
-    .resul .gridResul #edad {
-      grid-area: edad;
-      overflow: scroll;
-      height: 200px; }
-    .resul .gridResul #actividadFisica {
-      grid-area: acF;
-      overflow: scroll;
-      height: 200px; }
-    .resul .gridResul #sentimientos {
-      grid-area: sent;
-      overflow: scroll;
-      height: 200px; }
-    .resul .gridResul #negativos {
-      grid-area: nega; }
-    .resul .gridResul #alimentacion {
-      grid-area: ali; }
-    .resul .gridResul #alimentacionSana {
-      grid-area: sana; }
-    .resul .gridResul #comentarios {
-      grid-area: comen; }
-    .resul .gridResul #comentarioMalos {
-      grid-area: comenMal; }
-    .resul .gridResul #conforme {
-      grid-area: conf; }
-    .resul .gridResul #dispuestoHoy {
-      grid-area: hoy; }
-    .resul .gridResul #opinionAF {
-      grid-area: opAF; }
-    .resul .gridResul #salud {
-      grid-area: salud; }
-    .resul .gridResul #trastornoAlimen {
-      grid-area: ta; }
-    .resul .gridResul #redesSociales {
-      grid-area: redS; }
-    .resul .gridResul #conforme {
-      grid-area: conf; }
-    .resul .gridResul #cuerpoD {
-      grid-area: del; }
-    .resul .gridResul #cuerpoMaT {
-      grid-area: maT; }
-    .resul .gridResul #estereotipos {
-      grid-area: est; }
-    .resul .gridResul #actExtra {
-      grid-area: aE; }
-    .resul .gridResul #futuro {
-      grid-area: fut; }
+  padding: 2%;
+  /** DEJE PREPARADA ESTA PARTE PARA CUANDO TENGA LAS RESPUESTAS DEL FORMULARIO */
+  /**.gridResul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+		justify-content: stretch;
+		align-content: stretch;
+		align-items: $centro;
+		grid-template-areas:
+		"edad acF sen"
+		"nega ali sana"
+		"comen comenMal conf"
+		"hoy opAf opAF"
+		"ta redS redS"
+		"del del maT"
+		"salud est mat"
+		"aE fut fut";
+		.contenedorR{
+			background-color: $colorAzul;
+			border-radius: $bordes;
+			text-align: $centro;
+			color: $colorBlanco;
+			padding: 1em;
+			justify-content: stretch;
+			align-content: stretch;
+		}
+		@mixin resultados(){
+			overflow:scroll ;
+			height: 200px;
+		}
+		#edad{
+			grid-area: edad;
+			@include resultados;
+		}
+		#actividadFisica{
+			grid-area: acF;
+			@include resultados;
+		}
+		#sentimientos{
+			grid-area: sent;
+			@include resultados;
+		}
+		#negativos{
+			grid-area: nega;
+		}
+		#alimentacion{
+			grid-area: ali;
+		}
+		#alimentacionSana{
+			grid-area: sana;
+		}
+		#comentarios{
+			grid-area: comen;
+		}
+		#comentarioMalos{
+			grid-area: comenMal;
+		}
+		#conforme{
+			grid-area: conf;
+		}
+		#dispuestoHoy{
+			grid-area: hoy;
+		}
+		#opinionAF{
+			grid-area: opAF;
+		}
+		#salud{
+			grid-area: salud;
+		}
+		#trastornoAlimen{
+			grid-area: ta;
+		}
+		#redesSociales{
+			grid-area: redS;
+		}
+		#conforme{
+			grid-area: conf;
+		}
+		#cuerpoD{
+			grid-area: del;
+		}
+		#cuerpoMaT{
+			grid-area: maT
+		}
+		#estereotipos{
+			grid-area: est;
+		}
+		#actExtra{
+			grid-area: aE;
+		}
+		#futuro{
+			grid-area: fut;
+		}
+	}	*/ }
 
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 /** INDEX 3 */
 #index3 {
   grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
@@ -660,6 +749,8 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 @media only screen and (min-width: 768px) {
   #index1 {
     grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
@@ -680,6 +771,8 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 @media only screen and (min-width: 1024px) {
   #index1 {
     grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
@@ -701,6 +794,8 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 #index4 {
   grid-template-areas: "ejer ejer ejer" "img img img" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
   grid-gap: 10px;

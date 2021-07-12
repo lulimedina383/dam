@@ -390,4 +390,25 @@ div.content {
 	}
 }
 
+/** TAMAÑO TIPOGRAFIA */
+$tamaño-font: 1em;
+@for $i from 1 to 6 {
+   .mTop--#{$i} {
+        font-size: $tamaño-font * $i,
+   } 
+}
 
+/* GROSOR TIPOGRAFIA */
+@each $l, $m in $Weight {
+    .type--#{$l} {
+        font-family: $fontPrincipal;
+        font-weight: $m;
+    }
+}
+
+/** TAMAÑOS */
+@each $k, $v in $size {
+    .text--#{$k} {
+        font-size: $v;
+    }
+}
