@@ -6,6 +6,8 @@ $fontSecundaria: 'Staatliches';
 $colorAzul: #334A52;
 $colorCrema: #EDB78F;
 $colorBlanco: white;
+$colorSalmon: #EA7353;
+$colorCeleste: #516266;
 
 /** MEDIDAS */
 $bordes: 15px;
@@ -13,10 +15,9 @@ $bordes: 15px;
 /** ALINEACION */
 $centro: center;
 
-/** TAMAÑO VIDEOS */
-$aspect-ratios: (
-  "1x1": 100%,
-  "4x3": calc(3 / 4 * 100%),
-  "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
-);
+@mixin grid(){
+	grid-gap: 10px;
+	align-items: $centro;
+	justify-content: $centro;
+	text-align: $centro;
+}

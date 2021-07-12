@@ -1,14 +1,11 @@
-@charset "UTF-8";
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 * {
   padding: 0;
   margin: 0; }
@@ -40,7 +37,7 @@ img {
 
 h4 {
   font-size: 40px;
-  font-family: 'Raleway'; }
+  font-family: "Raleway"; }
 
 .logos {
   width: 2.5rem; }
@@ -94,7 +91,7 @@ h4 {
   .dropdown a:hover {
     color: #EDB78F; }
   .dropdown .dropdown-item {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-size: 0.3em; }
     .dropdown .dropdown-item #logo {
       margin-top: 50px;
@@ -111,7 +108,7 @@ h4 {
     color: #334A52;
     padding: 3px;
     font-size: 5em;
-    font-family: 'Staatliches';
+    font-family: "Staatliches";
     font-weight: bold;
     text-align: center;
     background-image: url("../media/fondoformas.jpg");
@@ -120,11 +117,10 @@ h4 {
     position: fixed; }
 
 .textos {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-align: justify;
   font-size: 1em;
-  margin-bottom: 15px;
-  margin-right: 3%; }
+  margin-bottom: 15px; }
 
 .especial {
   margin-right: 8%;
@@ -136,14 +132,15 @@ h4 {
   list-style-position: inside;
   margin: 1em;
   margin-right: 3%;
-  font-family: "Raleway"; }
+  font-family: "Raleway";
+  text-align: justify; }
 
 .fondoRosado {
   margin-right: 3%;
   margin-left: 3%; }
 
 .escritoP {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-align: justify;
   color: #334A52;
   padding-bottom: 3%;
@@ -158,21 +155,21 @@ h4 {
     font-weight: bold; }
 
 .titulosP {
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 1.5em;
   margin-bottom: 8px;
   margin-top: 15px; }
 
 .lluvia {
   text-align: center;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 2em;
   margin-bottom: 8px;
   margin-top: 15px; }
 
 .final {
   text-align: center;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 1.3em; }
 
 h4.mayus {
@@ -200,7 +197,7 @@ h4.mayus {
 
 h3.inline2 {
   background-color: #334A52;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   text-align: center;
   font-size: 60px;
   color: #EDB78F;
@@ -246,13 +243,115 @@ footer {
       text-decoration: none; }
 
 .videos {
-  display: inline; }
+  text-align: center;
+  margin-bottom: 3%; }
+  .videos .btn {
+    display: inline-block; }
+
+/** IMAGEN CON EFECTO */
+.imgPersona {
+  height: 500px;
+  text-align: center;
+  border-radius: 20px;
+  grid-area: img;
+  margin-top: 120px;
+  margin-bottom: 2%; }
+
+/** MODAL DE AGRADECIMIENTO */
+.boton {
+  font-family: "Staatliches";
+  font-size: 1.3em;
+  color: #334A52;
+  background-color: #EDB78F;
+  border-color: #334A52;
+  margin-top: 2%; }
+  .boton:hover {
+    color: #EDB78F;
+    background-color: #334A52;
+    border-color: #EDB78F; }
+
+.modal-content {
+  background-color: #EDB78F;
+  color: #334A52; }
+  .modal-content:hover {
+    background-color: #334A52;
+    color: #EDB78F; }
+  .modal-content #exampleModal {
+    font-family: "Raleway"; }
+  .modal-content .modal-title {
+    font-family: "Staatliches"; }
+  .modal-content .modal-body {
+    text-align: center; }
+  .modal-content .modal-footer {
+    font-family: "Staatliches"; }
+  .modal-content .botonExtra {
+    margin-top: 10px; }
+
+/** SIDEBAR */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #334A52;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-weight: bolder; }
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px; }
+    .sidebar a.active {
+      background-color: #EDB78F;
+      color: white;
+      text-decoration: none; }
+    .sidebar a:hover:not(.active) {
+      background-color: #516266;
+      color: white;
+      text-decoration: none; }
+  .sidebar img {
+    width: 20px;
+    padding-right: 5px; }
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px; }
+
+/** TABLET*/
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed; }
+  .sidebar a {
+    float: left; }
+  div.content {
+    margin-left: 0; }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 200px; }
+  .margin {
+    margin-left: 0; } }
+
+/** MOBILE */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    position: initial; }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 100px; }
+  .margin {
+    margin-left: 0; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 #index1 {
   grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer"; }
 
@@ -311,7 +410,7 @@ footer {
     grid-area: img;
     margin: 10px; }
     #banner .imgBanner img {
-      width: 400px; }
+      width: 380px; }
   #banner .bannerInfo {
     grid-area: text;
     color: #334A52; }
@@ -340,7 +439,7 @@ footer {
     margin-right: 8%;
     color: #334A52;
     font-weight: bolder;
-    text-shadow: 1px 1px 1px grey; }
+    text-shadow: 1px 1px 1px white; }
 
 .bannerTitulo {
   grid-area: tit; }
@@ -355,9 +454,12 @@ footer {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 #index2 {
-  grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer"; }
+  grid-template-areas: "img img img" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 #item1 {
   grid-area: item1; }
@@ -465,7 +567,6 @@ footer {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 /** INDEX 3 */
 #index3 {
   grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
@@ -482,18 +583,9 @@ footer {
 .margin {
   margin-left: 200px; }
 
-/** IMAGEN CON EFECTO */
-.imgPersona {
-  width: 280px;
-  text-align: center;
-  border-radius: 20px;
-  grid-area: img;
-  margin-top: 120px;
-  margin-bottom: 2%; }
-
 /** FORMULARIO DE CONSULTA */
 #formulario {
-  background-image: url("../media/fondoformas.jpg"), opacity(0.2), filter(opacity=20);
+  background-image: url("../media/fondoformas.jpg");
   color: #EDB78F;
   font-weight: bolder;
   font-family: "Raleway";
@@ -502,8 +594,7 @@ footer {
   padding: 3%;
   margin: 3%;
   border-radius: 15px;
-  text-align: left;
-  /** MODAL DE AGRADECIMIENTO */ }
+  text-align: left; }
   #formulario .btn {
     background-color: #334A52;
     color: #EDB78F;
@@ -514,33 +605,6 @@ footer {
       color: #334A52; }
   #formulario .container-flew .form {
     grid-area: form; }
-  #formulario #boton {
-    font-family: 'Staatliches';
-    font-size: 1.3em;
-    color: #334A52;
-    background-color: #EDB78F;
-    border-color: #334A52;
-    margin-top: 2%; }
-    #formulario #boton:hover {
-      color: #EDB78F;
-      background-color: #334A52;
-      border-color: #EDB78F; }
-  #formulario .modal-content {
-    background-color: #EDB78F;
-    color: #334A52; }
-    #formulario .modal-content:hover {
-      background-color: #334A52;
-      color: #EDB78F; }
-    #formulario .modal-content #exampleModal {
-      font-family: "Raleway"; }
-    #formulario .modal-content .modal-title {
-      font-family: "Staatliches"; }
-    #formulario .modal-content .modal-body {
-      text-align: justify; }
-    #formulario .modal-content .modal-footer {
-      font-family: "Staatliches"; }
-    #formulario .modal-content #botonExtra {
-      margin-top: 10px; }
 
 /** MENSAJE LINDO */
 #mensajeLindo {
@@ -553,69 +617,12 @@ footer {
     border-radius: 15px;
     margin-bottom: 3.5%; }
 
-/** SIDEBAR */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #334A52;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  font-weight: bolder; }
-  .sidebar a {
-    display: block;
-    color: white;
-    padding: 16px; }
-    .sidebar a.active {
-      background-color: #EDB78F;
-      color: white;
-      text-decoration: none; }
-    .sidebar a:hover:not(.active) {
-      background-color: #555;
-      color: white;
-      text-decoration: none; }
-  .sidebar img {
-    width: 20px;
-    padding-right: 5px; }
-
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px; }
-
-/** TABLET*/
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: fixed; }
-  .sidebar a {
-    float: left; }
-  div.content {
-    margin-left: 0; }
-  h1 {
-    padding-right: 0;
-    position: static;
-    margin-top: 200px; }
-  .margin {
-    margin-left: 0; } }
-
-/** MOBILE */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-    position: initial; }
-  h1 {
-    padding-right: 0;
-    position: static;
-    margin-top: 100px; }
-  .margin {
-    margin-left: 0; } }
-
 #index5 {
-  grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer"; }
+  grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer";
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 #blog {
   grid-area: blog; }
@@ -653,12 +660,13 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 @media only screen and (min-width: 768px) {
   #index1 {
     grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
   #index2 {
     grid-template-areas: "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer"; }
+  #index3 {
+    text-decoration: none; }
   #index4 {
     grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer"; }
   #index5 {
@@ -672,7 +680,6 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 @media only screen and (min-width: 1024px) {
   #index1 {
     grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
@@ -694,9 +701,12 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
 #index4 {
-  grid-template-areas: "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer"; }
+  grid-template-areas: "ejer ejer ejer" "img img img" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 #alimentacion {
   grid-area: ali; }
@@ -733,13 +743,13 @@ div.content {
       border-radius: 8px; }
 
 .card-title {
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-weight: bold;
   font-size: 1.4em; }
 
 .card-text {
   text-align: justify;
-  font-family: 'Raleway'; }
+  font-family: "Raleway"; }
 
 .fotos {
   width: 18%; }

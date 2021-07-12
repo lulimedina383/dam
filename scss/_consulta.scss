@@ -8,10 +8,7 @@
 	"form form form"
 	"mensaje mensaje mensaje"
 	"footer footer footer";
-	grid-gap: 10px;
-	align-items: $centro;
-	justify-content: $centro;
-	text-align: $centro;
+	@include grid;
 }
 
 /** CONSULTA */
@@ -23,20 +20,10 @@
 	margin-left: 200px;
 }
 
-/** IMAGEN CON EFECTO */
-.imgPersona{
-	width: 280px;
-	text-align: $centro;
-	border-radius: 20px;
-	grid-area: img;
-	margin-top: 120px;
-	margin-bottom: 2%;
-}
-
 /** FORMULARIO DE CONSULTA */
 #formulario{
-	background-image: url("../media/fondoformas.jpg"), opacity(0.2), filter(opacity=20);
-	color: #EDB78F;
+	background-image: url("../media/fondoformas.jpg");
+	color: $colorCrema;
 	font-weight: bolder;
 	font-family: $fontPrincipal;
 	font-size: 1rem;
@@ -47,54 +34,16 @@
 	text-align: left;
 	.btn{
 		background-color: $colorAzul;
-		color: #EDB78F;
+		color: $colorCrema;
 		font-family: $fontPrincipal;
 		font-weight: bolder;
 		&:hover{
-			background-color: #EDB78F;
+			background-color: $colorCrema;
 			color: $colorAzul;
 		}
 	}
 	.container-flew .form{
 		grid-area: form;
-	}
-
-	/** MODAL DE AGRADECIMIENTO */
-	#boton{
-		font-family: 'Staatliches';
-		font-size: 1.3em;
-		color: $colorAzul;
-		background-color: #EDB78F;
-		border-color: $colorAzul;
-		&:hover{
-			color: #EDB78F;
-			background-color: $colorAzul;
-			border-color: #EDB78F;
-		}
-		margin-top: 2%;
-	}
-	.modal-content{
-		background-color:#EDB78F;
-		color: $colorAzul;
-		&:hover{
-			background-color: $colorAzul;
-			color:#EDB78F; 
-		} 
-		#exampleModal{
-			font-family: $fontPrincipal;
-		}
-		.modal-title{
-			font-family: $fontSecundaria;
-		}
-		.modal-body{
-			text-align: justify;
-		}
-		.modal-footer{
-			font-family: $fontSecundaria;
-		}
-		#botonExtra{
-			margin-top: 10px;
-		}
 	}
 }
 
@@ -108,82 +57,6 @@
 	img{
 		border-radius: $bordes; 
 		margin-bottom: 3.5%;
-	}
-}
-
-
-
-/** SIDEBAR */
-.sidebar {
-  	margin: 0;
-  	padding: 0;
-  	width: 200px;
-  	background-color: #334A52;
-  	position: fixed;
-  	height: 100%;
-  	overflow: auto;
-  	font-weight: bolder;
-  	a {
-		display: block;
-		color: white;
-		padding: 16px;
-		&.active {
-	  		background-color: #EDB78F;
-	  		color: white;
-	  		text-decoration: none;
-	  	}
-	  	&:hover:not(.active) {
-		  	background-color: #555;
-		  	color: $colorBlanco;
-		  	text-decoration: none;
-		}
-	}
-	img{
-		width: 20px;
-		padding-right: 5px;
-	}
-}
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/** TABLET*/
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: fixed;
-
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-
-  	h1{
-  		padding-right: 0;
-		position: static;
-		margin-top: 200px;
-  	}
-  	.margin{
-		margin-left: 0;
-	}
-}
-
-/** MOBILE */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-    position: initial;
-  }
-  h1{
-  	padding-right: 0;
-	position: static;
-	margin-top: 100px;
-  }
-  .margin{
-		margin-left: 0;
 	}
 }
 

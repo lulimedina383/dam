@@ -3,10 +3,12 @@
 #index4{
 	grid-template-areas: 
 	"ejer ejer ejer"
+	"img img img"
 	"ali ali ali"
 	"psico psico psico"
 	"influ influ influ"
 	"footer footer footer";
+	@include grid;
 }
 
 #alimentacion{
@@ -26,7 +28,7 @@
 	justify-content: stretch;
 	text-align: center;
 	margin: 1.5em;
-	color: #334A52;
+	color: $colorAzul;
 	p{
 		font-family: 'Raleway';
 		span{
@@ -35,27 +37,27 @@
 		}
 	}
 	.perfil{
-		background-color: #334A52; 
-		color: #EDB78F;
-		border-color: #334A52;
+		background-color:  $colorAzul; 
+		color: $colorCrema;
+		border-color:  $colorAzul;
 		border-radius: 8px;
 		text-transform: uppercase;
 		&:hover{
-			background-color:#EDB78F; 
-			color: #334A52;
-			border-color:#EDB78F;
+			background-color:$colorCrema; 
+			color:  $colorAzul;
+			border-color:$colorCrema;
 			border-radius: 8px;
 		}
 	}
 }
 .card-title{
-	font-family: 'Staatliches';
+	font-family: $fontSecundaria;
 	font-weight: bold;
 	font-size: 1.4em;
 }
 .card-text{
 	text-align: justify;
-	font-family: 'Raleway';
+	font-family: $fontPrincipal;
 }
 .fotos{
 	width: 18%;

@@ -1,11 +1,14 @@
+@charset "UTF-8";
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 * {
   padding: 0;
   margin: 0;
@@ -67,44 +70,6 @@ h4 {
   width: 2.5rem;
 }
 
-#mySidenav a {
-  position: absolute;
-  left: -175px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 15px;
-  width: 230px;
-  text-decoration: none;
-  font-size: 1em;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
-  padding-left: 50px;
-}
-
-#mySidenav #in {
-  top: 100px;
-  background-color: #04AA6D;
-}
-
-#mySidenav #an {
-  top: 160px;
-  background-color: #2196F3;
-}
-
-#mySidenav #bl {
-  top: 220px;
-  background-color: #f44336;
-}
-
-#mySidenav #re {
-  top: 280px;
-  background-color: #555;
-}
-
 .sectoresWeb a {
   color: #334A52;
   font-weight: bold;
@@ -116,7 +81,7 @@ h4 {
 
 .sectoresWeb a:hover {
   background-color: #334A52;
-  color: #FEBA3F;
+  color: #EDB78F;
   text-decoration: none;
 }
 
@@ -213,106 +178,8 @@ h4 {
   text-align: center;
   background-image: url("../media/fondoformas.jpg");
   width: 100%;
-}
-
-.primeraParte #banner {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-      grid-template-areas: "img text" "img text";
-  margin-top: 3%;
-}
-
-.primeraParte #banner .imgBanner {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: img;
-  margin: 10px;
-}
-
-.primeraParte #banner .imgBanner img {
-  width: 400px;
-}
-
-.primeraParte #banner .bannerInfo {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: text;
-  color: #334A52;
-  font-weight: bold;
-}
-
-.primeraParte #banner .bannerInfo h6 {
-  font-family: 'Staatliches';
-  font-size: 5em;
-}
-
-.primeraParte #banner .bannerInfo h7 {
-  font-family: 'Raleway';
-  font-size: 2em;
-}
-
-.primeraParte #banner .bannerInfo img {
-  width: 100px;
-  margin: 1rem;
-}
-
-#indice {
-  padding: 1.5rem;
-  display: inline-block;
-  background-color: #334A52;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: indice;
-  text-align: center;
-}
-
-#indice h3 {
-  color: #EDB78F;
-  font-family: 'Staatliches';
-  font-size: 30px;
-  text-align: center;
-}
-
-#indice a {
-  color: #EDB78F;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#indice a:hover {
-  color: #BAA89B;
-}
-
-#indice ul {
-  list-style-image: url("../media/paraindice.png");
-  list-style-type: upper-latin;
-  list-style-position: inside;
-  -webkit-box-align: 30px;
-      -ms-flex-align: 30px;
-          align-items: 30px;
-  text-align: left;
-}
-
-#indice img {
-  text-align: center;
-}
-
-#indice .indi {
-  margin-left: 40%;
+  padding-right: 15%;
+  position: fixed;
 }
 
 .textos {
@@ -320,13 +187,13 @@ h4 {
   text-align: justify;
   font-size: 1em;
   margin-bottom: 15px;
-  margin-right: 3%;
 }
 
 .especial {
   margin-right: 8%;
   margin-left: 8%;
-  text-indent: 3em;
+  text-indent: 2em;
+  font-weight: bold;
 }
 
 .listasP {
@@ -334,6 +201,7 @@ h4 {
   margin: 1em;
   margin-right: 3%;
   font-family: "Raleway";
+  text-align: justify;
 }
 
 .fondoRosado {
@@ -356,8 +224,8 @@ h4 {
 }
 
 .escritoP p {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 6%;
+  margin-left: 6%;
   font-weight: bold;
 }
 
@@ -427,10 +295,21 @@ h3.inline2 {
   display: block;
   position: fixed;
   bottom: 0;
-  margin-left: 95%;
+  margin-left: 3%;
 }
 
-.logoFijo #gmail {
+.logoFijo img {
+  width: 40px;
+}
+
+.logoFijo2 {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  margin-left: 8%;
+}
+
+.logoFijo2 img {
   width: 40px;
 }
 
@@ -438,7 +317,7 @@ footer {
   background-color: #334A52;
   padding: 10px;
   width: 100%;
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
@@ -469,86 +348,273 @@ footer a:hover {
   text-decoration: none;
 }
 
+.videos {
+  display: inline;
+}
+
+/** IMAGEN CON EFECTO */
+.imgPersona {
+  height: 500px;
+  text-align: center;
+  border-radius: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img;
+  margin-top: 120px;
+  margin-bottom: 2%;
+}
+
+/** MODAL DE AGRADECIMIENTO */
+.boton {
+  font-family: 'Staatliches';
+  font-size: 1.3em;
+  color: #334A52;
+  background-color: #EDB78F;
+  border-color: #334A52;
+  margin-top: 2%;
+}
+
+.boton:hover {
+  color: #EDB78F;
+  background-color: #334A52;
+  border-color: #EDB78F;
+}
+
+.modal-content {
+  background-color: #EDB78F;
+  color: #334A52;
+}
+
+.modal-content:hover {
+  background-color: #334A52;
+  color: #EDB78F;
+}
+
+.modal-content #exampleModal {
+  font-family: "Raleway";
+}
+
+.modal-content .modal-title {
+  font-family: "Staatliches";
+}
+
+.modal-content .modal-body {
+  text-align: justify;
+}
+
+.modal-content .modal-footer {
+  font-family: "Staatliches";
+}
+
+.modal-content .botonExtra {
+  margin-top: 10px;
+}
+
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 #index1 {
       grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer";
 }
 
-#introduccion {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: intro;
+#fondo {
+  background-image: url("../media/banner.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: none;
 }
 
-#blog {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: blog;
+#mySidenav a {
+  position: absolute;
+  left: -180px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px;
+  width: 215px;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-family: "Raleway";
+  font-weight: bolder;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  padding-left: 35px;
+}
+
+#mySidenav #in {
+  top: 180px;
+  background-color: #EDB78F;
+}
+
+#mySidenav #an {
+  top: 240px;
+  background-color: #EA7353;
+}
+
+#mySidenav #bl {
+  top: 300px;
+  background-color: #516266;
+}
+
+#mySidenav #re {
+  top: 360px;
+  background-color: #334A52;
+}
+
+#mySidenav img {
+  width: 20px;
+  padding-right: 5px;
+}
+
+#banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+      grid-template-areas: "tit tit" "img text" "img text";
+  margin-top: 3%;
 }
 
-#blog #descripcion {
-  padding: 3%;
+#banner .imgBanner {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img;
+  margin: 10px;
 }
 
-#blog #fotoMia {
-  padding: 3%;
+#banner .imgBanner img {
+  width: 380px;
 }
 
-#blog #fotoMia img {
-  border-radius: 20px;
+#banner .bannerInfo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: text;
+  color: #334A52;
+}
+
+#banner .bannerInfo h6 {
+  font-family: 'Staatliches';
+  font-size: 5em;
+}
+
+#banner .bannerInfo h7 {
+  font-family: 'Raleway';
+  font-size: 2em;
+}
+
+#banner .bannerInfo img {
+  width: 100px;
+  margin: 1rem;
+}
+
+#banner .bannerN {
+  font-family: "Staatliches";
+  font-weight: bolder;
+  color: #334A52;
+  text-align: center;
+  font-size: 2.3em;
+  margin-bottom: 5px;
+  margin-right: 8%;
+}
+
+#banner .bannerP {
+  font-family: "Raleway";
+  text-align: justify;
+  font-size: 0.6em;
+  margin-bottom: 15px;
+  margin-right: 8%;
+  color: #334A52;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.bannerTitulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tit;
+}
+
+.bannerTitulo h6 {
+  font-family: "Staatliches";
+  font-size: 5em;
+  color: #334A52;
+  font-weight: bolder;
+  text-align: center;
 }
 
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 #index2 {
-      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
+      grid-template-areas: "img img img" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 #item1 {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: item1;
 }
 
 #item2 {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: item2;
 }
 
 #item3 {
-  -ms-grid-row: 6;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: item3;
 }
 
 #item4 {
-  -ms-grid-row: 7;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: item4;
 }
 
 #item5 {
-  -ms-grid-row: 8;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: item5;
 }
 
 #explicacion {
-  -ms-grid-row: 10;
+  -ms-grid-row: 8;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: exp;
@@ -563,7 +629,7 @@ footer a:hover {
 }
 
 #miOpinion {
-  -ms-grid-row: 11;
+  -ms-grid-row: 9;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: op;
@@ -653,8 +719,9 @@ footer a:hover {
 }
 
 .resul .gridResul #alimentacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: ali;
 }
 
@@ -755,6 +822,7 @@ footer a:hover {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 /** INDEX 3 */
 #index3 {
       grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
@@ -769,7 +837,7 @@ footer a:hover {
 }
 
 /** CONSULTA */
-.inicio {
+#consulta {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -777,17 +845,8 @@ footer a:hover {
   padding: 2%;
 }
 
-/** IMAGEN CON EFECTO */
-#imgPersona2 {
-  width: 300px;
-  text-align: center;
-  border-radius: 20px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: img;
-  margin-top: 10%;
-  margin-bottom: 2%;
+.margin {
+  margin-left: 200px;
 }
 
 /** FORMULARIO DE CONSULTA */
@@ -802,7 +861,6 @@ footer a:hover {
   margin: 3%;
   border-radius: 15px;
   text-align: left;
-  /** MODAL DE AGRADECIMIENTO */
 }
 
 #formulario .btn {
@@ -822,51 +880,6 @@ footer a:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: form;
-}
-
-#formulario #boton {
-  font-family: 'Staatliches';
-  font-size: 1.3em;
-  color: #334A52;
-  background-color: #EDB78F;
-  border-color: #334A52;
-  margin-top: 2%;
-}
-
-#formulario #boton:hover {
-  color: #EDB78F;
-  background-color: #334A52;
-  border-color: #EDB78F;
-}
-
-#formulario .modal-content {
-  background-color: #EDB78F;
-  color: #334A52;
-}
-
-#formulario .modal-content:hover {
-  background-color: #334A52;
-  color: #EDB78F;
-}
-
-#formulario .modal-content #exampleModal {
-  font-family: "Raleway";
-}
-
-#formulario .modal-content .modal-title {
-  font-family: "Staatliches";
-}
-
-#formulario .modal-content .modal-body {
-  text-align: justify;
-}
-
-#formulario .modal-content .modal-footer {
-  font-family: "Staatliches";
-}
-
-#formulario .modal-content #botonExtra {
-  margin-top: 10px;
 }
 
 /** MENSAJE LINDO */
@@ -892,13 +905,13 @@ footer a:hover {
   padding: 0;
   width: 200px;
   background-color: #334A52;
+  position: fixed;
+  height: 100%;
   overflow: auto;
-  font-family: "Raleway";
+  font-weight: bolder;
 }
 
 .sidebar a {
-  text-align: center;
-  float: none;
   display: block;
   color: white;
   padding: 16px;
@@ -907,7 +920,6 @@ footer a:hover {
 .sidebar a.active {
   background-color: #EDB78F;
   color: white;
-  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -917,12 +929,19 @@ footer a:hover {
   text-decoration: none;
 }
 
-.sidebar a img {
+.sidebar img {
   width: 20px;
   padding-right: 5px;
 }
 
-@media only screen and (min-width: 768px) {
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/** TABLET*/
+@media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -934,22 +953,103 @@ footer a:hover {
   div.content {
     margin-left: 0;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .sidebar a {
-    position: fixed;
-    height: 100%;
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 200px;
   }
   .margin {
-    margin-left: 200px;
+    margin-left: 0;
   }
+}
+
+/** MOBILE */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    position: initial;
+  }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 100px;
+  }
+  .margin {
+    margin-left: 0;
+  }
+}
+
+#index5 {
+      grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer";
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#blog {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: blog;
+}
+
+#yo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: yo;
+}
+
+#yo img {
+  border-radius: 10px;
+  height: 150px;
+}
+
+#galeria {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: galeria;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.unir2 {
+  display: inline-block;
+}
+
+.unir {
+  background-color: #EDB78F;
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.unir:hover {
+  background-color: #334A52;
+}
+
+#linkBlog {
+  padding: 5px;
+  margin: 5px;
+}
+
+#linkBlog:hover {
+  background-color: #334A52;
+  color: white;
 }
 
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 @media only screen and (min-width: 768px) {
   #index1 {
         grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
@@ -958,7 +1058,7 @@ footer a:hover {
         grid-template-areas: "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer";
   }
   #index3 {
-        grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "exp exp exp" "form form form" "resul resul resul" "op op op" "footer footer footer";
+    text-decoration: none;
   }
   #index4 {
         grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
@@ -966,21 +1066,24 @@ footer a:hover {
   #index5 {
         grid-template-areas: "header header header" "banner banner banner" "yo yo yo" "galeria galeria galeria" "footer footer footer";
   }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 200px;
+  }
 }
 
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
+/** TAMAÑO VIDEOS */
 @media only screen and (min-width: 1024px) {
   #index1 {
         grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
   }
   #index2 {
         grid-template-areas: "header header header" "banner banner banner" ". indice ." "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer";
-  }
-  #index3 {
-        grid-template-areas: "header header header" "banner banner banner" ". indice ." "exp exp exp" "form form form" "resul resul resul" "op op op" "footer footer footer";
   }
   #index4 {
         grid-template-areas: "header header header" "banner banner banner" ". indice ." "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
@@ -998,9 +1101,98 @@ footer a:hover {
     margin-left: 10%;
     margin-right: 10%;
   }
-  h1 {
-    padding-right: 15%;
-    position: fixed;
-  }
+}
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+/** TAMAÑO VIDEOS */
+#index4 {
+      grid-template-areas: "ejer ejer ejer" "img img img" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#alimentacion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ali;
+}
+
+#ejercitacion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ejer;
+}
+
+#influencers {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: influ;
+}
+
+#psicologia {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: psico;
+}
+
+.card {
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  text-align: center;
+  margin: 1.5em;
+  color: #334A52;
+}
+
+.card p {
+  font-family: 'Raleway';
+}
+
+.card p span {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.card .perfil {
+  background-color: #334A52;
+  color: #EDB78F;
+  border-color: #334A52;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.card .perfil:hover {
+  background-color: #EDB78F;
+  color: #334A52;
+  border-color: #EDB78F;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-family: 'Staatliches';
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.card-text {
+  text-align: justify;
+  font-family: 'Raleway';
+}
+
+.fotos {
+  width: 18%;
 }
 /*# sourceMappingURL=estilo.css.map */

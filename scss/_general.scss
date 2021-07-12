@@ -13,9 +13,9 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-row-gap: 20px;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	justify-content: $centro;
+	align-content: $centro;
+	align-items: $centro;
 }
 .flex{
 	display: flex;
@@ -30,7 +30,7 @@ img{
 }
 h4{
 	font-size: 40px;
-	font-family: 'Raleway';
+	font-family: $fontPrincipal;
 }
 .logos{
 	width: 2.5rem;
@@ -69,7 +69,7 @@ h4{
 	margin: 0;
 	opacity: 0.8;
 	.nav-link{
-		color: #EDB78F;
+		color: $colorCrema;
 		font-weight: bold;
 		text-decoration: none;
 		padding: 0 10px;
@@ -87,13 +87,13 @@ h4{
 }
 .dropdown{
 	margin-top: 60px;
-	color: #EDB78F;
+	color: $colorCrema;
 	margin-left: 5rem;
 	a:hover{
-		color:#EDB78F ;
+		color:$colorCrema ;
 	}
 	.dropdown-item{
-		font-family: 'Raleway';
+		font-family: $fontPrincipal;
 		font-size: 0.3em;
 		#logo{
 			margin-top: 50px;
@@ -111,10 +111,10 @@ h4{
 .primeraParte{
 	grid-area: banner;
 	h1{
-		color:#334A52 ;
+		color:$colorAzul;
 		padding: 3px;
 		font-size: 5em;
-		font-family: 'Staatliches';
+		font-family: $fontSecundaria;
 		font-weight: bold;
 		text-align: $centro;	
 		background-image: url("../media/fondoformas.jpg");	
@@ -125,11 +125,10 @@ h4{
 }
 
 .textos{
-	font-family: 'Raleway';
+	font-family: $fontPrincipal;
 	text-align: justify;
 	font-size: 1em;
 	margin-bottom: 15px;
-	margin-right: 3%;
 }
 .especial{
 		margin-right: 8%;
@@ -143,21 +142,22 @@ h4{
 	margin: 1em;
 	margin-right: 3%;
 	font-family: $fontPrincipal;
+	text-align: justify;
 }
 .fondoRosado{
 	margin-right: 3%;
 	margin-left:  3%;
 }
 .escritoP{
-	font-family: 'Raleway';
+	font-family: $fontPrincipal;
 	text-align: justify;
-	color: #334A52;
+	color: $colorAzul;
 	padding-bottom: 3%;
 	padding-top: 3%; 
 	margin-bottom: 2%;
 	margin-top: 2%;
 	&:hover{
-		color: #EDB78F;
+		color: $colorCrema;
 	}
 	p{
 		margin-right: 6%;
@@ -166,21 +166,21 @@ h4{
 	}
 }
 .titulosP{
-	font-family: 'Staatliches';
+	font-family: $fontSecundaria;
 	font-size: 1.5em;
 	margin-bottom: 8px;
 	margin-top: 15px;
 }
 .lluvia{
-	text-align: center;
-	font-family: 'Staatliches';
+	text-align: $centro;
+	font-family: $fontSecundaria;
 	font-size: 2em;
 	margin-bottom: 8px;
 	margin-top: 15px;
 }
 .final{
-	text-align: center;
-	font-family: 'Staatliches';
+	text-align: $centro;
+	font-family: $fontSecundaria;
 	font-size: 1.3em;
 }
 h4.mayus{
@@ -192,7 +192,7 @@ h4.mayus{
 	font-size: 0.5em;
 	margin-top: 8px;
 	a{
-		color: #334A52;
+		color: $colorAzul;
 		font-size: 0.7em;
 		&:hover{
 			text-decoration: none;
@@ -211,10 +211,10 @@ h4.mayus{
 }
 h3.inline2{
 	background-color: $colorAzul;
-	font-family: 'Staatliches';
+	font-family: $fontSecundaria;
 	text-align: center;
 	font-size: 60px;
-	color: #EDB78F;
+	color: $colorCrema;
 	padding-top: 20px;
 	padding-bottom: 15px;
 }
@@ -247,19 +247,147 @@ footer{
 	flex-direction: row;
 	text-align: center;
 	a{
-		color: #EDB78F;
+		color: $colorCrema;
 		font-weight: bold;
 		display: inline-block;
 		position:relative;
 		text-decoration: none;
 		padding: 0 10px;
 		&:hover {
-			background-color:#EDB78F ;
-			color:#334A52 ;
+			background-color:$colorCrema ;
+			color:$colorAzul ;
 			text-decoration: none;
 		}
 	}
 }
 .videos{
-	display: inline;
+	text-align: $centro;
+	margin-bottom: 3%;
+	.btn{
+		display: inline-block;
+	}
 }
+
+/** IMAGEN CON EFECTO */
+.imgPersona{
+	height: 500px;
+	text-align: $centro;
+	border-radius: 20px;
+	grid-area: img;
+	margin-top: 120px;
+	margin-bottom: 2%;
+}
+
+/** MODAL DE AGRADECIMIENTO */
+	.boton{
+		font-family: $fontSecundaria;
+		font-size: 1.3em;
+		color: $colorAzul;
+		background-color:$colorCrema;
+		border-color: $colorAzul;
+		&:hover{
+			color: $colorCrema;
+			background-color: $colorAzul;
+			border-color: $colorCrema;
+		}
+		margin-top: 2%;
+	}
+	.modal-content{
+		background-color: $colorCrema;
+		color: $colorAzul;
+		&:hover{
+			background-color: $colorAzul;
+			color: $colorCrema; 
+		} 
+		#exampleModal{
+			font-family: $fontPrincipal;
+		}
+		.modal-title{
+			font-family: $fontSecundaria;
+		}
+		.modal-body{
+			text-align: $centro;
+		}
+		.modal-footer{
+			font-family: $fontSecundaria;
+		}
+		.botonExtra{
+			margin-top: 10px;
+		}
+	}
+
+	/** SIDEBAR */
+.sidebar {
+  	margin: 0;
+  	padding: 0;
+  	width: 200px;
+  	background-color: $colorAzul;
+  	position: fixed;
+  	height: 100%;
+  	overflow: auto;
+  	font-weight: bolder;
+  	a {
+		display: block;
+		color: white;
+		padding: 16px;
+		&.active {
+	  		background-color: $colorCrema;
+	  		color: white;
+	  		text-decoration: none;
+	  	}
+	  	&:hover:not(.active) {
+		  	background-color: $colorCeleste;
+		  	color: $colorBlanco;
+		  	text-decoration: none;
+		}
+	}
+	img{
+		width: 20px;
+		padding-right: 5px;
+	}
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/** TABLET*/
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  	h1{
+  		padding-right: 0;
+		position: static;
+		margin-top: 200px;
+  	}
+  	.margin{
+		margin-left: 0;
+	}
+}
+
+/** MOBILE */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    position: initial;
+  }
+  h1{
+  	padding-right: 0;
+	position: static;
+	margin-top: 100px;
+  }
+  .margin{
+		margin-left: 0;
+	}
+}
+
+

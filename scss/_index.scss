@@ -39,12 +39,12 @@
 
 	#an {
 	  top: 240px;
-	  background-color: #EA7353; 
+	  background-color: $colorSalmon; 
 	}
 
 	#bl{
 	  top: 300px;
-	  background-color: #516266; 
+	  background-color: $colorCeleste; 
 	}
 
 	#re{
@@ -72,7 +72,7 @@
 			grid-area: img;
 			margin: 10px;
 			img{
-				width: 400px;
+				width: 380px;
 			}
 		}
 		.bannerInfo{
@@ -109,7 +109,7 @@
 			margin-right: 8%;
 			color: $colorAzul;
 			font-weight: bolder;
-			text-shadow: 1px 1px 1px grey;
+			text-shadow: 1px 1px 1px $colorBlanco;
 		}
 
 	}

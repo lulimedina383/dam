@@ -5,6 +5,7 @@
 	"yo yo yo"
 	"galeria galeria galeria"
 	"footer footer footer";
+	@include grid;
 }
 #blog{
 	grid-area: blog;
@@ -26,7 +27,7 @@
 	display: inline-block;
 }
 .unir{
-	background-color: #EDB78F;
+	background-color: $colorCrema;
 	border-radius: 10px;
 	margin-left: 15%;
 	margin-right: 15%;
