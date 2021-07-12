@@ -11,6 +11,7 @@
   margin: 0; }
 
 body {
+  margin: 0;
   font-family: "Raleway";
   background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
   color: #334A52; }
@@ -141,9 +142,9 @@ h4 {
     font-weight: bold;
     text-align: center;
     background-image: url("../media/fondoformas.jpg");
-    position: fixed;
     width: 100%;
-    padding-right: 15%; }
+    padding-right: 15%;
+    position: fixed; }
   .primeraParte #banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,7 +211,8 @@ h4 {
 .especial {
   margin-right: 8%;
   margin-left: 8%;
-  text-indent: 3em; }
+  text-indent: 2em;
+  font-weight: bold; }
 
 .listasP {
   list-style-position: inside;
@@ -233,8 +235,8 @@ h4 {
   .escritoP:hover {
     color: #EDB78F; }
   .escritoP p {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 6%;
+    margin-left: 6%;
     font-weight: bold; }
 
 .titulosP {
@@ -301,7 +303,7 @@ footer {
   width: 100%;
   grid-area: footer;
   grid-column: 1 / 3;
-  grid-grow: 4;
+  grid-row: 4;
   display: flex;
   flex-direction: row;
   text-align: center; }
@@ -316,55 +318,6 @@ footer {
       background-color: #EDB78F;
       color: #334A52;
       text-decoration: none; }
-
-/** PRUEBAS2 */
-body {
-  margin: 0;
-  font-family: 'raleway';
-  background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52); }
-
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #334A52;
-  position: fixed;
-  height: 100%;
-  overflow: auto; }
-
-.sidebar a {
-  display: block;
-  color: white;
-  padding: 16px;
-  text-decoration: none; }
-
-.sidebar a.active {
-  background-color: #EDB78F;
-  color: white; }
-
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white; }
-
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px; }
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: fixed; }
-  .sidebar a {
-    float: left; }
-  div.content {
-    margin-left: 0; } }
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
@@ -507,21 +460,21 @@ div.content {
   justify-content: center;
   text-align: center; }
 
-.margin {
-  margin-left: 200px; }
-
 /** CONSULTA */
-.inicio {
+#consulta {
   grid-area: consulta;
   padding: 2%; }
 
+.margin {
+  margin-left: 200px; }
+
 /** IMAGEN CON EFECTO */
-#imgPersona2 {
-  width: 300px;
+.imgPersona {
+  width: 280px;
   text-align: center;
   border-radius: 20px;
   grid-area: img;
-  margin-top: 10%;
+  margin-top: 120px;
   margin-bottom: 2%; }
 
 /** FORMULARIO DE CONSULTA */
@@ -595,7 +548,7 @@ div.content {
   position: fixed;
   height: 100%;
   overflow: auto;
-  font-family: "Raleway"; }
+  font-weight: bolder; }
   .sidebar a {
     display: block;
     color: white;
@@ -603,27 +556,233 @@ div.content {
     .sidebar a.active {
       background-color: #EDB78F;
       color: white;
-      font-weight: bolder;
       text-decoration: none; }
     .sidebar a:hover:not(.active) {
       background-color: #555;
       color: white;
       text-decoration: none; }
-    .sidebar a img {
-      width: 20px;
-      padding-right: 5px; }
+  .sidebar img {
+    width: 20px;
+    padding-right: 5px; }
 
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px; }
+
+/** TABLET*/
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: fixed; }
-    .sidebar a {
-      float: left; }
+  .sidebar a {
+    float: left; }
   div.content {
+    margin-left: 0; }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 200px; }
+  .margin {
     margin-left: 0; } }
 
+/** MOBILE */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
-    float: none; } }
+    float: none;
+    position: initial; }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 100px; }
+  .margin {
+    margin-left: 0; } }
+
+#wrapperMenu {
+  width: 30%;
+  margin: 20px 50px; }
+
+.wrappernav-dashboard {
+  /*background: #d3d3d3;*/
+  /*border: 1px dashed orange;*/
+  width: 100%;
+  padding: 10px;
+  margin: 0; }
+
+#menu-dashboard {
+  /*border: 1px dashed red;*/
+  border-left: 1px solid #bcbcbc;
+  border-right: 1px solid #bcbcbc;
+  border-top: 1px solid #bcbcbc;
+  border-radius: 5px;
+  overflow: hidden; }
+
+#menu-dashboard .active a {
+  background-color: #F4BD16;
+  border-radius: 0;
+  color: #fff; }
+
+#menu-dashboard li {
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #bcbcbc; }
+
+#menu-dashboard li > a {
+  border-radius: 0;
+  padding: 10px;
+  color: #444; }
+
+#menu-dashboard > li > a:hover,
+#menu-dashboard > li > a:focus {
+  color: #fff;
+  background: #F4BD16;
+  -webkit-transition: all 1ms ease-in-out;
+  -moz-transition: all 1ms ease-in-out;
+  -ms-transition: all 1ms ease-in-out;
+  -o-transition: all 1ms ease-in-out;
+  transition: all 1ms ease-in-out; }
+
+#submenu {
+  background: #333; }
+
+#submenu li {
+  border: none; }
+
+#submenu li a {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  text-indent: 20px; }
+
+#submenu li a:hover {
+  background: rgba(0, 0, 0, 0.5); }
+
+#index5 {
+  grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer"; }
+
+#blog {
+  grid-area: blog; }
+
+#yo {
+  grid-area: yo; }
+  #yo img {
+    border-radius: 10px;
+    height: 150px; }
+
+#galeria {
+  grid-area: galeria;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.unir2 {
+  display: inline-block; }
+
+.unir {
+  background-color: #EDB78F;
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-right: 15%; }
+  .unir:hover {
+    background-color: #334A52; }
+
+#linkBlog {
+  padding: 5px;
+  margin: 5px; }
+  #linkBlog:hover {
+    background-color: #334A52;
+    color: white; }
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+@media only screen and (min-width: 768px) {
+  #index1 {
+    grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
+  #index2 {
+    grid-template-areas: "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer"; }
+  #index4 {
+    grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer"; }
+  #index5 {
+    grid-template-areas: "header header header" "banner banner banner" "yo yo yo" "galeria galeria galeria" "footer footer footer"; }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 200px; } }
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+@media only screen and (min-width: 1024px) {
+  #index1 {
+    grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
+  #index2 {
+    grid-template-areas: "header header header" "banner banner banner" ". indice ." "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer"; }
+  #index4 {
+    grid-template-areas: "header header header" "banner banner banner" ". indice ." "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer"; }
+  #index5 {
+    grid-template-areas: "header header header" "banner banner banner" "yo yo yo" "galeria galeria galeria" "footer footer footer"; }
+  .bloque {
+    width: 50%; }
+  #indice {
+    border-radius: 13px; }
+  .indi {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+#index4 {
+  grid-template-areas: "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer"; }
+
+#alimentacion {
+  grid-area: ali; }
+
+#ejercitacion {
+  grid-area: ejer; }
+
+#influencers {
+  grid-area: influ; }
+
+#psicologia {
+  grid-area: psico; }
+
+.card {
+  justify-content: stretch;
+  text-align: center;
+  margin: 1.5em;
+  color: #334A52; }
+  .card p {
+    font-family: 'Raleway'; }
+    .card p span {
+      font-weight: bolder;
+      text-transform: uppercase; }
+  .card .perfil {
+    background-color: #334A52;
+    color: #EDB78F;
+    border-color: #334A52;
+    border-radius: 8px;
+    text-transform: uppercase; }
+    .card .perfil:hover {
+      background-color: #EDB78F;
+      color: #334A52;
+      border-color: #EDB78F;
+      border-radius: 8px; }
+
+.card-title {
+  font-family: 'Staatliches';
+  font-weight: bold;
+  font-size: 1.4em; }
+
+.card-text {
+  text-align: justify;
+  font-family: 'Raleway'; }
+
+.fotos {
+  width: 18%; }

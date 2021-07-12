@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Consulta</title>
-	<link rel="stylesheet" type="text/css" href="..css/estilo.css">
+	<title>ANALISIS GENERAL</title>
+	
+	<!-- ENLACE CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	
+	<!-- ETIQUETA META -->
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- TIPOGRAFIAS -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+
+	<!-- SEO -->
 </head>
 <body>
-	<div class="sidebar">
-	  <a class="active" href="../index.html">HOME</a>
-	  <a href="investigacion.html">Investigación</a>
-	  <a href="recomendaciones.html">Recomendaciones</a>
-	  <a href="blog.html">Blog</a>
-	</div>
+	
+		<!-- SIDEBAR -->
+		<div class="sidebar">
+			<a class="active" href="../index.html"><img src="../media/casa.png" alt="icono casa">HOME</a>
+			<a href="investigacion.html"><img src="../media/buscar.png"  alt="icono lupa">Investigación</a>
+			<a href="recomendaciones.html"><img src="../media/idea.png" alt="icono idea">Recomendaciones</a>
+			<a href="blog.html"><img src="../media/persona.png" alt="icono persona">Blog</a>
+		</div>
+      
+		<div class="margin">
+			<div class="grid2" id="index3">
+				
+				<!-- CONSULTA -->
+				<div class="primeraParte" id="blog">
+					<h1 id="tituloBlog">CONSULTA</h1>
+				</div>	
+				
+				<!-- IMAGEN CON EFECTO -->
+			
+				<img class="imgPersona" src="../media/imgPersona2_1.svg" alt="Persona haciendo act Fisica" onmousemove= "src='../media/imgPersona2_2.svg';"  onmouseout=  "src= '../media/imgPersona2_1.svg';" >
+	
 
-	<div class="content">
-		<div class="grid" id="index3">
-		  <div class="seccionesPrimerPagina" id="consulta">
-				<div class="sectoresWeb">
-					<h3 class="inline2">CONSULTA</h3>
-				</div>
-				<div class="flex">
-					<div class="container-flew form" class="bloque" id="formulario">
-						<form action="mailto:deunaadolescenteparaelmundo@gmail.com" method="POST" enctype="text/plain">
+				<!-- FORMULARIO DE CONSULTA -->
+					<div class="container-flew form" id="formulario">
+						<form action="mailto:deunaadolescenteparaelmundo@gmail.com" method="POST" enctype="text/plain"></form>
 						<div class="form-group">
 							<label for="nombre">NOMBRE y APELLIDO:</label>
 							<input class="form-control" type="text" name="nombre" placeholder="Ingresa tu nombre y apellido" id="nombre">
@@ -49,56 +69,60 @@
 							<label>CONSULTA:</label>
 							<textarea class="form-control" name="texto" rows="4" cols="40" placeholder="Escriba su consulta aquí"></textarea>
 						</div>
-						<button type="submit" class="btn btn-dark" name="sube_form" value="ENVIAR">ENVIAR</button> 
-						<button type="reset" class="btn btn-dark"  name="resetear" value="Borrar todo">BORRAR TODO</button>
+						
+						<!-- MODAL DE AGRADECIMIENTO -->
+						<button type="submit" class="btn" name="sube_form" value="ENVIAR">ENVIAR</button> 
+						<button type="reset" class="btn"  name="resetear" value="Borrar todo">BORRAR TODO</button>
 						<div id="botonExtra">
 							<button type="button" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal">
 							¡NO TE VAYAS SIN LEER ESTE MENSAJE!
 							</button>
 							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog" role="document">
-							    <div class="modal-content">
-							      <div class="modal-header">
-							        <h5 class="modal-title" id="exampleModalLabel">MENSAJE DE AGRADECIMIENTO</h5>
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							          <span aria-hidden="true">&times;</span>
-							        </button>
-							        <button type="button" ></button>
-							      </div>
-							      <div class="modal-body">
-							      Gracias por tomarte el tiempo de leer el contenido de mi web! Fue en verdad un trabajo extenso y tedioso, por lo que
-							      el simple hecho de que lo observes es de gran valor sentimental para mi. 
-							      Espero haya sido de tu agrado lo que trate de concientizar.
-							      Si te gustó, no olvides compartir asi logramos que mi mensaje sea visto por muchas personas!!
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
-							      </div>
-							    </div>
-							  </div>
+							  	<div class="modal-dialog" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title" id="exampleModalLabel">MENSAJE DE AGRADECIMIENTO</h5>
+							        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          			<span aria-hidden="true">&times;</span>
+							        		</button>
+							        		<button type="button" ></button>
+							      		</div>
+							      		<div class="modal-body">
+							      			Gracias por tomarte el tiempo de leer el contenido de mi web! Fue en verdad un trabajo extenso y tedioso, por lo que
+							      			el simple hecho de que lo observes es de gran valor sentimental para mi. 
+							      			Espero haya sido de tu agrado lo que trate de concientizar.
+							      			Si te gustó, no olvides compartir asi logramos que mi mensaje sea visto por muchas personas!!
+							      		<div class="modal-footer">
+							        		<button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+							      		</div>
+							    	</div>
+							  	</div>
 							</div>
 						</div>
 					</div>
-					</div><!--
-					--><div class="bloque" id="mensajeLindo">
-						<img src="media/logo.png" alt="Logo de la Web">
+					</div>
+
+					<!-- MENSAJE LINDO -->
+					<div class="bloque" id="mensajeLindo">
+						<img src="../media/logo.png" alt="Logo de la Web">
 						<p>Gracias por tomarte el tiempo de consultar!!</p>	
-						<img src="media/humano.png" alt="Humano con los brazos levantados, simulando un abrazo" class="logos">
 						<p class="lluvia">Con dedicación, Lu</p>
 					</div>
-				</div>
-
-			</div>		
-			<a href="mailto:deunaadolescenteparaelmundo@gmail.com" class="logoFijo">
-				<img src="media/gmail.png" alt="Logo Instagram" id="gmail">
-			</a>
-			<footer>
-				<a href="#inicio">HOME</a>
-				<a href="paginas/investigacion.html">Investigacion</a>
-				<a href="paginas/recomendaciones.html">Recomendaciones</a>
-				<a href="paginas/blog.html">Blog</a>
-			</footer>
+				
+				<!-- FOOTER -->
+				<footer>
+					<a href="#inicio">INICIO</a>
+					<a href="../paginas/index.html">PÁGINA PRINCIPAL</a>
+					<a href="investigacion.html">INVESTIGACIÓN</a>
+					<a href="recomendaciones.html">RECOMENDACIONES</a>
+					<a href="blog.html">MÁS COSAS SOBRE MI</a>
+				</footer>
+			</div>
 		</div>
-	</div>
+		<!-- ICONO GMAIL EMERGENTE -->
+		<a href="mailto:deunaadolescenteparaelmundo@gmail.com" class="logoFijo"><img src="../media/gmail.png" alt="Logo Instagram" id="gmail"></a>
+	
+	<!-- SCRIPT's -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"crossorigin="anonymous"></script>
 </body>

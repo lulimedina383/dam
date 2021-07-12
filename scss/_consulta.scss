@@ -13,23 +13,23 @@
 	justify-content: $centro;
 	text-align: $centro;
 }
-.margin{
-	margin-left: 200px;
-}
 
 /** CONSULTA */
-.inicio{
+#consulta{
 	grid-area: consulta;
 	padding: 2%;
 }
+ .margin{
+	margin-left: 200px;
+}
 
 /** IMAGEN CON EFECTO */
-#imgPersona2{
-	width: 300px;
+.imgPersona{
+	width: 280px;
 	text-align: $centro;
 	border-radius: 20px;
 	grid-area: img;
-	margin-top: 10%;
+	margin-top: 120px;
 	margin-bottom: 2%;
 }
 
@@ -116,52 +116,76 @@
 /** SIDEBAR */
 .sidebar {
   	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: $colorAzul;
-	position: fixed;
-	height: 100%;
-	overflow: auto;
-	font-family: $fontPrincipal;
-	a {
+  	padding: 0;
+  	width: 200px;
+  	background-color: #334A52;
+  	position: fixed;
+  	height: 100%;
+  	overflow: auto;
+  	font-weight: bolder;
+  	a {
 		display: block;
 		color: white;
 		padding: 16px;
 		&.active {
-			background-color: #EDB78F;
-			color: white;
-			font-weight: bolder;
-			text-decoration: none;
-		}
-		&:hover:not(.active) {
-		  background-color: #555;
-		  color: white;
-		  text-decoration: none;
-		}
-		img{
-			width: 20px;
-			padding-right: 5px;
+	  		background-color: #EDB78F;
+	  		color: white;
+	  		text-decoration: none;
+	  	}
+	  	&:hover:not(.active) {
+		  	background-color: #555;
+		  	color: $colorBlanco;
+		  	text-decoration: none;
 		}
 	}
+	img{
+		width: 20px;
+		padding-right: 5px;
+	}
 }
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/** TABLET*/
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: fixed;
-    a {
-	  	float: left;
-	  }
+
   }
-  div.content {
-  	margin-left: 0;
-  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  	h1{
+  		padding-right: 0;
+		position: static;
+		margin-top: 200px;
+  	}
+  	.margin{
+		margin-left: 0;
+	}
 }
 
+/** MOBILE */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
+    position: initial;
   }
+  h1{
+  	padding-right: 0;
+	position: static;
+	margin-top: 100px;
+  }
+  .margin{
+		margin-left: 0;
+	}
 }
+
+
 

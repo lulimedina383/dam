@@ -1,0 +1,45 @@
+#index5{
+	grid-template-areas: 
+	"blog blog blog"
+	"img img img"
+	"yo yo yo"
+	"galeria galeria galeria"
+	"footer footer footer";
+}
+#blog{
+	grid-area: blog;
+}
+
+#yo{
+	grid-area: yo;
+	img{
+		border-radius: 10px;
+		height: 150px;
+	}
+}
+#galeria{
+	grid-area: galeria;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.unir2{
+	display: inline-block;
+}
+.unir{
+	background-color: #EDB78F;
+	border-radius: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	&:hover{
+		background-color: $colorAzul;
+	}
+}
+
+#linkBlog{
+	padding: 5px;
+	margin: 5px;
+	&:hover{
+		background-color: $colorAzul;
+		color: $colorBlanco;
+	}
+}

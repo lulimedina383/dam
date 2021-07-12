@@ -1,9 +1,18 @@
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
+  margin: 0;
   font-family: "Raleway";
   background-image: -webkit-gradient(linear, left bottom, right top, from(#edb78f), color-stop(#a7a374), color-stop(#6a896d), color-stop(#426a66), to(#334a52));
   background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
@@ -71,28 +80,28 @@ h4 {
   border-radius: 0 5px 5px 0;
 }
 
-#mySidenav a a:hover {
+#mySidenav a:hover {
   left: 0;
   padding-left: 50px;
 }
 
 #mySidenav #in {
-  top: 20px;
+  top: 100px;
   background-color: #04AA6D;
 }
 
 #mySidenav #an {
-  top: 80px;
+  top: 160px;
   background-color: #2196F3;
 }
 
 #mySidenav #bl {
-  top: 140px;
+  top: 220px;
   background-color: #f44336;
 }
 
 #mySidenav #re {
-  top: 200px;
+  top: 280px;
   background-color: #555;
 }
 
@@ -105,9 +114,9 @@ h4 {
   padding: 0 10px;
 }
 
-.sectoresWeb a :hover {
+.sectoresWeb a:hover {
   background-color: #334A52;
-  color: #EDB78F;
+  color: #FEBA3F;
   text-decoration: none;
 }
 
@@ -149,7 +158,7 @@ h4 {
   opacity: none;
 }
 
-#navbarNav .nav-link :hover {
+#navbarNav .nav-link:hover {
   background-color: #EDB78F;
   color: #334A52;
   padding: 8px;
@@ -203,6 +212,7 @@ h4 {
   font-weight: bold;
   text-align: center;
   background-image: url("../media/fondoformas.jpg");
+  width: 100%;
 }
 
 .primeraParte #banner {
@@ -221,19 +231,18 @@ h4 {
   text-align: center;
       grid-template-areas: "img text" "img text";
   margin-top: 3%;
-  background-color: white;
 }
 
 .primeraParte #banner .imgBanner {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: img;
   margin: 10px;
 }
 
 .primeraParte #banner .imgBanner img {
-  width: 600px;
+  width: 400px;
 }
 
 .primeraParte #banner .bannerInfo {
@@ -284,7 +293,7 @@ h4 {
   text-decoration: none;
 }
 
-#indice a :hover {
+#indice a:hover {
   color: #BAA89B;
 }
 
@@ -324,6 +333,7 @@ h4 {
   list-style-position: inside;
   margin: 1em;
   margin-right: 3%;
+  font-family: "Raleway";
 }
 
 .fondoRosado {
@@ -341,7 +351,7 @@ h4 {
   margin-top: 2%;
 }
 
-.escritoP :hover {
+.escritoP:hover {
   color: #EDB78F;
 }
 
@@ -349,6 +359,13 @@ h4 {
   margin-right: 10%;
   margin-left: 10%;
   font-weight: bold;
+}
+
+.titulosP {
+  font-family: 'Staatliches';
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  margin-top: 15px;
 }
 
 .lluvia {
@@ -381,7 +398,7 @@ h4.mayus {
   font-size: 0.7em;
 }
 
-.mayus a :hover {
+.mayus a:hover {
   text-decoration: none;
   border-radius: 7px;
 }
@@ -421,10 +438,12 @@ footer {
   background-color: #334A52;
   padding: 10px;
   width: 100%;
-  -ms-grid-row: 9;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
+  grid-column: 1 / 3;
+  grid-row: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,14 +463,18 @@ footer a {
   padding: 0 10px;
 }
 
-footer a :hover {
+footer a:hover {
   background-color: #EDB78F;
   color: #334A52;
   text-decoration: none;
 }
 
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
 #index1 {
-      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
+      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer";
 }
 
 #introduccion {
@@ -481,37 +504,503 @@ footer a :hover {
   border-radius: 20px;
 }
 
-#consulta {
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+#index2 {
+      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
+}
+
+#item1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item1;
+}
+
+#item2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item2;
+}
+
+#item3 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
+  grid-area: item3;
+}
+
+#item4 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item4;
+}
+
+#item5 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: item5;
+}
+
+#explicacion {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: exp;
+}
+
+#formularioG {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: form;
+  text-align: center;
+}
+
+#miOpinion {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: op;
+}
+
+.efect1 {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.efect1:hover {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.efect2 {
+  overflow: hidden;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.efect2:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.resul {
+  padding: 2%;
+}
+
+.resul .gridResul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "edad acF sen" "nega ali sana" "comen comenMal conf" "hoy opAf opAF" "ta redS redS" "del del maT" "salud est mat" "aE fut fut";
+}
+
+.resul .gridResul .contenedorR {
+  background-color: #334A52;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.resul .gridResul #edad {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: edad;
+  overflow: scroll;
+  height: 200px;
+}
+
+.resul .gridResul #actividadFisica {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: acF;
+  overflow: scroll;
+  height: 200px;
+}
+
+.resul .gridResul #sentimientos {
+  grid-area: sent;
+  overflow: scroll;
+  height: 200px;
+}
+
+.resul .gridResul #negativos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nega;
+}
+
+.resul .gridResul #alimentacion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: ali;
+}
+
+.resul .gridResul #alimentacionSana {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sana;
+}
+
+.resul .gridResul #comentarios {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: comen;
+}
+
+.resul .gridResul #comentarioMalos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: comenMal;
+}
+
+.resul .gridResul #conforme {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: conf;
+}
+
+.resul .gridResul #dispuestoHoy {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: hoy;
+}
+
+.resul .gridResul #opinionAF {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: opAF;
+}
+
+.resul .gridResul #salud {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: salud;
+}
+
+.resul .gridResul #trastornoAlimen {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: ta;
+}
+
+.resul .gridResul #redesSociales {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: redS;
+}
+
+.resul .gridResul #conforme {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: conf;
+}
+
+.resul .gridResul #cuerpoD {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: del;
+}
+
+.resul .gridResul #cuerpoMaT {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: maT;
+}
+
+.resul .gridResul #estereotipos {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: est;
+}
+
+.resul .gridResul #actExtra {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: aE;
+}
+
+.resul .gridResul #futuro {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fut;
+}
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+/** INDEX 3 */
+#index3 {
+      grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+/** CONSULTA */
+.inicio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: consulta;
+  padding: 2%;
 }
 
-#consulta img {
+/** IMAGEN CON EFECTO */
+#imgPersona2 {
+  width: 300px;
+  text-align: center;
   border-radius: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img;
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
-#consulta #formulario {
+/** FORMULARIO DE CONSULTA */
+#formulario {
   background-image: url("../media/fondoformas.jpg");
   color: #EDB78F;
   font-weight: bolder;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 1rem;
   font-weight: bold;
-  text-align: left;
   padding: 3%;
-  width: 50%;
+  margin: 3%;
+  border-radius: 15px;
+  text-align: left;
+  /** MODAL DE AGRADECIMIENTO */
 }
 
-#consulta #mensajeLindo {
+#formulario .btn {
+  background-color: #334A52;
+  color: #EDB78F;
+  font-family: "Raleway";
+  font-weight: bolder;
+}
+
+#formulario .btn:hover {
+  background-color: #EDB78F;
+  color: #334A52;
+}
+
+#formulario .container-flew .form {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: form;
+}
+
+#formulario #boton {
+  font-family: 'Staatliches';
+  font-size: 1.3em;
+  color: #334A52;
+  background-color: #EDB78F;
+  border-color: #334A52;
+  margin-top: 2%;
+}
+
+#formulario #boton:hover {
+  color: #EDB78F;
+  background-color: #334A52;
+  border-color: #EDB78F;
+}
+
+#formulario .modal-content {
+  background-color: #EDB78F;
+  color: #334A52;
+}
+
+#formulario .modal-content:hover {
+  background-color: #334A52;
+  color: #EDB78F;
+}
+
+#formulario .modal-content #exampleModal {
+  font-family: "Raleway";
+}
+
+#formulario .modal-content .modal-title {
+  font-family: "Staatliches";
+}
+
+#formulario .modal-content .modal-body {
+  text-align: justify;
+}
+
+#formulario .modal-content .modal-footer {
+  font-family: "Staatliches";
+}
+
+#formulario .modal-content #botonExtra {
+  margin-top: 10px;
+}
+
+/** MENSAJE LINDO */
+#mensajeLindo {
   padding: 3%;
   display: inline-block;
   text-align: center;
   font-size: 20px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: mensaje;
 }
 
-#index2 {
-      grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer";
+#mensajeLindo img {
+  border-radius: 15px;
+  margin-bottom: 3.5%;
+}
+
+/** SIDEBAR */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #334A52;
+  overflow: auto;
+  font-family: "Raleway";
+}
+
+.sidebar a {
+  text-align: center;
+  float: none;
+  display: block;
+  color: white;
+  padding: 16px;
+}
+
+.sidebar a.active {
+  background-color: #EDB78F;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a img {
+  width: 20px;
+  padding-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sidebar a {
+    position: fixed;
+    height: 100%;
+  }
+  .margin {
+    margin-left: 200px;
+  }
+}
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+@media only screen and (min-width: 768px) {
+  #index1 {
+        grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
+  }
+  #index2 {
+        grid-template-areas: "banner banner banner" "indice indice indice" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer";
+  }
+  #index3 {
+        grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "exp exp exp" "form form form" "resul resul resul" "op op op" "footer footer footer";
+  }
+  #index4 {
+        grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
+  }
+  #index5 {
+        grid-template-areas: "header header header" "banner banner banner" "yo yo yo" "galeria galeria galeria" "footer footer footer";
+  }
+}
+
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+@media only screen and (min-width: 1024px) {
+  #index1 {
+        grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
+  }
+  #index2 {
+        grid-template-areas: "header header header" "banner banner banner" ". indice ." "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "footer footer footer";
+  }
+  #index3 {
+        grid-template-areas: "header header header" "banner banner banner" ". indice ." "exp exp exp" "form form form" "resul resul resul" "op op op" "footer footer footer";
+  }
+  #index4 {
+        grid-template-areas: "header header header" "banner banner banner" ". indice ." "ejer ejer ejer" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
+  }
+  #index5 {
+        grid-template-areas: "header header header" "banner banner banner" "yo yo yo" "galeria galeria galeria" "footer footer footer";
+  }
+  .bloque {
+    width: 50%;
+  }
+  #indice {
+    border-radius: 13px;
+  }
+  .indi {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  h1 {
+    padding-right: 15%;
+    position: fixed;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */

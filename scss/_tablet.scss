@@ -1,8 +1,10 @@
+@import "variables";
+
 
 @media only screen and (min-width: 768px){
 	#index1{
-		grid-template-areas: 
-		"header header header"
+		grid-template-areas:
+		"header header header"		
 		"banner banner banner"
 		"indice indice indice"
 		"intro intro intro"
@@ -12,7 +14,6 @@
 	}
 	#index2{
 		grid-template-areas: 
-		"header header header"
 		"banner banner banner"
 		"indice indice indice"
 		"item1 item1 item1"
@@ -23,15 +24,7 @@
 		"footer footer footer";
 	}
 	#index3{
-		grid-template-areas: 
-		"header header header"
-		"banner banner banner"
-		"indice indice indice"
-		"exp exp exp"
-		"form form form"
-		"resul resul resul"
-		"op op op"
-		"footer footer footer";
+	
 	}
 	#index4{
 		grid-template-areas: 
@@ -52,5 +45,10 @@
 		"galeria galeria galeria"
 		"footer footer footer";
 	}
+	h1{
+  		padding-right: 0;
+		position: static;
+		margin-top: 200px;
+  	}
 }
 

@@ -1,3 +1,5 @@
+@import "variables";
+
 @media only screen and (min-width: 1024px){
 	#index1{
 		grid-template-areas: 
@@ -22,15 +24,6 @@
 		"footer footer footer";
 	}
 	#index3{
-		grid-template-areas: 
-		"header header header"
-		"banner banner banner"
-		". indice ."
-		"exp exp exp"
-		"form form form"
-		"resul resul resul"
-		"op op op"
-		"footer footer footer";
 	}
 	#index4{
 		grid-template-areas: 

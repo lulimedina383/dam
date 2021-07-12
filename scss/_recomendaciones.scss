@@ -1,0 +1,66 @@
+@import "variables";
+
+#index4{
+	grid-template-areas: 
+	"ejer ejer ejer"
+	"ali ali ali"
+	"psico psico psico"
+	"influ influ influ"
+	"footer footer footer";
+}
+
+#alimentacion{
+	grid-area: ali;
+}
+#ejercitacion{
+	grid-area: ejer;
+}
+#influencers{
+	grid-area: influ;
+}
+#psicologia{
+	grid-area: psico;
+}
+
+.card{
+	justify-content: stretch;
+	text-align: center;
+	margin: 1.5em;
+	color: #334A52;
+	p{
+		font-family: 'Raleway';
+		span{
+			font-weight: bolder;
+			text-transform: uppercase;
+		}
+	}
+	.perfil{
+		background-color: #334A52; 
+		color: #EDB78F;
+		border-color: #334A52;
+		border-radius: 8px;
+		text-transform: uppercase;
+		&:hover{
+			background-color:#EDB78F; 
+			color: #334A52;
+			border-color:#EDB78F;
+			border-radius: 8px;
+		}
+	}
+}
+.card-title{
+	font-family: 'Staatliches';
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.card-text{
+	text-align: justify;
+	font-family: 'Raleway';
+}
+.fotos{
+	width: 18%;
+}
+
+
+
+
