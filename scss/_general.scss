@@ -35,42 +35,7 @@ h4{
 .logos{
 	width: 2.5rem;
 }
-#mySidenav{
-	a{
-		position: absolute; 
-		left: -175px;
-		transition: 0.3s;
-		padding: 15px;
-		width: 230px;
-		text-decoration: none; 
-		font-size: 1em; 
-		color: white; 
-		border-radius: 0 5px 5px 0;
-		&:hover{
-			left: 0;
-			padding-left: 50px;
-		}
-	}
-	#in {
-	  top: 100px;
-	  background-color: #04AA6D;
-	}
 
-	#an {
-	  top: 160px;
-	  background-color: #2196F3; 
-	}
-
-	#bl{
-	  top: 220px;
-	  background-color: #f44336; 
-	}
-
-	#re{
-	  top: 280px;
-	  background-color: #555
-	}
-}
 
 .sectoresWeb{
 	a{
@@ -82,7 +47,7 @@ h4{
 		padding: 0 10px;
 		&:hover{
 			background-color: $colorAzul;
-			color: $colorAmarillo;
+			color: $colorCrema;
 			text-decoration: none;
 		}
 	}
@@ -92,7 +57,7 @@ h4{
 	}
 }
 #navbarNav{
-	background-color: #334A52;
+	background-color: $colorAzul;
 	position: fixed;
 	width: 100%;
 	z-index: 10;	
@@ -111,8 +76,8 @@ h4{
 		margin-top: 65px;
 		opacity: none;
 		&:hover {
-			background-color:#EDB78F;
-			color:#334A52 ;
+			background-color: $colorCrema;
+			color: $colorAzul;
 			padding: 8px;
 		}
 	}
@@ -157,77 +122,8 @@ h4{
 		padding-right: 15%;
 		position: fixed;
 	}
-	#banner{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
-		align-content: center;
-		justify-content: center;
-		text-align: center;
-		grid-template-areas: 
-		"img text"
-		"img text";
-		margin-top: 3%;
-		.imgBanner{
-			grid-area: img;
-			margin: 10px;
-			img{
-				width: 400px;
-			}
-		}
-		.bannerInfo{
-			grid-area: text;
-			color: #334A52;
-			font-weight: bold;
-			h6{
-				font-family: 'Staatliches';
-				font-size: 5em;
-			}
-			h7{
-				font-family: 'Raleway';
-				font-size: 2em;
-			}
-			img{
-				width: 100px;
-				margin: 1rem;
-			}
-		}
-	}
 }
-#indice{
-	padding: 1.5rem;
-	display: inline-block;
-	background-color:#334A52;
-	grid-area: indice;
-	text-align: center;
-	h3{
-		color: #EDB78F;
-		font-family: 'Staatliches';
-		font-size: 30px;
-		text-align: center;
-	}
-	a{
-		color:#EDB78F ; 
-		font-weight: bold;
-		text-decoration: none;
-		&:hover{
-			color: #BAA89B; 
-		}
-	}
-	ul{
-		list-style-image: url("../media/paraindice.png") ;
-		list-style-type: upper-latin;
-		list-style-position: inside;
-		align-items: 30px;
-		text-align: left;
-	}
-	img{
-		text-align: center;
-	}	
-	.indi{
-		margin-left: 40%;
-	}
-}
+
 .textos{
 	font-family: 'Raleway';
 	text-align: justify;
@@ -326,8 +222,17 @@ h3.inline2{
 	display: block;
 	position: fixed;
 	bottom: 0;
-	margin-left: 95%;
-	#gmail{
+	margin-left: 3%;
+	img{
+		width: 40px;
+	}
+}
+.logoFijo2{
+	display: block;
+	position: fixed;
+	bottom: 0;
+	margin-left: 8%;
+	img{
 		width: 40px;
 	}
 }
@@ -354,4 +259,7 @@ footer{
 			text-decoration: none;
 		}
 	}
+}
+.videos{
+	display: inline;
 }

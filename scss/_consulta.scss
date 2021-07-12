@@ -35,7 +35,7 @@
 
 /** FORMULARIO DE CONSULTA */
 #formulario{
-	background-image: url("../media/fondoformas.jpg");
+	background-image: url("../media/fondoformas.jpg"), opacity(0.2), filter(opacity=20);
 	color: #EDB78F;
 	font-weight: bolder;
 	font-family: $fontPrincipal;
