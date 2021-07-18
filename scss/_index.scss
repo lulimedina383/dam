@@ -78,14 +78,6 @@
 		.bannerInfo{
 			grid-area: text;
 			color: #334A52;
-			h6{
-				font-family: 'Staatliches';
-				font-size: 5em;
-			}
-			h7{
-				font-family: 'Raleway';
-				font-size: 2em;
-			}
 			img{
 				width: 100px;
 				margin: 1rem;
@@ -111,16 +103,130 @@
 			font-weight: bolder;
 			text-shadow: 1px 1px 1px $colorBlanco;
 		}
+}
+.bannerTitulo{
+	grid-area: tit;
+	h6{
+		font-family: $fontSecundaria;
+		font-size: 5em;
+		color: $colorAzul;
+		font-weight: bolder;
+		text-align: $centro;
+	}
+}		
 
+
+
+/** RESPONSIVE MOBILE y TABLET */
+
+/** TABLET*/
+@media screen and (max-width: 700px) {
+	#banner{
+		grid-template-areas: 
+		"tit tit"
+		"img img"
+		"text text";
+		.imgBanner{
+			img{
+				margin-top: 3%;
+				width: 300px;
+			}
+		}
+		.bannerInfo{
+			margin-left: 5%;
+			img{
+				width: 70px;
+			}
+		}
+		.bannerN{
+			font-size: 1.5em;
+			margin-top: 5%;
+		}
 	}
 	.bannerTitulo{
-		grid-area: tit;
 		h6{
-			font-family: $fontSecundaria;
-			font-size: 5em;
-			color: $colorAzul;
-			font-weight: bolder;
-			text-align: $centro;
-		}		
-
+			font-size: 2.5em;
+		}
 	}
+	#mySidenav{
+		a{
+			left: -175px;
+			width: 215px;
+			font-size: 0.5em;
+			&:hover{
+				padding-left: 15px;
+			} 
+		}
+		#in {
+			top: 140px;
+		}
+		#an {
+			top: 200px;
+		}
+		#bl{
+			top: 260px;
+			}
+		#re{
+			top: 320px;
+		}
+		img{
+			width: 15px;
+		}
+	}
+}
+
+/** MOBILE */
+@media screen and (max-width: 400px) {
+	#banner{
+		grid-template-areas: 
+		"tit tit"
+		"img img"
+		"text text";
+		.imgBanner{
+			img{
+				margin-top: 10%;
+				width: 200px;
+			}
+		}
+		.bannerInfo{
+			margin-left: 5%;
+			img{
+				width: 40px;
+			}
+		}
+		.bannerN{
+			font-size: 1.4em;
+			margin-top: 10%;
+		}
+	}
+	.bannerTitulo{
+		h6{
+			font-size: 2em;
+		}		
+	}
+	#mySidenav{
+		a{
+			left: -175px;
+			width: 215px;
+			font-size: 0.5em;
+			&:hover{
+				padding-left: 15px;
+			} 
+		}
+		#in {
+			top: 140px;
+		}
+		#an {
+			top: 200px;
+		}
+		#bl{
+			top: 260px;
+			}
+		#re{
+			top: 320px;
+		}
+		img{
+			width: 15px;
+		}
+	}
+}

@@ -272,7 +272,6 @@ footer{
 .imgPersona{
 	height: 500px;
 	text-align: $centro;
-	border-radius: 20px;
 	grid-area: img;
 	margin-top: 120px;
 	margin-bottom: 2%;
@@ -371,6 +370,11 @@ div.content {
   	.margin{
 		margin-left: 0;
 	}
+	
+	/** IMAGEN CON EFECTO */
+	.imgPersona{
+		height: 300px;
+	}
 }
 
 /** MOBILE */
@@ -387,6 +391,11 @@ div.content {
   }
   .margin{
 		margin-left: 0;
+	}
+	
+	/** IMAGEN CON EFECTO */
+	.imgPersona{
+		height: 200px;
 	}
 }
 
