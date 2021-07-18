@@ -143,8 +143,17 @@
 /** TABLET*/
 @media screen and (max-width: 825px) {
 	#fondo{
-		background-image: url('../media/bannerTablet.jpg');
-		background-size: cover;	
+		background-image: url('../media/bannerTablet.jpg');	
+		height: 100vh;
+		&:before{
+			content:'';
+			position: absolute;
+	        top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.4);
+		}
 	}
 	#banner{
 		grid-template-areas: 
@@ -205,8 +214,7 @@
 /** MOBILE */
 @media screen and (max-width: 400px) {
 	#fondo{
-		background-image: url('../media/bannerMobile.jpg');
-		background-size: cover;	
+		background-image: url('../media/bannerMobile.jpg');	
 		&:before{
 			content:'';
 			position: absolute;

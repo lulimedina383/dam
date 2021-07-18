@@ -535,7 +535,15 @@ div.content {
 @media screen and (max-width: 825px) {
   #fondo {
     background-image: url("../media/bannerTablet.jpg");
-    background-size: cover; }
+    height: 100vh; }
+    #fondo:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.4); }
   #banner {
     grid-template-areas: "tit tit" "img img" "text text"; }
     #banner .imgBanner img {
@@ -572,8 +580,7 @@ div.content {
 /** MOBILE */
 @media screen and (max-width: 400px) {
   #fondo {
-    background-image: url("../media/bannerMobile.jpg");
-    background-size: cover; }
+    background-image: url("../media/bannerMobile.jpg"); }
     #fondo:before {
       content: '';
       position: absolute;
