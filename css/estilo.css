@@ -5,12 +5,14 @@
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 * {
   padding: 0;
   margin: 0; }
@@ -213,7 +215,7 @@ h3.inline2 {
   display: block;
   position: fixed;
   bottom: 0;
-  margin-left: 3%; }
+  margin-left: 50px; }
   .logoFijo img {
     width: 40px; }
 
@@ -221,7 +223,7 @@ h3.inline2 {
   display: block;
   position: fixed;
   bottom: 0;
-  margin-left: 8%; }
+  margin-left: 100px; }
   .logoFijo2 img {
     width: 40px; }
 
@@ -323,7 +325,7 @@ div.content {
   height: 1000px; }
 
 /** TABLET*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 825px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -340,7 +342,21 @@ div.content {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
   .imgPersona {
-    height: 300px; } }
+    height: 300px; }
+  .logoFijo {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    margin-left: 20px; }
+    .logoFijo img {
+      width: 40px; }
+  .logoFijo2 {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    margin-left: 70px; }
+    .logoFijo2 img {
+      width: 40px; } }
 
 /** MOBILE */
 @media screen and (max-width: 400px) {
@@ -410,6 +426,7 @@ div.content {
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 #index1 {
   grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer"; }
 
@@ -486,7 +503,7 @@ div.content {
   #banner .bannerP {
     font-family: "Raleway";
     text-align: justify;
-    font-size: 0.6em;
+    font-size: 1.2em;
     margin-bottom: 15px;
     margin-right: 8%;
     color: #334A52;
@@ -504,7 +521,7 @@ div.content {
 
 /** RESPONSIVE MOBILE y TABLET */
 /** TABLET*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 825px) {
   #banner {
     grid-template-areas: "tit tit" "img img" "text text"; }
     #banner .imgBanner img {
@@ -518,7 +535,9 @@ div.content {
       font-size: 1.5em;
       margin-top: 5%; }
   .bannerTitulo h6 {
-    font-size: 2.5em; }
+    font-size: 3em;
+    padding-right: 15px;
+    padding-left: 15px; }
   #mySidenav a {
     left: -175px;
     width: 215px;
@@ -555,7 +574,7 @@ div.content {
   #mySidenav a {
     left: -175px;
     width: 215px;
-    font-size: 0.5em; }
+    font-size: 1em; }
     #mySidenav a:hover {
       padding-left: 15px; }
   #mySidenav #in {
@@ -575,6 +594,7 @@ div.content {
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 #index2 {
   grid-template-areas: "img img img" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
   grid-gap: 10px;
@@ -722,6 +742,7 @@ div.content {
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 /** INDEX 3 */
 #index3 {
   grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
@@ -819,6 +840,7 @@ div.content {
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 @media only screen and (min-width: 768px) {
   #index1 {
     grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
@@ -841,6 +863,7 @@ div.content {
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 @media only screen and (min-width: 1024px) {
   #index1 {
     grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer"; }
@@ -864,6 +887,7 @@ div.content {
 /** ALINEACION */
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 #index4 {
   grid-template-areas: "ejer ejer ejer" "img img img" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
   grid-gap: 10px;

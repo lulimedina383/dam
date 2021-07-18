@@ -3,12 +3,16 @@
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 * {
   padding: 0;
   margin: 0;
@@ -63,7 +67,7 @@ img {
 
 h4 {
   font-size: 40px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 .logos {
@@ -144,7 +148,7 @@ h4 {
 }
 
 .dropdown .dropdown-item {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 0.3em;
 }
 
@@ -173,7 +177,7 @@ h4 {
   color: #334A52;
   padding: 3px;
   font-size: 5em;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-weight: bold;
   text-align: center;
   background-image: url("../media/fondoformas.jpg");
@@ -183,7 +187,7 @@ h4 {
 }
 
 .textos {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-align: justify;
   font-size: 1em;
   margin-bottom: 15px;
@@ -210,7 +214,7 @@ h4 {
 }
 
 .escritoP {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-align: justify;
   color: #334A52;
   padding-bottom: 3%;
@@ -230,7 +234,7 @@ h4 {
 }
 
 .titulosP {
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 1.5em;
   margin-bottom: 8px;
   margin-top: 15px;
@@ -238,7 +242,7 @@ h4 {
 
 .lluvia {
   text-align: center;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 2em;
   margin-bottom: 8px;
   margin-top: 15px;
@@ -246,7 +250,7 @@ h4 {
 
 .final {
   text-align: center;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 1.3em;
 }
 
@@ -283,7 +287,7 @@ h4.mayus {
 
 h3.inline2 {
   background-color: #334A52;
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   text-align: center;
   font-size: 60px;
   color: #EDB78F;
@@ -295,7 +299,7 @@ h3.inline2 {
   display: block;
   position: fixed;
   bottom: 0;
-  margin-left: 3%;
+  margin-left: 50px;
 }
 
 .logoFijo img {
@@ -306,7 +310,7 @@ h3.inline2 {
   display: block;
   position: fixed;
   bottom: 0;
-  margin-left: 8%;
+  margin-left: 100px;
 }
 
 .logoFijo2 img {
@@ -349,14 +353,18 @@ footer a:hover {
 }
 
 .videos {
-  display: inline;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.videos .btn {
+  display: inline-block;
 }
 
 /** IMAGEN CON EFECTO */
 .imgPersona {
   height: 500px;
   text-align: center;
-  border-radius: 20px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -367,7 +375,7 @@ footer a:hover {
 
 /** MODAL DE AGRADECIMIENTO */
 .boton {
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-size: 1.3em;
   color: #334A52;
   background-color: #EDB78F;
@@ -400,7 +408,7 @@ footer a:hover {
 }
 
 .modal-content .modal-body {
-  text-align: justify;
+  text-align: center;
 }
 
 .modal-content .modal-footer {
@@ -411,11 +419,167 @@ footer a:hover {
   margin-top: 10px;
 }
 
+/** SIDEBAR */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #334A52;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-weight: bolder;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+}
+
+.sidebar a.active {
+  background-color: #EDB78F;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #516266;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar img {
+  width: 20px;
+  padding-right: 5px;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/** TABLET*/
+@media screen and (max-width: 825px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 200px;
+  }
+  .margin {
+    margin-left: 0;
+  }
+  /** IMAGEN CON EFECTO */
+  .imgPersona {
+    height: 300px;
+  }
+  .logoFijo {
+    margin-left: 20px;
+  }
+  .logoFijo2 {
+    margin-left: 70px;
+  }
+}
+
+/** MOBILE */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    position: initial;
+  }
+  h1 {
+    padding-right: 0;
+    position: static;
+    margin-top: 100px;
+  }
+  .margin {
+    margin-left: 0;
+  }
+  /** IMAGEN CON EFECTO */
+  .imgPersona {
+    height: 200px;
+  }
+}
+
+/** TAMAÑO TIPOGRAFIA */
+.mTop--1 {
+  font-size: 1em;
+}
+
+.mTop--2 {
+  font-size: 2em;
+}
+
+.mTop--3 {
+  font-size: 3em;
+}
+
+.mTop--4 {
+  font-size: 4em;
+}
+
+.mTop--5 {
+  font-size: 5em;
+}
+
+/* GROSOR TIPOGRAFIA */
+.type--thin {
+  font-family: "Raleway";
+  font-weight: 100;
+}
+
+.type--light {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
+.type--regular {
+  font-family: "Raleway";
+  font-weight: 400;
+}
+
+.type--bold {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+/** TAMAÑOS */
+.text--xsm {
+  font-size: 1rem;
+}
+
+.text--sm {
+  font-size: 1.8rem;
+}
+
+.text--md {
+  font-size: 2.3rem;
+}
+
+.text--lg {
+  font-size: 3rem;
+}
+
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 #index1 {
       grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer";
 }
@@ -510,16 +674,6 @@ footer a:hover {
   color: #334A52;
 }
 
-#banner .bannerInfo h6 {
-  font-family: 'Staatliches';
-  font-size: 5em;
-}
-
-#banner .bannerInfo h7 {
-  font-family: 'Raleway';
-  font-size: 2em;
-}
-
 #banner .bannerInfo img {
   width: 100px;
   margin: 1rem;
@@ -538,12 +692,12 @@ footer a:hover {
 #banner .bannerP {
   font-family: "Raleway";
   text-align: justify;
-  font-size: 0.6em;
+  font-size: 1.2em;
   margin-bottom: 15px;
   margin-right: 8%;
   color: #334A52;
   font-weight: bolder;
-  text-shadow: 1px 1px 1px grey;
+  text-shadow: 1px 1px 1px white;
 }
 
 .bannerTitulo {
@@ -561,11 +715,110 @@ footer a:hover {
   text-align: center;
 }
 
+/** RESPONSIVE MOBILE y TABLET */
+/** TABLET*/
+@media screen and (max-width: 825px) {
+  #banner {
+        grid-template-areas: "tit tit" "img img" "text text";
+  }
+  #banner .imgBanner img {
+    margin-top: 3%;
+    width: 300px;
+  }
+  #banner .bannerInfo {
+    margin-left: 5%;
+  }
+  #banner .bannerInfo img {
+    width: 70px;
+  }
+  #banner .bannerN {
+    font-size: 1.5em;
+    margin-top: 5%;
+  }
+  .bannerTitulo h6 {
+    font-size: 3em;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #mySidenav a {
+    left: -175px;
+    width: 215px;
+    font-size: 0.5em;
+  }
+  #mySidenav a:hover {
+    padding-left: 15px;
+  }
+  #mySidenav #in {
+    top: 140px;
+  }
+  #mySidenav #an {
+    top: 200px;
+  }
+  #mySidenav #bl {
+    top: 260px;
+  }
+  #mySidenav #re {
+    top: 320px;
+  }
+  #mySidenav img {
+    width: 15px;
+  }
+}
+
+/** MOBILE */
+@media screen and (max-width: 400px) {
+  #banner {
+        grid-template-areas: "tit tit" "img img" "text text";
+  }
+  #banner .imgBanner img {
+    margin-top: 10%;
+    width: 200px;
+  }
+  #banner .bannerInfo {
+    margin-left: 5%;
+  }
+  #banner .bannerInfo img {
+    width: 40px;
+  }
+  #banner .bannerN {
+    font-size: 1.4em;
+    margin-top: 10%;
+  }
+  .bannerTitulo h6 {
+    font-size: 2em;
+  }
+  #mySidenav a {
+    left: -175px;
+    width: 215px;
+    font-size: 1em;
+  }
+  #mySidenav a:hover {
+    padding-left: 15px;
+  }
+  #mySidenav #in {
+    top: 140px;
+  }
+  #mySidenav #an {
+    top: 200px;
+  }
+  #mySidenav #bl {
+    top: 260px;
+  }
+  #mySidenav #re {
+    top: 320px;
+  }
+  #mySidenav img {
+    width: 15px;
+  }
+}
+
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 #index2 {
       grid-template-areas: "img img img" "item1 item1 item1" "item2 item2 item2" "item3 item3 item3" "item4 item4 item4" "item5 item5 item5" "form form form" "exp exp exp" "op op op" "footer footer footer";
   grid-gap: 10px;
@@ -658,171 +911,109 @@ footer a:hover {
 
 .resul {
   padding: 2%;
-}
-
-.resul .gridResul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-      grid-template-areas: "edad acF sen" "nega ali sana" "comen comenMal conf" "hoy opAf opAF" "ta redS redS" "del del maT" "salud est mat" "aE fut fut";
-}
-
-.resul .gridResul .contenedorR {
-  background-color: #334A52;
-  border-radius: 15px;
-  text-align: center;
-  color: white;
-  padding: 1em;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-}
-
-.resul .gridResul #edad {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: edad;
-  overflow: scroll;
-  height: 200px;
-}
-
-.resul .gridResul #actividadFisica {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: acF;
-  overflow: scroll;
-  height: 200px;
-}
-
-.resul .gridResul #sentimientos {
-  grid-area: sent;
-  overflow: scroll;
-  height: 200px;
-}
-
-.resul .gridResul #negativos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: nega;
-}
-
-.resul .gridResul #alimentacion {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: ali;
-}
-
-.resul .gridResul #alimentacionSana {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: sana;
-}
-
-.resul .gridResul #comentarios {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: comen;
-}
-
-.resul .gridResul #comentarioMalos {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: comenMal;
-}
-
-.resul .gridResul #conforme {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: conf;
-}
-
-.resul .gridResul #dispuestoHoy {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: hoy;
-}
-
-.resul .gridResul #opinionAF {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: opAF;
-}
-
-.resul .gridResul #salud {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: salud;
-}
-
-.resul .gridResul #trastornoAlimen {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: ta;
-}
-
-.resul .gridResul #redesSociales {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: redS;
-}
-
-.resul .gridResul #conforme {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: conf;
-}
-
-.resul .gridResul #cuerpoD {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: del;
-}
-
-.resul .gridResul #cuerpoMaT {
-  -ms-grid-row: 6;
-  -ms-grid-column: 3;
-  grid-area: maT;
-}
-
-.resul .gridResul #estereotipos {
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-  grid-area: est;
-}
-
-.resul .gridResul #actExtra {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: aE;
-}
-
-.resul .gridResul #futuro {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: fut;
+  /** DEJE PREPARADA ESTA PARTE PARA CUANDO TENGA LAS RESPUESTAS DEL FORMULARIO */
+  /**.gridResul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+		justify-content: stretch;
+		align-content: stretch;
+		align-items: $centro;
+		grid-template-areas:
+		"edad acF sen"
+		"nega ali sana"
+		"comen comenMal conf"
+		"hoy opAf opAF"
+		"ta redS redS"
+		"del del maT"
+		"salud est mat"
+		"aE fut fut";
+		.contenedorR{
+			background-color: $colorAzul;
+			border-radius: $bordes;
+			text-align: $centro;
+			color: $colorBlanco;
+			padding: 1em;
+			justify-content: stretch;
+			align-content: stretch;
+		}
+		@mixin resultados(){
+			overflow:scroll ;
+			height: 200px;
+		}
+		#edad{
+			grid-area: edad;
+			@include resultados;
+		}
+		#actividadFisica{
+			grid-area: acF;
+			@include resultados;
+		}
+		#sentimientos{
+			grid-area: sent;
+			@include resultados;
+		}
+		#negativos{
+			grid-area: nega;
+		}
+		#alimentacion{
+			grid-area: ali;
+		}
+		#alimentacionSana{
+			grid-area: sana;
+		}
+		#comentarios{
+			grid-area: comen;
+		}
+		#comentarioMalos{
+			grid-area: comenMal;
+		}
+		#conforme{
+			grid-area: conf;
+		}
+		#dispuestoHoy{
+			grid-area: hoy;
+		}
+		#opinionAF{
+			grid-area: opAF;
+		}
+		#salud{
+			grid-area: salud;
+		}
+		#trastornoAlimen{
+			grid-area: ta;
+		}
+		#redesSociales{
+			grid-area: redS;
+		}
+		#conforme{
+			grid-area: conf;
+		}
+		#cuerpoD{
+			grid-area: del;
+		}
+		#cuerpoMaT{
+			grid-area: maT
+		}
+		#estereotipos{
+			grid-area: est;
+		}
+		#actExtra{
+			grid-area: aE;
+		}
+		#futuro{
+			grid-area: fut;
+		}
+	}	*/
 }
 
 /** TIPOGRAFIAS */
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 /** INDEX 3 */
 #index3 {
       grid-template-areas: "consulta consulta consulta" "img img img" "form form form" "mensaje mensaje mensaje" "footer footer footer";
@@ -899,87 +1090,8 @@ footer a:hover {
   margin-bottom: 3.5%;
 }
 
-/** SIDEBAR */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #334A52;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  font-weight: bolder;
-}
-
-.sidebar a {
-  display: block;
-  color: white;
-  padding: 16px;
-}
-
-.sidebar a.active {
-  background-color: #EDB78F;
-  color: white;
-  text-decoration: none;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-  text-decoration: none;
-}
-
-.sidebar img {
-  width: 20px;
-  padding-right: 5px;
-}
-
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
 /** TABLET*/
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: fixed;
-  }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
-  h1 {
-    padding-right: 0;
-    position: static;
-    margin-top: 200px;
-  }
-  .margin {
-    margin-left: 0;
-  }
-}
-
 /** MOBILE */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-    position: initial;
-  }
-  h1 {
-    padding-right: 0;
-    position: static;
-    margin-top: 100px;
-  }
-  .margin {
-    margin-left: 0;
-  }
-}
-
 #index5 {
       grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer";
   grid-gap: 10px;
@@ -1049,7 +1161,9 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 @media only screen and (min-width: 768px) {
   #index1 {
         grid-template-areas: "header header header"		 "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
@@ -1077,7 +1191,9 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 @media only screen and (min-width: 1024px) {
   #index1 {
         grid-template-areas: "header header header" "banner banner banner" ". indice ." "intro intro intro" "blog blog blog" "consulta consulta consulta" "footer footer footer";
@@ -1107,7 +1223,9 @@ div.content {
 /** COLORES */
 /** MEDIDAS */
 /** ALINEACION */
-/** TAMAÑO VIDEOS */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
 #index4 {
       grid-template-areas: "ejer ejer ejer" "img img img" "ali ali ali" "psico psico psico" "influ influ influ" "footer footer footer";
   grid-gap: 10px;
@@ -1182,14 +1300,14 @@ div.content {
 }
 
 .card-title {
-  font-family: 'Staatliches';
+  font-family: "Staatliches";
   font-weight: bold;
   font-size: 1.4em;
 }
 
 .card-text {
   text-align: justify;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 .fotos {

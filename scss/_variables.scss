@@ -26,3 +26,14 @@ $centro: center;
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 $Weight:('thin': 100 , 'light':300, 'regular':400 , 'bold':700 );
 $size:('xsm': 1rem , 'sm':1.8rem, 'md':2.3rem , 'lg':3rem );
+
+
+/** MIXIN PARA ICONOS FIXED **/
+@mixin iconos(){
+	display: block;
+	position: fixed;
+	bottom: 0;
+	img{
+		width: 40px;
+	}
+}

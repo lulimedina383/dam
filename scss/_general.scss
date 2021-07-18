@@ -219,22 +219,12 @@ h3.inline2{
 	padding-bottom: 15px;
 }
 .logoFijo{
-	display: block;
-	position: fixed;
-	bottom: 0;
-	margin-left: 3%;
-	img{
-		width: 40px;
-	}
+	@include iconos;
+	margin-left: 50px;
 }
 .logoFijo2{
-	display: block;
-	position: fixed;
-	bottom: 0;
-	margin-left: 8%;
-	img{
-		width: 40px;
-	}
+	@include iconos;
+	margin-left: 100px;
 }
 footer{
 	background-color: #334A52;
@@ -352,7 +342,7 @@ div.content {
 }
 
 /** TABLET*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 825px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -375,6 +365,16 @@ div.content {
 	.imgPersona{
 		height: 300px;
 	}
+	.logoFijo{
+		@include iconos;
+		margin-left: 20px;
+		
+	}
+	.logoFijo2{
+		@include iconos;
+		margin-left: 70px;
+	}
+	
 }
 
 /** MOBILE */
