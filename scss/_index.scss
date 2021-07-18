@@ -144,7 +144,6 @@
 @media screen and (max-width: 825px) {
 	#fondo{
 		background-image: url('../media/bannerTablet.jpg');	
-		height: 100vh;
 		&:before{
 			content:'';
 			position: absolute;
@@ -214,7 +213,7 @@
 /** MOBILE */
 @media screen and (max-width: 400px) {
 	#fondo{
-		background-image: url('../media/bannerMobile.jpg');	
+		background-image: url('../media/bannerMobile.jpg');
 		&:before{
 			content:'';
 			position: absolute;

@@ -534,8 +534,7 @@ div.content {
 /** TABLET*/
 @media screen and (max-width: 825px) {
   #fondo {
-    background-image: url("../media/bannerTablet.jpg");
-    height: 100vh; }
+    background-image: url("../media/bannerTablet.jpg"); }
     #fondo:before {
       content: '';
       position: absolute;
