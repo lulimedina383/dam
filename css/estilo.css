@@ -118,7 +118,8 @@ h4 {
     font-family: "Staatliches";
     font-weight: bold;
     text-align: center;
-    background-image: url("../media/fondoformas.jpg");
+    background-image: url("../media/fondoFormas.png");
+    background-size: cover;
     width: 100%;
     padding-right: 15%;
     position: fixed; }
@@ -427,52 +428,59 @@ div.content {
 /** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 /** MIXIN PARA ICONOS FIXED **/
+/**MIXIN */
+/** */
+#fondo {
+  background-image: url("../media/banner.jpg");
+  background-size: cover;
+  position: relative; }
+  #fondo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4); }
+
 #index1 {
   grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer"; }
 
-#fondo {
-  background-image: url("../media/banner.jpg");
-  height: 100vh;
-  width: 100%;
-  background-repeat: none; }
-
-#mySidenav a {
-  position: absolute;
-  left: -180px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 215px;
-  text-decoration: none;
-  font-size: 1em;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  font-family: "Raleway";
-  font-weight: bolder; }
-  #mySidenav a:hover {
-    left: 0;
-    padding-left: 35px; }
-
-#mySidenav #in {
-  top: 180px;
-  background-color: #EDB78F; }
-
-#mySidenav #an {
-  top: 240px;
-  background-color: #EA7353; }
-
-#mySidenav #bl {
-  top: 300px;
-  background-color: #516266; }
-
-#mySidenav #re {
-  top: 360px;
-  background-color: #334A52; }
-
-#mySidenav img {
-  width: 20px;
-  padding-right: 5px; }
+#mySidenav {
+  position: relative; }
+  #mySidenav a {
+    position: absolute;
+    left: -180px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 215px;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-family: "Raleway";
+    font-weight: bolder; }
+    #mySidenav a:hover {
+      left: 0;
+      padding-left: 35px; }
+  #mySidenav #in {
+    top: 220px;
+    background-color: #EDB78F; }
+  #mySidenav #an {
+    top: 280px;
+    background-color: #EA7353; }
+  #mySidenav #bl {
+    top: 340px;
+    background-color: #516266; }
+  #mySidenav #re {
+    top: 400px;
+    background-color: #334A52; }
+  #mySidenav img {
+    width: 20px;
+    padding-right: 5px; }
 
 #banner {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -495,7 +503,8 @@ div.content {
   #banner .bannerN {
     font-family: "Staatliches";
     font-weight: bolder;
-    color: #334A52;
+    color: #EDB78F;
+    text-shadow: 1.5px 1.5px 1.5px #334A52;
     text-align: center;
     font-size: 2.3em;
     margin-bottom: 5px;
@@ -503,25 +512,30 @@ div.content {
   #banner .bannerP {
     font-family: "Raleway";
     text-align: justify;
+    color: white;
     font-size: 1.2em;
     margin-bottom: 15px;
     margin-right: 8%;
-    color: #334A52;
     font-weight: bolder;
-    text-shadow: 1px 1px 1px white; }
+    text-shadow: 1px 1px 1px #334A52; }
 
 .bannerTitulo {
+  position: relative;
   grid-area: tit; }
   .bannerTitulo h6 {
     font-family: "Staatliches";
     font-size: 5em;
-    color: #334A52;
+    color: #EA7353;
+    text-shadow: 2px 2px 2px #334A52;
     font-weight: bolder;
     text-align: center; }
 
 /** RESPONSIVE MOBILE y TABLET */
 /** TABLET*/
 @media screen and (max-width: 825px) {
+  #fondo {
+    background-image: url("../media/bannerTablet.jpg");
+    background-size: cover; }
   #banner {
     grid-template-areas: "tit tit" "img img" "text text"; }
     #banner .imgBanner img {
@@ -541,7 +555,7 @@ div.content {
   #mySidenav a {
     left: -175px;
     width: 215px;
-    font-size: 0.5em; }
+    font-size: 1em; }
     #mySidenav a:hover {
       padding-left: 15px; }
   #mySidenav #in {
@@ -557,20 +571,36 @@ div.content {
 
 /** MOBILE */
 @media screen and (max-width: 400px) {
+  #fondo {
+    background-image: url("../media/bannerMobile.jpg");
+    background-size: cover; }
+    #fondo:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.4); }
   #banner {
     grid-template-areas: "tit tit" "img img" "text text"; }
     #banner .imgBanner img {
-      margin-top: 10%;
+      margin-top: 15%;
       width: 200px; }
     #banner .bannerInfo {
       margin-left: 5%; }
       #banner .bannerInfo img {
         width: 40px; }
     #banner .bannerN {
-      font-size: 1.4em;
-      margin-top: 10%; }
+      font-size: 1.2em;
+      margin-top: 15%;
+      color: #EDB78F;
+      text-shadow: 1px 1px 1px #516266; }
+    #banner .bannerP {
+      font-size: 0.8em; }
   .bannerTitulo h6 {
-    font-size: 2em; }
+    font-size: 2em;
+    color: #EDB78F; }
   #mySidenav a {
     left: -175px;
     width: 215px;

@@ -486,10 +486,22 @@ div.content {
     height: 300px;
   }
   .logoFijo {
+    display: block;
+    position: fixed;
+    bottom: 0;
     margin-left: 20px;
   }
+  .logoFijo img {
+    width: 40px;
+  }
   .logoFijo2 {
+    display: block;
+    position: fixed;
+    bottom: 0;
     margin-left: 70px;
+  }
+  .logoFijo2 img {
+    width: 40px;
   }
 }
 
@@ -781,8 +793,11 @@ div.content {
     width: 40px;
   }
   #banner .bannerN {
-    font-size: 1.4em;
+    font-size: 1em;
     margin-top: 10%;
+  }
+  #banner .bannerP {
+    font-size: 0.8em;
   }
   .bannerTitulo h6 {
     font-size: 2em;
@@ -796,16 +811,16 @@ div.content {
     padding-left: 15px;
   }
   #mySidenav #in {
-    top: 140px;
+    top: 160px;
   }
   #mySidenav #an {
-    top: 200px;
+    top: 220px;
   }
   #mySidenav #bl {
-    top: 260px;
+    top: 280px;
   }
   #mySidenav #re {
-    top: 320px;
+    top: 340px;
   }
   #mySidenav img {
     width: 15px;

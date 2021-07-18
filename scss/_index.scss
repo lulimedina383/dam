@@ -1,4 +1,25 @@
 @import "variables";
+
+/**MIXIN */
+@mixin positionInfo(){
+	position:relative;
+}
+/** */
+
+#fondo{
+	background-image: url('../media/banner.jpg');
+	background-size: cover;	
+	@include positionInfo;
+	&:before{
+		content:'';
+		position: absolute;
+        top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.4);
+	}
+}
 #index1{
 	grid-template-areas: 
 	"header header header"
@@ -8,13 +29,9 @@
 	"blog blog blog"
 	"footer footer footer";
 }
-#fondo{
-	background-image: url('../media/banner.jpg');
-	height: 100vh;
-  	width: 100%;
-  	background-repeat: none;
-}
+
 #mySidenav{
+	@include positionInfo;
 	a{
 		position: absolute; 
 		left: -180px;
@@ -33,22 +50,22 @@
 		}
 	}
 	#in {
-	  top: 180px;
+	  top: 220px;
 	  background-color: $colorCrema;
 	}
 
 	#an {
-	  top: 240px;
+	  top: 280px;
 	  background-color: $colorSalmon; 
 	}
 
 	#bl{
-	  top: 300px;
+	  top: 340px;
 	  background-color: $colorCeleste; 
 	}
 
 	#re{
-	  top: 360px;
+	  top: 400px;
 	  background-color: $colorAzul;
 	}
 	img{
@@ -57,6 +74,7 @@
 	}
 }
 #banner{
+		@include positionInfo;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
@@ -86,7 +104,8 @@
 		.bannerN{
 			font-family: $fontSecundaria;
 			font-weight: bolder;
-			color: $colorAzul;
+			color: $colorCrema;
+			text-shadow: 1.5px 1.5px 1.5px $colorAzul;
 			text-align: $centro;
 			font-size: 2.3em;
 			margin-bottom: 5px;
@@ -96,20 +115,22 @@
 		.bannerP{
 			font-family: $fontPrincipal;
 			text-align: justify;
+			color: $colorBlanco;
 			font-size: 1.2em;
 			margin-bottom: 15px;
 			margin-right: 8%;
-			color: $colorAzul;
 			font-weight: bolder;
-			text-shadow: 1px 1px 1px $colorBlanco;
+			text-shadow: 1px 1px 1px $colorAzul;
 		}
 }
 .bannerTitulo{
+	@include positionInfo;
 	grid-area: tit;
 	h6{
 		font-family: $fontSecundaria;
 		font-size: 5em;
-		color: $colorAzul;
+		color: $colorSalmon;
+		text-shadow: 2px 2px 2px $colorAzul;
 		font-weight: bolder;
 		text-align: $centro;
 	}
@@ -121,6 +142,10 @@
 
 /** TABLET*/
 @media screen and (max-width: 825px) {
+	#fondo{
+		background-image: url('../media/bannerTablet.jpg');
+		background-size: cover;	
+	}
 	#banner{
 		grid-template-areas: 
 		"tit tit"
@@ -154,7 +179,7 @@
 		a{
 			left: -175px;
 			width: 215px;
-			font-size: 0.5em;
+			font-size: 1em;
 			&:hover{
 				padding-left: 15px;
 			} 
@@ -167,7 +192,7 @@
 		}
 		#bl{
 			top: 260px;
-			}
+		}
 		#re{
 			top: 320px;
 		}
@@ -179,6 +204,19 @@
 
 /** MOBILE */
 @media screen and (max-width: 400px) {
+	#fondo{
+		background-image: url('../media/bannerMobile.jpg');
+		background-size: cover;	
+		&:before{
+			content:'';
+			position: absolute;
+	        top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.4);
+		}
+	}
 	#banner{
 		grid-template-areas: 
 		"tit tit"
@@ -186,7 +224,7 @@
 		"text text";
 		.imgBanner{
 			img{
-				margin-top: 10%;
+				margin-top: 15%;
 				width: 200px;
 			}
 		}
@@ -197,13 +235,19 @@
 			}
 		}
 		.bannerN{
-			font-size: 1.4em;
-			margin-top: 10%;
+			font-size: 1.2em;
+			margin-top: 15%;
+			color: $colorCrema;
+			text-shadow: 1px 1px 1px $colorCeleste;
+		}
+		.bannerP{
+			font-size: 0.8em;
 		}
 	}
 	.bannerTitulo{
 		h6{
 			font-size: 2em;
+			color: $colorCrema;
 		}		
 	}
 	#mySidenav{
@@ -223,7 +267,7 @@
 		}
 		#bl{
 			top: 260px;
-			}
+		}
 		#re{
 			top: 320px;
 		}
