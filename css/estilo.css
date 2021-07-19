@@ -15,7 +15,6 @@
 /* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
 /** MIXIN PARA ICONOS FIXED **/
 /** MIXIN PARA TAMAÑO DE FUENTES*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
 * {
   padding: 0;
   margin: 0; }
@@ -60,8 +59,7 @@ h4 {
   font-weight: bold;
   display: inline-block;
   position: relative;
-  text-decoration: none;
-  padding: 0 10px; }
+  text-decoration: none; }
   .sectoresWeb a:hover {
     background-color: #334A52;
     color: #EDB78F;
@@ -242,7 +240,8 @@ footer {
   footer p {
     color: white;
     font-size: small;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-bottom: 4%; }
 
 .videos {
   text-align: center;
@@ -361,7 +360,9 @@ div.content {
 /** EXTRA */
 @media screen and (max-width: 526px) {
   .primeraParte h1 {
-    margin-top: 115px; } }
+    margin-top: 108px; }
+  .imgPersona {
+    margin-top: 200px; } }
 
 /** MOBILE */
 @media screen and (max-width: 400px) {
@@ -542,8 +543,7 @@ div.content {
 /** TABLET*/
 @media screen and (max-width: 825px) {
   #fondo {
-    background-image: url("../media/bannerTablet.jpg");
-    height: 100vh; }
+    background-image: url("../media/bannerTablet.jpg"); }
     #fondo:before {
       content: '';
       position: absolute;
@@ -966,51 +966,11 @@ div.content {
 #psicologia {
   grid-area: psico; }
 
-.card {
-  justify-content: stretch;
-  text-align: center;
-  margin: 1.5em;
-  color: #334A52; }
-  .card p {
-    font-family: 'Raleway'; }
-    .card p span {
-      font-weight: bolder;
-      text-transform: uppercase; }
-  .card .perfil {
-    background-color: #334A52;
-    color: #EDB78F;
-    border-color: #334A52;
-    border-radius: 8px;
-    text-transform: uppercase; }
-    .card .perfil:hover {
-      background-color: #EDB78F;
-      color: #334A52;
-      border-color: #EDB78F;
-      border-radius: 8px; }
-  .card p a {
-    color: #334A52; }
-    .card p a:hover {
-      background-color: #6e777a;
-      color: white;
-      border-radius: 8px; }
-
-.card-title {
-  font-family: "Staatliches";
-  font-weight: bold;
-  font-size: 1.4em; }
-
-.card-text {
-  text-align: justify;
-  font-family: "Raleway"; }
-
-.fotos {
-  width: 18%; }
-
 a.btn {
-  background: #0096a0;
+  background: #334A52;
   border-radius: 4px;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: #ffffff;
+  color: white;
   display: inline-block;
   padding: 6px 30px 8px;
   position: relative;
@@ -1018,14 +978,15 @@ a.btn {
   transition: all 0.1s 0s ease-out; }
 
 .no-touch a.btn:hover {
-  background: #00a2ad;
+  background: #38515a;
+  color: white;
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out; }
 
 .no-touch a.btn:active,
 a.btn:active {
-  background: #008a93;
+  background: #2e434a;
   box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
   transform: translate3d(0, 1px, 0);
   transition: all 0.025s 0s ease-out; }
@@ -1036,7 +997,7 @@ div.cards {
   text-align: center; }
 
 div.card {
-  background: #ffffff;
+  background: white;
   display: inline-block;
   margin: 8px;
   max-width: 300px;
@@ -1053,7 +1014,7 @@ div.card {
     height: 0;
     padding-bottom: 75%; }
   div.card div.card-title {
-    background: #ffffff;
+    background: white;
     padding: 6px 15px 10px;
     position: relative;
     z-index: 0; }
@@ -1066,7 +1027,7 @@ div.card {
       top: 10px;
       width: 32px; }
       div.card div.card-title a.toggle-info span {
-        background: #ffffff;
+        background: white;
         display: block;
         height: 2px;
         position: absolute;
@@ -1080,20 +1041,30 @@ div.card {
         left: 14px;
         transform: rotate(-45deg); }
     div.card div.card-title h2 {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: -0.05em;
+      font-size: 20px;
+      font-weight: bolder;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      font-family: "Staatliches";
+      color: #334A52; }
       div.card div.card-title h2 small {
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
-        letter-spacing: -0.025em; }
+        letter-spacing: -0.025em;
+        padding: 0;
+        font-family: "Raleway";
+        color: #334A52; }
+        div.card div.card-title h2 small a:hover {
+          color: gray;
+          background-color: white;
+          border-radius: 3px; }
   div.card div.card-description {
     padding: 0 15px 10px;
     position: relative;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: justify;
+    font-family: "Raleway"; }
   div.card div.card-actions {
     box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
     padding: 10px 15px 20px;

@@ -47,7 +47,6 @@ h4{
 		display: inline-block;
 		position:relative;
 		text-decoration: none;
-		padding: 0 10px;
 		&:hover{
 			background-color: $colorAzul;
 			color: $colorCrema;
@@ -209,7 +208,7 @@ h3.inline2{
 	margin-left: 100px;
 }
 footer{
-	background-color: #334A52;
+	background-color: $colorAzul;
 	padding: 10px;
 	width: 100%;
 	grid-area: footer;
@@ -236,6 +235,7 @@ footer{
 		color: $colorBlanco;
 		@include tamaño-font;
 		font-weight: bold;
+		padding-bottom: 4%;
 	}
 }
 .videos{
@@ -379,8 +379,11 @@ div.content {
 @media screen and (max-width: 526px){
 	.primeraParte{
 		h1{
-			margin-top: 115px;
+			margin-top: 108px;
 		}
+	}
+	.imgPersona{
+		margin-top: 200px;
 	}
 
 }
