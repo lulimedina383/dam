@@ -181,15 +181,16 @@ h4.mayus{
 		}
 	}
 }
+
+/**
 .inline{
 	display: inline-block;
 	width: 50%;
 }
 .bloque{
-
 	display: inline-block;
 	width: 50%;
-}
+}*/
 h3.inline2{
 	background-color: $colorAzul;
 	font-family: $fontSecundaria;
@@ -218,17 +219,23 @@ footer{
 	flex-direction: row;
 	text-align: center;
 	a{
-		color: $colorCrema;
+		color: $colorSalmon;
 		font-weight: bold;
 		display: inline-block;
 		position:relative;
 		text-decoration: none;
 		padding: 0 10px;
+		border-radius: 10px;
 		&:hover {
-			background-color:$colorCrema ;
-			color:$colorAzul ;
+			background-color: $colorCeleste;
+			color:$colorBlanco ;
 			text-decoration: none;
 		}
+	}
+	p{
+		color: $colorBlanco;
+		@include tamaño-font;
+		font-weight: bold;
 	}
 }
 .videos{
@@ -367,6 +374,19 @@ div.content {
 	}
 }
 
+
+/** EXTRA */
+@media screen and (max-width: 526px){
+	.primeraParte{
+		h1{
+			margin-top: 115px;
+		}
+	}
+
+}
+
+
+
 /** MOBILE */
 @media screen and (max-width: 400px) {
   	.sidebar a {
@@ -393,6 +413,11 @@ div.content {
 		margin-top: 300px;
 	}
 }
+
+
+
+
+
 
 /** TAMAÑO TIPOGRAFIA */
 $tamaño-font: 1em;
