@@ -23,6 +23,9 @@ body {
   background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
   color: #334A52; }
 
+.margin {
+  margin-left: 200px; }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -90,24 +93,6 @@ h4 {
       padding: 8px; }
   #navbarNav img {
     width: 1rem; }
-
-.dropdown {
-  margin-top: 60px;
-  color: #EDB78F;
-  margin-left: 5rem; }
-  .dropdown a:hover {
-    color: #EDB78F; }
-  .dropdown .dropdown-item {
-    font-family: "Raleway";
-    font-size: 0.3em; }
-    .dropdown .dropdown-item #logo {
-      margin-top: 50px;
-      margin-right: 5rem; }
-      .dropdown .dropdown-item #logo img {
-        width: 12rem;
-        border-radius: 15px; }
-  .dropdown .dropdown-menu {
-    margin-right: 10rem; }
 
 .primeraParte {
   grid-area: banner; }
@@ -335,15 +320,18 @@ div.content {
     float: left; }
   div.content {
     margin-left: 0; }
-  h1 {
+  .primeraParte h1 {
+    position: absolute;
+    margin-top: 50px;
     padding-right: 0;
-    position: static;
-    margin-top: 200px; }
+    font-size: 3.2em;
+    padding: 5px; }
   .margin {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
   .imgPersona {
-    height: 300px; }
+    height: 300px;
+    margin-top: 170px; }
   .logoFijo {
     display: block;
     position: fixed;
@@ -357,7 +345,9 @@ div.content {
     bottom: 0;
     margin-left: 70px; }
     .logoFijo2 img {
-      width: 40px; } }
+      width: 40px; }
+  h3.inline2 {
+    font-size: 1.5em; } }
 
 /** MOBILE */
 @media screen and (max-width: 400px) {
@@ -365,15 +355,18 @@ div.content {
     text-align: center;
     float: none;
     position: initial; }
-  h1 {
+  .primeraParte h1 {
+    font-size: 2.3em;
+    position: absolute;
+    margin-top: 220px;
     padding-right: 0;
-    position: static;
-    margin-top: 100px; }
+    padding: 5px; }
   .margin {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
   .imgPersona {
-    height: 200px; } }
+    height: 200px;
+    margin-top: 300px; } }
 
 /** TAMAÑO TIPOGRAFIA */
 .mTop--1 {
@@ -534,7 +527,8 @@ div.content {
 /** TABLET*/
 @media screen and (max-width: 825px) {
   #fondo {
-    background-image: url("../media/bannerTablet.jpg"); }
+    background-image: url("../media/bannerTablet.jpg");
+    height: 100vh; }
     #fondo:before {
       content: '';
       position: absolute;
@@ -792,12 +786,9 @@ div.content {
   grid-area: consulta;
   padding: 2%; }
 
-.margin {
-  margin-left: 200px; }
-
 /** FORMULARIO DE CONSULTA */
 #formulario {
-  background-image: url("../media/fondoformas.jpg");
+  background-image: url("../media/fondoFormas.png");
   color: #EDB78F;
   font-weight: bolder;
   font-family: "Raleway";
@@ -823,7 +814,7 @@ div.content {
   padding: 3%;
   display: inline-block;
   text-align: center;
-  font-size: 20px;
+  font-size: 1em;
   grid-area: mensaje; }
   #mensajeLindo img {
     border-radius: 15px;
@@ -831,6 +822,10 @@ div.content {
 
 /** TABLET*/
 /** MOBILE */
+@media screen and (max-width: 400px) {
+  #mensajeLindo img {
+    width: 200px; } }
+
 #index5 {
   grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer";
   grid-gap: 10px;
