@@ -69,32 +69,6 @@ h4 {
   padding-top: 10px;
   padding-bottom: 5px; }
 
-#navbarNav {
-  background-color: #334A52;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  grid-area: header;
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  justify-content: center;
-  margin: 0;
-  opacity: 0.8; }
-  #navbarNav .nav-link {
-    color: #EDB78F;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0 10px;
-    margin-top: 65px;
-    opacity: none; }
-    #navbarNav .nav-link:hover {
-      background-color: #EDB78F;
-      color: #334A52;
-      padding: 8px; }
-  #navbarNav img {
-    width: 1rem; }
-
 .primeraParte {
   grid-area: banner; }
   .primeraParte h1 {
@@ -108,7 +82,8 @@ h4 {
     background-size: cover;
     width: 100%;
     padding-right: 15%;
-    position: fixed; }
+    position: fixed;
+    z-index: 2; }
 
 .textos {
   font-family: "Raleway";
@@ -202,6 +177,7 @@ h3.inline2 {
 .logoFijo {
   display: block;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   margin-left: 50px; }
   .logoFijo img {
@@ -210,6 +186,7 @@ h3.inline2 {
 .logoFijo2 {
   display: block;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   margin-left: 100px; }
   .logoFijo2 img {
@@ -296,7 +273,8 @@ footer {
   position: fixed;
   height: 100%;
   overflow: auto;
-  font-weight: bolder; }
+  font-weight: bolder;
+  z-index: 1; }
   .sidebar a {
     display: block;
     color: white;
@@ -319,7 +297,7 @@ div.content {
   height: 1000px; }
 
 /** TABLET*/
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 992px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -343,6 +321,7 @@ div.content {
   .logoFijo {
     display: block;
     position: fixed;
+    z-index: 1;
     bottom: 0;
     margin-left: 20px; }
     .logoFijo img {
@@ -350,6 +329,7 @@ div.content {
   .logoFijo2 {
     display: block;
     position: fixed;
+    z-index: 1;
     bottom: 0;
     margin-left: 70px; }
     .logoFijo2 img {
@@ -357,15 +337,8 @@ div.content {
   h3.inline2 {
     font-size: 1.5em; } }
 
-/** EXTRA */
-@media screen and (max-width: 526px) {
-  .primeraParte h1 {
-    margin-top: 108px; }
-  .imgPersona {
-    margin-top: 200px; } }
-
 /** MOBILE */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .sidebar a {
     text-align: center;
     float: none;
@@ -541,7 +514,7 @@ div.content {
 
 /** RESPONSIVE MOBILE y TABLET */
 /** TABLET*/
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 992px) {
   #fondo {
     background-image: url("../media/bannerTablet.jpg"); }
     #fondo:before {
@@ -586,7 +559,7 @@ div.content {
     width: 15px; } }
 
 /** MOBILE */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #fondo {
     background-image: url("../media/bannerMobile.jpg"); }
     #fondo:before {
@@ -838,7 +811,7 @@ div.content {
 
 /** TABLET*/
 /** MOBILE */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #mensajeLindo img {
     width: 150px; }
   #mensajeLindo .lluvia {
@@ -1005,8 +978,7 @@ div.card {
   position: relative;
   text-align: left;
   transition: all 0.3s 0s ease-in;
-  width: 300px;
-  z-index: 1; }
+  width: 300px; }
   div.card img {
     max-width: 300px; }
   div.card .card__image-holder {
@@ -1016,8 +988,7 @@ div.card {
   div.card div.card-title {
     background: white;
     padding: 6px 15px 10px;
-    position: relative;
-    z-index: 0; }
+    position: relative; }
     div.card div.card-title a.toggle-info {
       border-radius: 32px;
       height: 32px;

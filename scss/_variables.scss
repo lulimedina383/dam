@@ -32,6 +32,7 @@ $size:('xsm': 1rem , 'sm':1.8rem, 'md':2.3rem , 'lg':3rem );
 @mixin iconos(){
 	display: block;
 	position: fixed;
+	z-index: 1;
 	bottom: 0;
 	img{
 		width: 40px;

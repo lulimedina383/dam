@@ -86,7 +86,6 @@ div.card {
   text-align: left;
   transition: all 0.3s 0s ease-in;
   width: 300px;
-  z-index: 1;
 
   img {
     max-width: 300px;
@@ -102,7 +101,6 @@ div.card {
     background: $colorBlanco;
     padding: 6px 15px 10px;
     position: relative;
-    z-index: 0;
     
     a.toggle-info {
       border-radius: 32px;
