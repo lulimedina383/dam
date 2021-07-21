@@ -20,14 +20,75 @@ body{
 	align-content: $centro;
 	align-items: $centro;
 }
+
 .flex{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
-	padding: 3%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 20px;
+	justify-content: $centro;
+	align-content: $centro;
+	align-items: $centro;
+	.uno{
+		grid-template-areas:  
+		"text1 video1";
+		#preg1{
+			grid-area: text1;
+		}
+		#video1{
+			grid-area: video1;
+		}
+	}
+	.dos{
+		grid-template-areas: 
+		"imagenes2 text2";
+		#preg2{
+			grid-area: text2;
+		}
+		#imagenes2{
+			grid-area: imagenes2;
+		}
+	}
+	.tres{
+		grid-template-areas: 
+		"text3 imagenes2";
+		#preg3{
+			grid-area: text3;
+		}
+		#imagenes3{
+			grid-area: imagenes3;
+		}
+	}
+	.cuatro{
+		grid-template-areas: 
+		"video4text4";
+		justify-content: $centro;
+		align-content: $centro;
+		align-items: $centro;
+		#preg4{
+			grid-area: text4;
+		}
+		#video4{
+			grid-area: video4;
+		}
+	}
 }
+
+.textExtra{
+		margin-right: 3%;
+		margin-left: 3%;
+}  
+@mixin margenes(){
+	margin-right: 35px;
+	margin-left:  35px;
+}
+
+.fondoRosado{
+	@include margenes;
+}
+
+
+
+
 img{
 	width: 300px;
 }
@@ -95,10 +156,6 @@ h4{
 	margin-right: 3%;
 	font-family: $fontPrincipal;
 	text-align: justify;
-}
-.fondoRosado{
-	margin-right: 3%;
-	margin-left:  3%;
 }
 .escritoP{
 	font-family: $fontPrincipal;

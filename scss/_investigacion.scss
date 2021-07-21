@@ -55,7 +55,6 @@
 .resul{
 	padding: 2%;
 	
-	
 	/** DEJE PREPARADA ESTA PARTE PARA CUANDO TENGA LAS RESPUESTAS DEL FORMULARIO */
 
 	/**.gridResul{
@@ -153,3 +152,21 @@
 	}	*/
 }
 
+.delimitador{
+	width:468px;
+	.contenedor{
+		height:0px;
+		width:100%;
+		max-width:468px; 
+		padding-top:56.25%; 
+		position:relative;
+		margin: 20px;
+		iframe{
+			position:absolute;
+			height:100%;
+			width:100%;
+			top:0px;
+			left:0px;
+		}
+	}
+}

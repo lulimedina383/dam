@@ -37,12 +37,47 @@ body {
   align-items: center; }
 
 .flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: stretch;
-  padding: 3%; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .flex .uno {
+    grid-template-areas: "text1 video1"; }
+    .flex .uno #preg1 {
+      grid-area: text1; }
+    .flex .uno #video1 {
+      grid-area: video1; }
+  .flex .dos {
+    grid-template-areas: "imagenes2 text2"; }
+    .flex .dos #preg2 {
+      grid-area: text2; }
+    .flex .dos #imagenes2 {
+      grid-area: imagenes2; }
+  .flex .tres {
+    grid-template-areas: "text3 imagenes2"; }
+    .flex .tres #preg3 {
+      grid-area: text3; }
+    .flex .tres #imagenes3 {
+      grid-area: imagenes3; }
+  .flex .cuatro {
+    grid-template-areas: "video4text4";
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .flex .cuatro #preg4 {
+      grid-area: text4; }
+    .flex .cuatro #video4 {
+      grid-area: video4; }
+
+.textExtra {
+  margin-right: 3%;
+  margin-left: 3%; }
+
+.fondoRosado {
+  margin-right: 35px;
+  margin-left: 35px; }
 
 img {
   width: 300px; }
@@ -103,10 +138,6 @@ h4 {
   margin-right: 3%;
   font-family: "Raleway";
   text-align: justify; }
-
-.fondoRosado {
-  margin-right: 3%;
-  margin-left: 3%; }
 
 .escritoP {
   font-family: "Raleway";
@@ -541,12 +572,6 @@ div.content {
     font-size: 3em;
     padding-right: 15px;
     padding-left: 15px; }
-  #mySidenav a {
-    left: -175px;
-    width: 215px;
-    font-size: 1em; }
-    #mySidenav a:hover {
-      padding-left: 15px; }
   #mySidenav #in {
     top: 140px; }
   #mySidenav #an {
@@ -589,12 +614,6 @@ div.content {
   .bannerTitulo h6 {
     font-size: 2em;
     color: #EDB78F; }
-  #mySidenav a {
-    left: -175px;
-    width: 215px;
-    font-size: 1em; }
-    #mySidenav a:hover {
-      padding-left: 15px; }
   #mySidenav #in {
     top: 140px; }
   #mySidenav #an {
@@ -754,6 +773,22 @@ div.content {
 			grid-area: fut;
 		}
 	}	*/ }
+
+.delimitador {
+  width: 468px; }
+  .delimitador .contenedor {
+    height: 0px;
+    width: 100%;
+    max-width: 468px;
+    padding-top: 56.25%;
+    position: relative;
+    margin: 20px; }
+    .delimitador .contenedor iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px; }
 
 /** TIPOGRAFIAS */
 /** COLORES */
@@ -1047,11 +1082,9 @@ div.card {
     transform-origin: top;
     transform: rotateX(-90deg); }
   div.card div.flap1 {
-    transition: all 0.3s 0.3s ease-out;
-    z-index: -1; }
+    transition: all 0.3s 0.3s ease-out; }
   div.card div.flap2 {
-    transition: all 0.3s 0s ease-out;
-    z-index: -2; }
+    transition: all 0.3s 0s ease-out; }
 
 div.cards.showing div.card {
   cursor: pointer;
@@ -1074,7 +1107,7 @@ div.card.show {
     div.card.show div.card-title a.toggle-info span.right {
       left: 10px; }
   div.card.show div.card-flap {
-    background: #ffffff;
+    background: white;
     transform: rotateX(0deg); }
   div.card.show div.flap1 {
     transition: all 0.3s 0s ease-out; }

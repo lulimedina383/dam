@@ -29,17 +29,8 @@
 
 
 
-// colour stuff
-$white: #ffffff;
-$lightBG: #dce1df;
 $salmon: #ff6666;
 
-$teal: #0096a0;
-$tealMid: #0ebac7;
-$tealContrast: #33ffff;
-$tealShade:	#007c85;
-
-$darkGrey: #4f585e;
 
 
 a.btn {
@@ -170,7 +161,7 @@ div.card {
   }
   
   div.card-flap {
-    background: darken($white,15);
+    background: darken($colorBlanco,15);
     position: absolute;
     width: 100%;
     transform-origin: top;
@@ -178,11 +169,11 @@ div.card {
   }
   div.flap1 {
     transition: all 0.3s 0.3s ease-out;
-    z-index: -1;
+
   }
   div.flap2 {
     transition: all 0.3s 0s ease-out;
-    z-index: -2;
+
   }
   
 }
@@ -221,7 +212,7 @@ div.card.show {
     }
   }
   div.card-flap {
-    background: $white;
+    background: $colorBlanco;
     transform: rotateX(0deg);
   }
   div.flap1 {
