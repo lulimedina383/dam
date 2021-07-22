@@ -7,7 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	
 	<!-- ETIQUETA META -->
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<!-- TIPOGRAFIAS -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,14 +24,22 @@
 </head>
 <body>
 	
-		<!-- SIDEBAR -->
-		<div class="sidebar">
-			<a class="active" href="../index.html"><img src="../media/casa.png" alt="icono casa">HOME</a>
-			<a href="investigacion.html"><img src="../media/buscar.png"  alt="icono lupa">Investigación</a>
-			<a href="recomendaciones.html"><img src="../media/idea.png" alt="icono idea">Recomendaciones</a>
-			<a href="blog.html"><img src="../media/persona.png" alt="icono persona">Blog</a>
-		</div>
-      
+			<header>
+				<div class="menu_bar">
+					<a href="#" class="bt-menu"><img src="../media/menu.png">MENÚ</a>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="../index.html"><img src="../media/casa.png">HOME</a></li>
+						<li><a href="investigacion.html"><img src="../media/buscar.png">Investigación</a></li>
+						<li><a href="recomendaciones.html"><img src="../media/idea.png">Recomendaciones</a></li>
+						<li><a href="blog.html"><img src="../media/blog.png">Blog</a></li>
+						<li><a href="consulta.html" class="active"><img src="../media/consulta.png">Consulta</a></li>
+					</ul>
+				</nav>
+			</header>
+
 		<div class="margin">
 			<div class="grid2" id="index3">
 				
@@ -133,5 +142,7 @@
 	<!-- SCRIPT's -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="menu.js"></script>
 </body>
 </html>

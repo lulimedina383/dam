@@ -12,7 +12,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 	
 	<!-- ETIQUETA META -->
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,15 +23,21 @@
 	<meta name="description" content="Recomendaciones variadas sobre paginas de Instagram administradas por distintas persona que promueven el positivismo y el buen funcionamiento del organismo. Inlfuencers como Sol carlos, La Reina de los Cardios como Juli Puente, y Alimentación Saludable con Paulina Cocina">
 </head>
 <body>
-		<header>
-			<!-- SIDEBAR -->
-			<div class="sidebar">
-				<a class="active" href="../index.html"><img src="../media/casa.png" alt="icono casa">HOME</a>
-				<a href="investigacion.html"><img src="../media/buscar.png"  alt="icono lupa">Investigación</a>
-				<a href="blog.html"><img src="../media/persona.png" alt="icono persona">Blog</a>
-				<a href="consulta.html"><img src="../media/consulta.png" alt="icono persona">Consulta</a>
-			</div>
-		</header>
+			<header>
+				<div class="menu_bar">
+					<a href="#" class="bt-menu"><img src="../media/menu.png">MENÚ</a>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="../index.html"><img src="../media/casa.png">HOME</a></li>
+						<li><a href="investigacion.html"><img src="../media/buscar.png">Investigación</a></li>
+						<li><a href="recomendaciones.html" class="active"><img src="../media/idea.png">Recomendaciones</a></li>
+						<li><a href="blog.html"><img src="../media/blog.png">Blog</a></li>
+						<li><a href="consulta.html"><img src="../media/consulta.png">Consulta</a></li>
+					</ul>
+				</nav>
+			</header>
 
 	<div class="margin">
 		<div id="index4">
@@ -781,5 +788,7 @@
 			  });
 			});
 	</script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="menu.js"></script>
 </body>
 </html>

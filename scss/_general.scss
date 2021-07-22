@@ -23,6 +23,52 @@ body{
 	align-items: $centro;
 }
 
+header{
+	width: 100%;
+	.menu_bar {
+		display: none;
+		font-family: $fontSecundaria;
+	}
+	nav{
+		font-family: $fontPrincipal;
+		margin: 0;
+	  	padding: 0;
+	  	width: 205px;
+	  	background-color: $colorAzul;
+	  	position: fixed;
+	  	height: 100%;
+	  	overflow: auto;
+	  	font-weight: bolder;
+	  	z-index: 1;
+	  	a {
+			display: block;
+			color: white;
+			padding: 16px;
+			font-size: 1em;
+			&.active {
+		  		background-color: $colorCrema;
+		  		color: white;
+		  		text-decoration: none;
+		  	}
+		  	&:hover:not(.active) {
+			  	background-color: $colorCeleste;
+			  	color: $colorBlanco;
+			  	text-decoration: none;
+			}
+		}
+		img{
+			width: 20px;
+			margin-right:10px;
+		}
+		ul {
+			overflow:hidden;
+			list-style:none;
+		}
+	}
+}
+
+
+
 img{
 	width: 300px;
 }
@@ -65,9 +111,6 @@ h4{
 		background-image: url("../media/fondoFormas.png");	
 		background-size: cover;
 		width: 100%;
-		padding-right: 15%;
-		position: fixed;
-		z-index: 2;
 	}
 }
 
@@ -242,7 +285,6 @@ footer{
 		padding: 16px;
 		&.active {
 	  		background-color: $colorCrema;
-	  		color: white;
 	  		text-decoration: none;
 	  	}
 	  	&:hover:not(.active) {
@@ -256,32 +298,61 @@ footer{
 		padding-right: 5px;
 	}
 }
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
+
+
 
 /** TABLET*/
 @media screen and (max-width: 992px) {
-  	.sidebar {
-    	width: 100%;
-    	height: auto;
-    	position: fixed;
-  	}
-  	.sidebar a {
-  		float: left;
-  	}
-  	div.content {
-  		margin-left: 0;
-  	}
+  	header{
+		.menu_bar {
+			display:block;
+			width:100%;
+			background: $colorAzul;
+			.bt-menu {
+			display:block;
+			padding:20px;
+			background: $colorAzul;
+			color: $colorBlanco;
+			text-decoration:none;
+			font-weight: bold;
+			font-size:25px;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+			}
+			img {
+				float:right;
+				width: 40px;
+			}
+		}
+		nav {
+			width:80%;
+			height:100%;
+			left:-100%;
+			margin:0;
+			position: fixed;
+			background: $colorAzul;
+			ul li {
+				display:block;
+				float:none;
+				border-bottom:1px solid rgba(255,255,255, .3);
+			}
+			a{
+				&.active{
+					background-color: $colorAzul;
+					:hover{
+						background-color: $colorCeleste;
+					}
+				}
+			}
+		}
+	}
   	.primeraParte{
 		h1{
-			position: absolute;
-			margin-top: 50px;
 			padding-right: 0;
 			font-size: 3.2em;
 			padding: 5px;
+			display: block;
 		}
 	}
   	.margin{
@@ -303,7 +374,7 @@ div.content {
 		margin-left: 70px;
 	}
 	h3.inline2{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 }
 
@@ -311,16 +382,13 @@ div.content {
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
-  	.sidebar a {
-    	text-align: center;
-    	float: none;
-    	position: initial;
+  	header nav a {
+    		float: none;
+    		position: initial;
   	}
   	.primeraParte{
 		h1{
 			font-size:  2.3em;
-			position: absolute;
-			margin-top: 220px;
 			padding-right: 0;
 			padding: 5px;
 		}
@@ -335,10 +403,6 @@ div.content {
 		margin-top: 300px;
 	}
 }
-
-
-
-
 
 
 /** TAMAÑO TIPOGRAFIA */

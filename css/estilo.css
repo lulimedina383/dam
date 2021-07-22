@@ -38,6 +38,42 @@ body {
   align-content: center;
   align-items: center; }
 
+header {
+  width: 100%; }
+  header .menu_bar {
+    display: none;
+    font-family: "Staatliches"; }
+  header nav {
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+    width: 205px;
+    background-color: #334A52;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-weight: bolder;
+    z-index: 1; }
+    header nav a {
+      display: block;
+      color: white;
+      padding: 16px;
+      font-size: 1em; }
+      header nav a.active {
+        background-color: #EDB78F;
+        color: white;
+        text-decoration: none; }
+      header nav a:hover:not(.active) {
+        background-color: #516266;
+        color: white;
+        text-decoration: none; }
+    header nav img {
+      width: 20px;
+      margin-right: 10px; }
+    header nav ul {
+      overflow: hidden;
+      list-style: none; }
+
 img {
   width: 300px; }
 
@@ -74,10 +110,7 @@ h4 {
     text-align: center;
     background-image: url("../media/fondoFormas.png");
     background-size: cover;
-    width: 100%;
-    padding-right: 15%;
-    position: fixed;
-    z-index: 2; }
+    width: 100%; }
 
 .textos {
   font-family: "Raleway";
@@ -244,7 +277,6 @@ footer {
     padding: 16px; }
     .sidebar a.active {
       background-color: #EDB78F;
-      color: white;
       text-decoration: none; }
     .sidebar a:hover:not(.active) {
       background-color: #516266;
@@ -254,27 +286,46 @@ footer {
     width: 20px;
     padding-right: 5px; }
 
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px; }
-
 /** TABLET*/
 @media screen and (max-width: 992px) {
-  .sidebar {
+  header .menu_bar {
+    display: block;
     width: 100%;
-    height: auto;
-    position: fixed; }
-  .sidebar a {
-    float: left; }
-  div.content {
-    margin-left: 0; }
+    background: #334A52; }
+    header .menu_bar .bt-menu {
+      display: block;
+      padding: 20px;
+      background: #334A52;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    header .menu_bar img {
+      float: right;
+      width: 40px; }
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+    background: #334A52; }
+    header nav ul li {
+      display: block;
+      float: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    header nav a.active {
+      background-color: #334A52; }
+      header nav a.active :hover {
+        background-color: #516266; }
   .primeraParte h1 {
-    position: absolute;
-    margin-top: 50px;
     padding-right: 0;
     font-size: 3.2em;
-    padding: 5px; }
+    padding: 5px;
+    display: block; }
   .margin {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
@@ -298,18 +349,15 @@ div.content {
     .logoFijo2 img {
       width: 40px; }
   h3.inline2 {
-    font-size: 1.5em; } }
+    font-size: 2em; } }
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
-  .sidebar a {
-    text-align: center;
+  header nav a {
     float: none;
     position: initial; }
   .primeraParte h1 {
     font-size: 2.3em;
-    position: absolute;
-    margin-top: 220px;
     padding-right: 0;
     padding: 5px; }
   .margin {
@@ -392,12 +440,13 @@ div.content {
   grid-template-areas: "header header header" "banner banner banner" "indice indice indice" "intro intro intro" "blog blog blog" "footer footer footer"; }
 
 #mySidenav {
-  position: relative; }
+  position: relative;
+  text-align: right; }
   #mySidenav a {
     position: absolute;
     left: -180px;
     transition: 0.3s;
-    padding: 15px;
+    padding: 8px;
     width: 215px;
     text-decoration: none;
     font-size: 1em;
@@ -407,7 +456,7 @@ div.content {
     font-weight: bolder; }
     #mySidenav a:hover {
       left: 0;
-      padding-left: 35px; }
+      padding-left: 30px; }
   #mySidenav #in {
     top: 220px;
     background-color: #EDB78F; }
@@ -421,8 +470,8 @@ div.content {
     top: 400px;
     background-color: #334A52; }
   #mySidenav img {
-    width: 20px;
-    padding-right: 5px; }
+    width: 32px;
+    padding-left: 10px; }
 
 #banner {
   position: relative;
@@ -641,6 +690,24 @@ iframe {
     top: 0px;
     left: 0px; }
 
+.boxHorizontal {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap; }
+  .boxHorizontal .galeriaI {
+    height: 0px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    margin: 20px; }
+    .boxHorizontal .galeriaI img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px; }
+
 .delimitador {
   width: 300px;
   justify-content: center;
@@ -669,13 +736,23 @@ iframe {
     .delimitador .contenedor {
       max-width: 200px; }
   .imagenes .galeria3 {
+    width: 180px; }
+  .boxHorizontal {
     width: 230px; }
-  .galeriaI {
-    width: 230px; } }
+    .boxHorizontal .galeriaI {
+      max-width: 230px; } }
 
 @media screen and (max-width: 992px) {
-  .galeriaI {
-    width: 180px; } }
+  .imagenes .galeria3 {
+    width: 140px; }
+  .boxHorizontal {
+    width: 180px; }
+    .boxHorizontal .galeriaI {
+      max-width: 180px; }
+  .video {
+    width: 570px; }
+    .video .mobileVideo {
+      max-width: 570px; } }
 
 @media screen and (max-width: 692px) {
   .delimitador {
@@ -684,16 +761,44 @@ iframe {
     flex-wrap: wrap; }
     .delimitador .contenedor {
       max-width: 370px; }
-  .imagenes img {
-    width: 500px; } }
+  .boxHorizontal {
+    width: 160px; }
+    .boxHorizontal .galeriaI {
+      max-width: 160px; }
+  .imagenes .galeria3 {
+    width: 500px; }
+  .video {
+    width: 550px; }
+    .video .mobileVideo {
+      max-width: 500px; } }
+
+@media screen and (max-width: 576px) {
+  .boxHorizontal {
+    width: 120px; }
+    .boxHorizontal .galeriaI {
+      max-width: 120px; }
+  .imagenes .galeria3 {
+    width: 90px; }
+  .video {
+    width: 300px; }
+    .video .mobileVideo {
+      max-width: 300px; } }
 
 @media screen and (max-width: 352px) {
+  .boxHorizontal {
+    width: 100px; }
+    .boxHorizontal .galeriaI {
+      max-width: 100px; }
   .delimitador {
     width: 290px; }
     .delimitador .contenedor {
       max-width: 290px; }
-  .imagenes img {
-    width: 290px; } }
+  .imagenes .galeria3 {
+    width: 290px; }
+  .video {
+    width: 250px; }
+    .video .mobileVideo {
+      max-width: 240px; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
