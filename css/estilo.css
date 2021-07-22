@@ -42,7 +42,7 @@ header {
   width: 100%; }
   header .menu_bar {
     display: none;
-    font-family: "Staatliches"; }
+    font-family: "Raleway"; }
   header nav {
     font-family: "Raleway";
     margin: 0;
@@ -602,9 +602,7 @@ footer {
   #mySidenav #bl {
     top: 260px; }
   #mySidenav #re {
-    top: 320px; }
-  #mySidenav img {
-    width: 15px; } }
+    top: 320px; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
