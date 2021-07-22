@@ -23,7 +23,9 @@ body {
   margin: 0;
   font-family: "Raleway";
   background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
-  color: #334A52; }
+  color: #334A52;
+  overflow-x: hidden;
+  width: 100%; }
 
 .margin {
   margin-left: 200px; }
@@ -35,49 +37,6 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center; }
-
-.flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 20px;
-  justify-content: center;
-  align-content: center;
-  align-items: center; }
-  .flex .uno {
-    grid-template-areas: "text1 video1"; }
-    .flex .uno #preg1 {
-      grid-area: text1; }
-    .flex .uno #video1 {
-      grid-area: video1; }
-  .flex .dos {
-    grid-template-areas: "imagenes2 text2"; }
-    .flex .dos #preg2 {
-      grid-area: text2; }
-    .flex .dos #imagenes2 {
-      grid-area: imagenes2; }
-  .flex .tres {
-    grid-template-areas: "text3 imagenes2"; }
-    .flex .tres #preg3 {
-      grid-area: text3; }
-    .flex .tres #imagenes3 {
-      grid-area: imagenes3; }
-  .flex .cuatro {
-    grid-template-areas: "video4text4";
-    justify-content: center;
-    align-content: center;
-    align-items: center; }
-    .flex .cuatro #preg4 {
-      grid-area: text4; }
-    .flex .cuatro #video4 {
-      grid-area: video4; }
-
-.textExtra {
-  margin-right: 3%;
-  margin-left: 3%; }
-
-.fondoRosado {
-  margin-right: 35px;
-  margin-left: 35px; }
 
 img {
   width: 300px; }
@@ -125,6 +84,9 @@ h4 {
   text-align: justify;
   font-size: 1em;
   margin-bottom: 15px; }
+  .textos span {
+    font-weight: bolder;
+    text-transform: uppercase; }
 
 .especial {
   margin-right: 8%;
@@ -138,6 +100,9 @@ h4 {
   margin-right: 3%;
   font-family: "Raleway";
   text-align: justify; }
+  .listasP span {
+    font-weight: bolder;
+    text-transform: uppercase; }
 
 .escritoP {
   font-family: "Raleway";
@@ -158,7 +123,8 @@ h4 {
   font-family: "Staatliches";
   font-size: 1.5em;
   margin-bottom: 8px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  text-align: left; }
 
 .lluvia {
   text-align: center;
@@ -178,11 +144,9 @@ h4.mayus {
 .mayus {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.5em;
   margin-top: 8px; }
   .mayus a {
-    color: #334A52;
-    font-size: 0.7em; }
+    color: #334A52; }
     .mayus a:hover {
       text-decoration: none;
       border-radius: 7px; }
@@ -228,8 +192,6 @@ footer {
   padding: 10px;
   width: 100%;
   grid-area: footer;
-  grid-column: 1 / 3;
-  grid-row: 4;
   display: flex;
   flex-direction: row;
   text-align: center; }
@@ -264,36 +226,6 @@ footer {
   grid-area: img;
   margin-top: 120px;
   margin-bottom: 2%; }
-
-/** MODAL DE AGRADECIMIENTO */
-.boton {
-  font-family: "Staatliches";
-  font-size: 1.3em;
-  color: #334A52;
-  background-color: #EDB78F;
-  border-color: #334A52;
-  margin-top: 2%; }
-  .boton:hover {
-    color: #EDB78F;
-    background-color: #334A52;
-    border-color: #EDB78F; }
-
-.modal-content {
-  background-color: #EDB78F;
-  color: #334A52; }
-  .modal-content:hover {
-    background-color: #334A52;
-    color: #EDB78F; }
-  .modal-content #exampleModal {
-    font-family: "Raleway"; }
-  .modal-content .modal-title {
-    font-family: "Staatliches"; }
-  .modal-content .modal-body {
-    text-align: center; }
-  .modal-content .modal-footer {
-    font-family: "Staatliches"; }
-  .modal-content .botonExtra {
-    margin-top: 10px; }
 
 /** SIDEBAR */
 .sidebar {
@@ -665,121 +597,62 @@ div.content {
 #miOpinion {
   grid-area: op; }
 
+.doble {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+/** EFECTOS IMAGENES */
 .efect1 {
-  transition: all 500ms ease-in-out; }
+  transition: all 500ms ease-in-out;
+  margin-bottom: 5%;
+  border-radius: 8px; }
   .efect1:hover {
     filter: blur(5px); }
 
 .efect2 {
   overflow: hidden;
-  transition: all 500ms ease-in-out; }
+  transition: all 500ms ease-in-out;
+  margin-bottom: 5%;
+  border-radius: 8px; }
   .efect2:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
-.resul {
-  padding: 2%;
-  /** DEJE PREPARADA ESTA PARTE PARA CUANDO TENGA LAS RESPUESTAS DEL FORMULARIO */
-  /**.gridResul{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 20px;
-		justify-content: stretch;
-		align-content: stretch;
-		align-items: $centro;
-		grid-template-areas:
-		"edad acF sen"
-		"nega ali sana"
-		"comen comenMal conf"
-		"hoy opAf opAF"
-		"ta redS redS"
-		"del del maT"
-		"salud est mat"
-		"aE fut fut";
-		.contenedorR{
-			background-color: $colorAzul;
-			border-radius: $bordes;
-			text-align: $centro;
-			color: $colorBlanco;
-			padding: 1em;
-			justify-content: stretch;
-			align-content: stretch;
-		}
-		@mixin resultados(){
-			overflow:scroll ;
-			height: 200px;
-		}
-		#edad{
-			grid-area: edad;
-			@include resultados;
-		}
-		#actividadFisica{
-			grid-area: acF;
-			@include resultados;
-		}
-		#sentimientos{
-			grid-area: sent;
-			@include resultados;
-		}
-		#negativos{
-			grid-area: nega;
-		}
-		#alimentacion{
-			grid-area: ali;
-		}
-		#alimentacionSana{
-			grid-area: sana;
-		}
-		#comentarios{
-			grid-area: comen;
-		}
-		#comentarioMalos{
-			grid-area: comenMal;
-		}
-		#conforme{
-			grid-area: conf;
-		}
-		#dispuestoHoy{
-			grid-area: hoy;
-		}
-		#opinionAF{
-			grid-area: opAF;
-		}
-		#salud{
-			grid-area: salud;
-		}
-		#trastornoAlimen{
-			grid-area: ta;
-		}
-		#redesSociales{
-			grid-area: redS;
-		}
-		#conforme{
-			grid-area: conf;
-		}
-		#cuerpoD{
-			grid-area: del;
-		}
-		#cuerpoMaT{
-			grid-area: maT
-		}
-		#estereotipos{
-			grid-area: est;
-		}
-		#actExtra{
-			grid-area: aE;
-		}
-		#futuro{
-			grid-area: fut;
-		}
-	}	*/ }
+iframe {
+  border-radius: 8px; }
+
+.preg {
+  margin-right: 35px;
+  margin-left: 35px; }
+
+.video {
+  width: 700px; }
+  .video .mobileVideo {
+    height: 0px;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 56.25%;
+    position: relative;
+    margin: 20px; }
+  .video iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px; }
 
 .delimitador {
-  width: 468px; }
+  width: 300px;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
   .delimitador .contenedor {
     height: 0px;
     width: 100%;
-    max-width: 468px;
+    max-width: 300px;
     padding-top: 56.25%;
     position: relative;
     margin: 20px; }
@@ -789,6 +662,38 @@ div.content {
       width: 100%;
       top: 0px;
       left: 0px; }
+
+@media screen and (max-width: 1208px) {
+  .delimitador {
+    width: 200px; }
+    .delimitador .contenedor {
+      max-width: 200px; }
+  .imagenes .galeria3 {
+    width: 230px; }
+  .galeriaI {
+    width: 230px; } }
+
+@media screen and (max-width: 992px) {
+  .galeriaI {
+    width: 180px; } }
+
+@media screen and (max-width: 692px) {
+  .delimitador {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap; }
+    .delimitador .contenedor {
+      max-width: 370px; }
+  .imagenes img {
+    width: 500px; } }
+
+@media screen and (max-width: 352px) {
+  .delimitador {
+    width: 290px; }
+    .delimitador .contenedor {
+      max-width: 290px; }
+  .imagenes img {
+    width: 290px; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
@@ -844,7 +749,36 @@ div.content {
     border-radius: 15px;
     margin-bottom: 3.5%; }
 
-/** TABLET*/
+/** MODAL DE AGRADECIMIENTO */
+.boton {
+  font-family: "Staatliches";
+  font-size: 1.3em;
+  color: #334A52;
+  background-color: #EDB78F;
+  border-color: #334A52;
+  margin-top: 2%; }
+  .boton:hover {
+    color: #EDB78F;
+    background-color: #334A52;
+    border-color: #EDB78F; }
+
+.modal-content {
+  background-color: #EDB78F;
+  color: #334A52; }
+  .modal-content:hover {
+    background-color: #334A52;
+    color: #EDB78F; }
+  .modal-content #exampleModal {
+    font-family: "Raleway"; }
+  .modal-content .modal-title {
+    font-family: "Staatliches"; }
+  .modal-content .modal-body {
+    text-align: center; }
+  .modal-content .modal-footer {
+    font-family: "Staatliches"; }
+  .modal-content .botonExtra {
+    margin-top: 10px; }
+
 /** MOBILE */
 @media screen and (max-width: 576px) {
   #mensajeLindo img {

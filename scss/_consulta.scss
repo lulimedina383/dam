@@ -56,10 +56,44 @@
 	}
 }
 
-/** TABLET*/
-@media screen and (max-width: 992px) {
-	
-}
+/** MODAL DE AGRADECIMIENTO */
+	.boton{
+		font-family: $fontSecundaria;
+		font-size: 1.3em;
+		color: $colorAzul;
+		background-color:$colorCrema;
+		border-color: $colorAzul;
+		&:hover{
+			color: $colorCrema;
+			background-color: $colorAzul;
+			border-color: $colorCrema;
+		}
+		margin-top: 2%;
+	}
+	.modal-content{
+		background-color: $colorCrema;
+		color: $colorAzul;
+		&:hover{
+			background-color: $colorAzul;
+			color: $colorCrema; 
+		} 
+		#exampleModal{
+			font-family: $fontPrincipal;
+		}
+		.modal-title{
+			font-family: $fontSecundaria;
+		}
+		.modal-body{
+			text-align: $centro;
+		}
+		.modal-footer{
+			font-family: $fontSecundaria;
+		}
+		.botonExtra{
+			margin-top: 10px;
+		}
+	}
+
 
 /** MOBILE */
 @media screen and (max-width: 576px) {

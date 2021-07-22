@@ -38,8 +38,23 @@
 #miOpinion{
 	grid-area: op;
 }
+
+
+
+@mixin paraImagenes() {
+	margin-bottom: 5%;
+	border-radius: 8px;
+}
+
+.doble{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/** EFECTOS IMAGENES */
 .efect1{
 	transition: all 500ms ease-in-out;
+	@include paraImagenes;
 	&:hover{
 	filter: blur(5px);
 	}
@@ -47,117 +62,61 @@
 .efect2{
 	overflow:hidden;
 	transition: all 500ms ease-in-out;
+	@include paraImagenes;
 	&:hover{
-	-webkit-transform:scale(1.3);
-	transform:scale(1.3);
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
 	}
 }
-.resul{
-	padding: 2%;
-	
-	/** DEJE PREPARADA ESTA PARTE PARA CUANDO TENGA LAS RESPUESTAS DEL FORMULARIO */
 
-	/**.gridResul{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 20px;
-		justify-content: stretch;
-		align-content: stretch;
-		align-items: $centro;
-		grid-template-areas:
-		"edad acF sen"
-		"nega ali sana"
-		"comen comenMal conf"
-		"hoy opAf opAF"
-		"ta redS redS"
-		"del del maT"
-		"salud est mat"
-		"aE fut fut";
-		.contenedorR{
-			background-color: $colorAzul;
-			border-radius: $bordes;
-			text-align: $centro;
-			color: $colorBlanco;
-			padding: 1em;
-			justify-content: stretch;
-			align-content: stretch;
-		}
-		@mixin resultados(){
-			overflow:scroll ;
-			height: 200px;
-		}
-		#edad{
-			grid-area: edad;
-			@include resultados;
-		}
-		#actividadFisica{
-			grid-area: acF;
-			@include resultados;
-		}
-		#sentimientos{
-			grid-area: sent;
-			@include resultados;
-		}
-		#negativos{
-			grid-area: nega;
-		}
-		#alimentacion{
-			grid-area: ali;
-		}
-		#alimentacionSana{
-			grid-area: sana;
-		}
-		#comentarios{
-			grid-area: comen;
-		}
-		#comentarioMalos{
-			grid-area: comenMal;
-		}
-		#conforme{
-			grid-area: conf;
-		}
-		#dispuestoHoy{
-			grid-area: hoy;
-		}
-		#opinionAF{
-			grid-area: opAF;
-		}
-		#salud{
-			grid-area: salud;
-		}
-		#trastornoAlimen{
-			grid-area: ta;
-		}
-		#redesSociales{
-			grid-area: redS;
-		}
-		#conforme{
-			grid-area: conf;
-		}
-		#cuerpoD{
-			grid-area: del;
-		}
-		#cuerpoMaT{
-			grid-area: maT
-		}
-		#estereotipos{
-			grid-area: est;
-		}
-		#actExtra{
-			grid-area: aE;
-		}
-		#futuro{
-			grid-area: fut;
-		}
-	}	*/
+
+iframe{
+	border-radius: 8px;
 }
 
+@mixin margenes(){
+	margin-right: 35px;
+	margin-left:  35px;
+}
+
+.preg{
+	@include margenes;
+	
+}
+
+.video{
+	width: 700px;
+	.mobileVideo{
+		height:0px;
+		width:100%;
+		max-width:700px; 
+		padding-top:56.25%; 
+		position:relative;
+		margin: 20px;
+	}
+	iframe{
+		position:absolute;
+		height:100%;
+		width:100%;
+		top:0px;
+		left:0px;
+	}
+}
+
+
+
 .delimitador{
-	width:468px;
+	width:300px;
+	justify-content: $centro;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
 	.contenedor{
 		height:0px;
 		width:100%;
-		max-width:468px; 
+		max-width:300px; 
 		padding-top:56.25%; 
 		position:relative;
 		margin: 20px;
@@ -166,7 +125,61 @@
 			height:100%;
 			width:100%;
 			top:0px;
-			left:0px;
+			left:0px;;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1208px) {
+	.delimitador{
+		width:200px;
+		.contenedor{
+			max-width:200px; 
+		}
+	}
+	.imagenes{
+		.galeria3{
+			width: 230px;
+		}
+	}
+	.galeriaI{
+		width: 230px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.galeriaI{
+		width: 180px;
+	}
+}
+@media screen and (max-width: 692px){
+	.delimitador{
+		width:370px;
+		display: flex;
+		flex-wrap: wrap;
+		.contenedor{
+			max-width:370px; 
+		}
+	}
+	.imagenes{
+		img{
+			width: 500px;
+		}
+	}
+}
+
+@media screen and (max-width: 352px){
+	.delimitador{
+		width:290px;
+		.contenedor{
+			max-width:290px; 
+		}
+	}
+	.imagenes{
+		img{
+			width: 290px;
 		}
 	}
 }

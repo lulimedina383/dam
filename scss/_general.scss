@@ -8,6 +8,8 @@ body{
 	font-family: $fontPrincipal;
 	background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
 	color: $colorAzul;
+	overflow-x: hidden;
+	width: 100%;
 }
 .margin{
 	margin-left:  200px;
@@ -20,74 +22,6 @@ body{
 	align-content: $centro;
 	align-items: $centro;
 }
-
-.flex{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-row-gap: 20px;
-	justify-content: $centro;
-	align-content: $centro;
-	align-items: $centro;
-	.uno{
-		grid-template-areas:  
-		"text1 video1";
-		#preg1{
-			grid-area: text1;
-		}
-		#video1{
-			grid-area: video1;
-		}
-	}
-	.dos{
-		grid-template-areas: 
-		"imagenes2 text2";
-		#preg2{
-			grid-area: text2;
-		}
-		#imagenes2{
-			grid-area: imagenes2;
-		}
-	}
-	.tres{
-		grid-template-areas: 
-		"text3 imagenes2";
-		#preg3{
-			grid-area: text3;
-		}
-		#imagenes3{
-			grid-area: imagenes3;
-		}
-	}
-	.cuatro{
-		grid-template-areas: 
-		"video4text4";
-		justify-content: $centro;
-		align-content: $centro;
-		align-items: $centro;
-		#preg4{
-			grid-area: text4;
-		}
-		#video4{
-			grid-area: video4;
-		}
-	}
-}
-
-.textExtra{
-		margin-right: 3%;
-		margin-left: 3%;
-}  
-@mixin margenes(){
-	margin-right: 35px;
-	margin-left:  35px;
-}
-
-.fondoRosado{
-	@include margenes;
-}
-
-
-
 
 img{
 	width: 300px;
@@ -142,6 +76,10 @@ h4{
 	text-align: justify;
 	font-size: 1em;
 	margin-bottom: 15px;
+	span{
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
 }
 .especial{
 	margin-right: 8%;
@@ -156,6 +94,10 @@ h4{
 	margin-right: 3%;
 	font-family: $fontPrincipal;
 	text-align: justify;
+	span{
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
 }
 .escritoP{
 	font-family: $fontPrincipal;
@@ -179,6 +121,7 @@ h4{
 	font-size: 1.5em;
 	margin-bottom: 8px;
 	margin-top: 15px;
+	text-align: left;
 }
 .lluvia{
 	text-align: $centro;
@@ -198,11 +141,9 @@ h4.mayus{
 .mayus{
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 0.5em;
 	margin-top: 8px;
 	a{
 		color: $colorAzul;
-		font-size: 0.7em;
 		&:hover{
 			text-decoration: none;
 			border-radius: 7px;
@@ -241,8 +182,6 @@ footer{
 	padding: 10px;
 	width: 100%;
 	grid-area: footer;
-	grid-column: 1 / 3;
-	grid-row: 4;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
@@ -284,43 +223,7 @@ footer{
 	margin-bottom: 2%;
 }
 
-/** MODAL DE AGRADECIMIENTO */
-	.boton{
-		font-family: $fontSecundaria;
-		font-size: 1.3em;
-		color: $colorAzul;
-		background-color:$colorCrema;
-		border-color: $colorAzul;
-		&:hover{
-			color: $colorCrema;
-			background-color: $colorAzul;
-			border-color: $colorCrema;
-		}
-		margin-top: 2%;
-	}
-	.modal-content{
-		background-color: $colorCrema;
-		color: $colorAzul;
-		&:hover{
-			background-color: $colorAzul;
-			color: $colorCrema; 
-		} 
-		#exampleModal{
-			font-family: $fontPrincipal;
-		}
-		.modal-title{
-			font-family: $fontSecundaria;
-		}
-		.modal-body{
-			text-align: $centro;
-		}
-		.modal-footer{
-			font-family: $fontSecundaria;
-		}
-		.botonExtra{
-			margin-top: 10px;
-		}
-	}
+
 
 	/** SIDEBAR */
 .sidebar {
