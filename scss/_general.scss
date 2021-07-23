@@ -8,7 +8,6 @@ body{
 	font-family: $fontPrincipal;
 	background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
 	color: $colorAzul;
-	overflow-x: hidden;
 }
 .margin{
 	margin-left:  200px;
@@ -275,7 +274,8 @@ footer{
 @media screen and (max-width: 992px) {
   	header{
 		.menu_bar {
-			position: sticky;
+			position: fixed;
+			z-index: 1;
 			display:block;
 			width:100%;
 			background: $colorAzul;
@@ -347,10 +347,10 @@ footer{
 		font-size: 2em;
 	}
 	.listasp{
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 	.textos{
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 }
 
@@ -375,6 +375,12 @@ footer{
 	/** IMAGEN CON EFECTO */
 	.imgPersona{
 		height: 300px;
+	}
+	ul li{
+		font-size: 0.8em;
+	}
+	.textos{
+		font-size: 0.8em;
 	}
 }
 
