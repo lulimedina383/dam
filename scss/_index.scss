@@ -8,7 +8,8 @@
 
 #fondo{
 	background-image: url('../media/banner.jpg');
-	background-size: cover;	
+	background-size: cover;
+	height: 100vh;
 	@include positionInfo;
 	&:before{
 		content:'';
@@ -140,7 +141,6 @@
 
 
 /** RESPONSIVE MOBILE y TABLET */
-
 /** TABLET*/
 @media screen and (max-width: 992px) {
 	#fondo{
@@ -197,26 +197,11 @@
 		#re{
 			top: 320px;
 		}
-		img{
-			width: 15px;
-		}
 	}
 }
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
-	#fondo{
-		background-image: url('../media/bannerMobile.jpg');
-		&:before{
-			content:'';
-			position: absolute;
-	        top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: rgba(0,0,0,0.4);
-		}
-	}
 	#banner{
 		grid-template-areas: 
 		"tit tit"

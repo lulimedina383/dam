@@ -46,6 +46,25 @@
 	border-radius: 8px;
 }
 
+.limite{
+	width: 600px;
+	.contenido{
+		height:0px;
+		width:100%;
+		max-width:600px; 
+		padding-top:56.25%; 
+		position:relative;
+		margin: 20px;
+		iframe{
+			position:absolute;
+			height:100%;
+			width:100%;
+			top:0px;
+			left:0px;
+		}
+	}
+}
+
 .doble{
 	margin-bottom: 10px;
 	margin-top: 10px;

@@ -9,7 +9,6 @@ body{
 	background-image: linear-gradient(to right top, #edb78f, #a7a374, #6a896d, #426a66, #334a52);
 	color: $colorAzul;
 	overflow-x: hidden;
-	width: 100%;
 }
 .margin{
 	margin-left:  200px;
@@ -262,43 +261,8 @@ footer{
 	height: 500px;
 	text-align: $centro;
 	grid-area: img;
-	margin-top: 120px;
 	margin-bottom: 2%;
 }
-
-
-
-	/** SIDEBAR */
-.sidebar {
-  	margin: 0;
-  	padding: 0;
-  	width: 200px;
-  	background-color: $colorAzul;
-  	position: fixed;
-  	height: 100%;
-  	overflow: auto;
-  	font-weight: bolder;
-  	z-index: 1;
-  	a {
-		display: block;
-		color: white;
-		padding: 16px;
-		&.active {
-	  		background-color: $colorCrema;
-	  		text-decoration: none;
-	  	}
-	  	&:hover:not(.active) {
-		  	background-color: $colorCeleste;
-		  	color: $colorBlanco;
-		  	text-decoration: none;
-		}
-	}
-	img{
-		width: 20px;
-		padding-right: 5px;
-	}
-}
-
 
 
 /** TABLET*/
@@ -361,8 +325,7 @@ footer{
 	
 	/** IMAGEN CON EFECTO */
 	.imgPersona{
-		height: 300px;
-		margin-top: 170px;
+		height: 400px;
 	}
 	.logoFijo{
 		@include iconos;
@@ -400,7 +363,6 @@ footer{
 	/** IMAGEN CON EFECTO */
 	.imgPersona{
 		height: 200px;
-		margin-top: 300px;
 	}
 }
 
