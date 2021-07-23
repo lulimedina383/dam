@@ -34,11 +34,18 @@
 						<li><a href="investigacion.html"><img src="../media/buscar.png">Investigación</a></li>
 						<li><a href="recomendaciones.html"><img src="../media/idea.png">Recomendaciones</a></li>
 						<li><a href="blog.html" class="active"><img src="../media/blog.png">Blog</a></li>
+						<li class="menuDesplegable">
+							<a href="#yo" class="menu"><img src="../media/corazon.png">¿Quien soy?</a>
+							<a href="#poesia" class="menu"><img src="../media/corazon.png">Lluvia</a>
+							<a href="#galeria" class="menu"><img src="../media/corazon.png">Galeria de Fotos Mías</a>	
+						</li>
 						<li><a href="consulta.html"><img src="../media/consulta.png">Consulta</a></li>
 					</ul>
 				</nav>
 			</header>
 		
+			<!--  -->
+
 		<div class="margin">
 			<div id="index5">
 
@@ -60,11 +67,11 @@
 							<!-- LLUVIA -->
 							<div class="unir escritoP" id="poesia">
 								<p class="lluvia">Lluvia</p>
-								<p>Apareciste anoche y me despertaste.</p>
-								<p>Sonreí en silencio -en mi supuesto silencio, porque hiciste mucho ruido la verdad-.</p>	
-								<p>Te sonreí dormida. Te sonreí porque te necesitaba -ni que fueras una planta en el medio del desierto Lucía- si ya se. Pero te necesitaba de verdad.No sé por qué fenómeno de la naturaleza tan peculiar, pero me generas tantas cosas que ni mis mas sinceras palabras son capaces de relatar.</p>	
-								<p>Te amo lluvia; pero te amo por lo que soy cuando estas presente, por toda la inspiración que me traes.</p>	
-								<p>Te amo porque sos hermosa; pero principalmente porque puedo escribirte durante horas y eso es lo más satisfactorio que me ha pasado en toda mi vida.</p>	
+								<p class="mTop--1">Apareciste anoche y me despertaste.</p>
+								<p class="mTop--1">Sonreí en silencio -en mi supuesto silencio, porque hiciste mucho ruido la verdad-.</p>	
+								<p class="mTop--1">Te sonreí dormida. Te sonreí porque te necesitaba -ni que fueras una planta en el medio del desierto Lucía- si ya se. Pero te necesitaba de verdad.No sé por qué fenómeno de la naturaleza tan peculiar, pero me generas tantas cosas que ni mis mas sinceras palabras son capaces de relatar.</p>	
+								<p class="mTop--1">Te amo lluvia; pero te amo por lo que soy cuando estas presente, por toda la inspiración que me traes.</p>	
+								<p class="mTop--1">Te amo porque sos hermosa; pero principalmente porque puedo escribirte durante horas y eso es lo más satisfactorio que me ha pasado en toda mi vida.</p>	
 							</div>
 
 						<!-- MÁS TEXTO -->
@@ -160,6 +167,31 @@
 
 		function main(){
 			$('.menu_bar').click(function(){
+				// $('nav').toggle(); 
+
+				if(contador == 1){
+					$('nav').animate({
+						left: '0'
+					});
+					contador = 0;
+				} else {
+					contador = 1;
+					$('nav').animate({
+						left: '-100%'
+					});
+				}
+
+			});
+
+		};
+	</script>
+	<script>
+		$(document).ready(main);
+
+		var contador = 1;
+
+		function main(){
+			$('.menu').click(function(){
 				// $('nav').toggle(); 
 
 				if(contador == 1){

@@ -33,6 +33,17 @@
 				<ul>
 					<li><a href="../index.html"><img src="../media/casa.png">HOME</a></li>
 					<li><a href="investigacion.html" class="active"><img src="../media/buscar.png">Investigación</a></li>
+					<li class="menuDesplegable">
+						<a href="#introduccion"><img src="../media/corazon.png">Introducción</a>
+						<a href="#item1" class="menu"><img src="../media/corazon.png">¿Qué es la ACTIVIDAD FÍSICA?</a>
+						<a href="#item2" class="menu"><img src="../media/corazon.png">Nuestro organismo SIEMPRE! en movimiento</a>	
+						<a href="#item3" class="menu"><img src="../media/corazon.png">Las EMOCIONES</a>
+						<a href="#item4" class="menu"><img src="../media/corazon.png">Los ESTEREOTIPOS y las ETIQUETAS</a>
+						<a href="#item5" class="menu"><img src="../media/corazon.png">Las REDES SOCIALES</a>
+						<a href="#formularioG" class="menu"><img src="../media/corazon.png">Formulario de Google</a>
+						<a href="#explicacion" class="menu"><img src="../media/corazon.png">Explicación del Formulario</a>
+						<a href="#miOpinion" class="menu"><img src="../media/corazon.png">Mi opinion</a>
+					</li>
 					<li><a href="recomendaciones.html" ><img src="../media/idea.png">Recomendaciones</a></li>
 					<li><a href="blog.html"><img src="../media/blog.png">Blog</a></li>
 					<li><a href="consulta.html"><img src="../media/consulta.png">Consulta</a></li>
@@ -291,6 +302,31 @@
 
 		function main(){
 			$('.menu_bar').click(function(){
+				// $('nav').toggle(); 
+
+				if(contador == 1){
+					$('nav').animate({
+						left: '0'
+					});
+					contador = 0;
+				} else {
+					contador = 1;
+					$('nav').animate({
+						left: '-100%'
+					});
+				}
+
+			});
+
+		};
+	</script>
+	<script>
+		$(document).ready(main);
+
+		var contador = 1;
+
+		function main(){
+			$('.menu').click(function(){
 				// $('nav').toggle(); 
 
 				if(contador == 1){

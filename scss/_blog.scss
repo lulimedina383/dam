@@ -44,3 +44,34 @@
 		color: $colorBlanco;
 	}
 }
+
+.lluvia{
+	text-align: $centro;
+	font-family: $fontSecundaria;
+	font-size: 2em;
+	margin-bottom: 8px;
+	margin-top: 15px;
+} 
+
+.rounded{
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 992px){
+	.mTop--1{
+		font-size: 0.8em;
+		border-radius: 8px;
+	}
+	#galeria{
+		img{
+			width: 60%;
+		}
+	}
+}
+@media screen and (max-width: 576px){
+	.unir{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+

@@ -72,6 +72,22 @@ header {
     header nav ul {
       overflow: hidden;
       list-style: none; }
+      header nav ul .menuDesplegable {
+        background-color: #516266;
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-weight: 200;
+        font-size: 0.8em; }
+        header nav ul .menuDesplegable a {
+          padding: 2px; }
+          header nav ul .menuDesplegable a:hover {
+            background-color: #334A52; }
+        header nav ul .menuDesplegable img {
+          margin-right: 5px;
+          width: 10px; }
 
 img {
   width: 300px; }
@@ -115,7 +131,7 @@ h4 {
 .textos {
   font-family: "Raleway";
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 1em;
   margin-bottom: 15px; }
   .textos span {
     font-weight: bolder;
@@ -131,7 +147,7 @@ h4 {
   list-style-position: inside;
   margin: 1em;
   margin-right: 3%;
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: "Raleway";
   text-align: justify; }
   .listasP span {
@@ -160,13 +176,6 @@ h4 {
   margin-top: 15px;
   text-align: left; }
 
-.lluvia {
-  text-align: center;
-  font-family: "Staatliches";
-  font-size: 2em;
-  margin-bottom: 8px;
-  margin-top: 15px; }
-
 .final {
   text-align: center;
   font-family: "Staatliches";
@@ -191,8 +200,7 @@ h3.inline2 {
   text-align: center;
   font-size: 60px;
   color: #EDB78F;
-  padding-top: 20px;
-  padding-bottom: 15px; }
+  padding: 20px; }
 
 .logoFijo {
   display: block;
@@ -254,6 +262,7 @@ footer {
 /** TABLET*/
 @media screen and (max-width: 992px) {
   header .menu_bar {
+    position: sticky;
     display: block;
     width: 100%;
     background: #334A52; }
@@ -313,7 +322,11 @@ footer {
     .logoFijo2 img {
       width: 40px; }
   h3.inline2 {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .listasp {
+    font-size: 0.8em; }
+  .textos {
+    font-size: 0.8em; } }
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
@@ -646,7 +659,7 @@ iframe {
 
 .video {
   width: 700px;
-  justify-content: center; }
+  text-align: center; }
   .video .mobileVideo {
     height: 0px;
     width: 100%;
@@ -908,6 +921,28 @@ iframe {
   #linkBlog:hover {
     background-color: #334A52;
     color: white; }
+
+.lluvia {
+  text-align: center;
+  font-family: "Staatliches";
+  font-size: 2em;
+  margin-bottom: 8px;
+  margin-top: 15px; }
+
+.rounded {
+  border-radius: 8px; }
+
+@media screen and (max-width: 992px) {
+  .mTop--1 {
+    font-size: 0.8em;
+    border-radius: 8px; }
+  #galeria img {
+    width: 60%; } }
+
+@media screen and (max-width: 576px) {
+  .unir {
+    margin-left: 10%;
+    margin-right: 10%; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
