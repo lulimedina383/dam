@@ -9,7 +9,6 @@
 #fondo{
 	background-image: url('../media/banner.jpg');
 	background-size: cover;
-	height: 100vh;
 	@include positionInfo;
 	&:before{
 		content:'';
@@ -197,14 +196,14 @@
 		#re{
 			top: 320px;
 		}
-		img{
-			width: 20px;
-		}
 	}
 }
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
+	#fondo{
+		background-image: url('../media/bannerMobile.jpg');
+	}
 	#banner{
 		grid-template-areas: 
 		"tit tit"
@@ -250,9 +249,6 @@
 		}
 		#re{
 			top: 320px;
-		}
-		img{
-			width: 20px;
 		}
 	}
 }

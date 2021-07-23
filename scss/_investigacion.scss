@@ -47,11 +47,13 @@
 }
 
 .limite{
-	width: 600px;
+	width: 550px;
+	text-align: center;
+	display: inline-block;
 	.contenido{
 		height:0px;
 		width:100%;
-		max-width:600px; 
+		max-width:550px; 
 		padding-top:56.25%; 
 		position:relative;
 		margin: 20px;
@@ -106,6 +108,7 @@ iframe{
 .video{
 	width: 700px;
 	text-align: center;
+	display: inline-block;
 	.mobileVideo{
 		height:0px;
 		width:100%;
@@ -175,6 +178,8 @@ iframe{
 @media screen and (max-width: 1208px) {
 	.delimitador{
 		width:200px;
+		text-align: center;
+		display: inline-block;
 		.contenedor{
 			max-width:200px; 
 		}
@@ -237,7 +242,14 @@ iframe{
 			max-width: 500px;
 		}
 	}
+	.limite{
+		width: 500px;
+		.contenido{
+			max-width:500px; 
+		}
+	}
 }
+
 
 @media screen and (max-width: 576px){
 	.boxHorizontal{
@@ -255,6 +267,21 @@ iframe{
 		width: 300px;
 		.mobileVideo{
 			max-width: 300px;
+		}
+	}
+	.limite{
+		width: 420px;
+		.contenido{
+			max-width: 420px; 
+		}
+	}
+}
+
+@media screen and (max-width: 452px){
+	.limite{
+		width: 370px;
+		.contenido{
+			max-width:370px; 
 		}
 	}
 }
@@ -278,9 +305,15 @@ iframe{
 		}
 	}
 	.video{
-		width: 250px;
+		width: 240px;
 		.mobileVideo{
 			max-width: 240px;
+		}
+	}
+	.limite{
+		width: 240px;
+		.contenido{
+			max-width: 240px; 
 		}
 	}
 }
