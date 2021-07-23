@@ -88,7 +88,8 @@ h4 {
   font-weight: bold;
   display: inline-block;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
   .sectoresWeb a:hover {
     background-color: #334A52;
     color: #EDB78F;
@@ -114,7 +115,7 @@ h4 {
 .textos {
   font-family: "Raleway";
   text-align: justify;
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom: 15px; }
   .textos span {
     font-weight: bolder;
@@ -130,6 +131,7 @@ h4 {
   list-style-position: inside;
   margin: 1em;
   margin-right: 3%;
+  font-size: 0.8em;
   font-family: "Raleway";
   text-align: justify; }
   .listasP span {
@@ -183,15 +185,6 @@ h4.mayus {
       text-decoration: none;
       border-radius: 7px; }
 
-/**
-.inline{
-	display: inline-block;
-	width: 50%;
-}
-.bloque{
-	display: inline-block;
-	width: 50%;
-}*/
 h3.inline2 {
   background-color: #334A52;
   font-family: "Staatliches";
@@ -253,7 +246,7 @@ footer {
 
 /** IMAGEN CON EFECTO */
 .imgPersona {
-  height: 500px;
+  height: 600px;
   text-align: center;
   grid-area: img;
   margin-bottom: 2%; }
@@ -302,7 +295,7 @@ footer {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
   .imgPersona {
-    height: 400px; }
+    height: 500px; }
   .logoFijo {
     display: block;
     position: fixed;
@@ -335,7 +328,7 @@ footer {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
   .imgPersona {
-    height: 200px; } }
+    height: 300px; } }
 
 /** TAMAÑO TIPOGRAFIA */
 .mTop--1 {
@@ -531,7 +524,9 @@ footer {
   #mySidenav #bl {
     top: 260px; }
   #mySidenav #re {
-    top: 320px; } }
+    top: 320px; }
+  #mySidenav img {
+    width: 20px; } }
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
@@ -561,7 +556,9 @@ footer {
   #mySidenav #bl {
     top: 260px; }
   #mySidenav #re {
-    top: 320px; } }
+    top: 320px; }
+  #mySidenav img {
+    width: 20px; } }
 
 /** TIPOGRAFIAS */
 /** COLORES */
@@ -648,14 +645,16 @@ iframe {
   margin-left: 35px; }
 
 .video {
-  width: 700px; }
+  width: 700px;
+  justify-content: center; }
   .video .mobileVideo {
     height: 0px;
     width: 100%;
     max-width: 700px;
     padding-top: 56.25%;
     position: relative;
-    margin: 20px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
   .video iframe {
     position: absolute;
     height: 100%;
