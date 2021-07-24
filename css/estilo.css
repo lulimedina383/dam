@@ -78,9 +78,9 @@ header {
         padding-right: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
-        font-weight: 200;
-        font-size: 0.8em; }
+        font-weight: 200; }
         header nav ul .menuD a {
+          font-size: 0.8em;
           padding: 2px; }
           header nav ul .menuD a:hover {
             background-color: #334A52; }
@@ -118,7 +118,7 @@ h4 {
 
 .primeraParte {
   grid-area: banner; }
-  .primeraParte h1 {
+  .primeraParte #tituloBlog {
     color: #334A52;
     padding: 3px;
     font-size: 5em;
@@ -532,7 +532,7 @@ footer {
 .bannerTitulo {
   position: relative;
   grid-area: tit; }
-  .bannerTitulo h6 {
+  .bannerTitulo h1 {
     font-family: "Staatliches";
     font-size: 5em;
     color: #EA7353;
@@ -565,7 +565,7 @@ footer {
     #banner .bannerN {
       font-size: 1.5em;
       margin-top: 5%; }
-  .bannerTitulo h6 {
+  .bannerTitulo h1 {
     font-size: 3em;
     padding-right: 15px;
     padding-left: 15px; }
@@ -598,7 +598,7 @@ footer {
       text-shadow: 1px 1px 1px #516266; }
     #banner .bannerP {
       font-size: 0.8em; }
-  .bannerTitulo h6 {
+  .bannerTitulo h1 {
     font-size: 2em;
     color: #EDB78F; }
   #mySidenav #in {

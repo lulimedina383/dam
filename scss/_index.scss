@@ -127,7 +127,7 @@
 .bannerTitulo{
 	@include positionInfo;
 	grid-area: tit;
-	h6{
+	h1{
 		font-family: $fontSecundaria;
 		font-size: 5em;
 		color: $colorSalmon;
@@ -177,7 +177,7 @@
 		}
 	}
 	.bannerTitulo{
-		h6{
+		h1{
 			font-size: 3em;
 			padding-right: 15px;
 			padding-left: 15px;
@@ -232,7 +232,7 @@
 		}
 	}
 	.bannerTitulo{
-		h6{
+		h1{
 			font-size: 2em;
 			color: $colorCrema;
 		}		

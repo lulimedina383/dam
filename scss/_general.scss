@@ -69,8 +69,9 @@ header{
 				padding-bottom: 5px;
 				padding-top: 5px;
 				font-weight: 200;
-				font-size: 0.8em;
 				a{
+					
+					font-size: 0.8em;
 					padding: 2px;
 					&:hover{
 						background-color: $colorAzul;
@@ -124,7 +125,7 @@ h4{
 }
 .primeraParte{
 	grid-area: banner;
-	h1{
+	#tituloBlog{
 		color:$colorAzul;
 		padding: 3px;
 		font-size: 5em;
