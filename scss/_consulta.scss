@@ -71,11 +71,10 @@
 		margin-top: 2%;
 	}
 	.modal-content{
-		background-color: $colorCrema;
 		color: $colorAzul;
 		&:hover{
 			background-color: $colorAzul;
-			color: $colorCrema; 
+			color: $colorCrema
 		} 
 		#exampleModal{
 			font-family: $fontPrincipal;
@@ -84,7 +83,7 @@
 			font-family: $fontSecundaria;
 		}
 		.modal-body{
-			text-align: $centro;
+			text-align: justify;
 		}
 		.modal-footer{
 			font-family: $fontSecundaria;

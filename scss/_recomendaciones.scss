@@ -144,7 +144,7 @@ div.card {
         }
       }
     }
-  }
+}
 
   div.card-description {
     padding: 0 15px 10px;
@@ -199,7 +199,7 @@ div.card.show {
 
   div.card-title {
     a.toggle-info {
-      background: $salmon !important;
+      background: $colorSalmon !important;
       span {
         top: 15px;
       }

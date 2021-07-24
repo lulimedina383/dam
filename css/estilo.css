@@ -71,7 +71,7 @@ header {
     header nav ul {
       overflow: hidden;
       list-style: none; }
-      header nav ul .menuDesplegable {
+      header nav ul .menuD {
         background-color: #516266;
         margin-left: 30px;
         padding-left: 10px;
@@ -80,13 +80,15 @@ header {
         padding-top: 5px;
         font-weight: 200;
         font-size: 0.8em; }
-        header nav ul .menuDesplegable a {
+        header nav ul .menuD a {
           padding: 2px; }
-          header nav ul .menuDesplegable a:hover {
+          header nav ul .menuD a:hover {
             background-color: #334A52; }
-        header nav ul .menuDesplegable img {
+        header nav ul .menuD img {
           margin-right: 5px;
           width: 10px; }
+      header nav ul .menuDesplegable {
+        display: none; }
 
 img {
   width: 300px; }
@@ -174,6 +176,20 @@ h4 {
   margin-bottom: 8px;
   margin-top: 15px;
   text-align: left; }
+  .titulosP a {
+    font-family: "Raleway";
+    margin-left: 5px;
+    color: #334A52;
+    background-color: transparent;
+    background-image: none;
+    border-color: #334A52;
+    font-size: 1em;
+    padding-left: 3px;
+    padding-right: 3px; }
+    .titulosP a:hover {
+      color: white;
+      background-color: #334A52;
+      border-color: white; }
 
 .final {
   text-align: center;
@@ -291,15 +307,35 @@ footer {
       display: block;
       float: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-    header nav a.active {
+    header nav ul a.active {
       background-color: #334A52; }
-      header nav a.active :hover {
+      header nav ul a.active :hover {
         background-color: #516266; }
+    header nav ul .menuD {
+      display: none; }
+    header nav ul .menuDesplegable {
+      display: block;
+      background-color: #516266;
+      margin-left: 30px;
+      padding-left: 10px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      font-weight: 200;
+      font-size: 0.8em; }
+      header nav ul .menuDesplegable a {
+        padding: 2px; }
+        header nav ul .menuDesplegable a:hover {
+          background-color: #334A52; }
+      header nav ul .menuDesplegable img {
+        margin-right: 5px;
+        width: 10px; }
   .primeraParte h1 {
     padding-right: 0;
     font-size: 3.2em;
     padding: 5px;
-    display: block; }
+    display: block;
+    margin-top: 78px; }
   .margin {
     margin-left: 0; }
   /** IMAGEN CON EFECTO */
@@ -610,23 +646,6 @@ footer {
 
 #formularioG {
   grid-area: form; }
-  #formularioG .limite {
-    width: 550px;
-    text-align: center;
-    display: inline-block; }
-    #formularioG .limite .contenido {
-      height: 0px;
-      width: 100%;
-      max-width: 550px;
-      padding-top: 56.25%;
-      position: relative;
-      margin: 20px; }
-      #formularioG .limite .contenido iframe {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0px;
-        left: 0px; }
 
 #miOpinion {
   grid-area: op; }
@@ -634,6 +653,24 @@ footer {
 .preg {
   margin-right: 35px;
   margin-left: 35px; }
+
+.limite {
+  width: 550px;
+  text-align: center;
+  display: inline-block; }
+  .limite .contenido {
+    height: 0px;
+    width: 100%;
+    max-width: 550px;
+    padding-top: 56.25%;
+    position: relative;
+    margin: 20px; }
+    .limite .contenido iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px; }
 
 .video {
   width: 700px;
@@ -675,6 +712,16 @@ footer {
   transition: all 500ms ease-in-out; }
   .modalVideo img:hover {
     filter: blur(5px); }
+
+.modal-footer .btn {
+  color: #334A52;
+  background-color: transparent;
+  background-image: none;
+  border-color: #334A52; }
+  .modal-footer .btn:hover {
+    color: white;
+    background-color: #516266;
+    border-color: white; }
 
 @media screen and (max-width: 1208px) {
   .delimitador {
@@ -750,7 +797,8 @@ footer {
   grid-gap: 10px;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 /** CONSULTA */
 #consulta {
@@ -804,7 +852,6 @@ footer {
     border-color: #EDB78F; }
 
 .modal-content {
-  background-color: #EDB78F;
   color: #334A52; }
   .modal-content:hover {
     background-color: #334A52;
@@ -814,7 +861,7 @@ footer {
   .modal-content .modal-title {
     font-family: "Staatliches"; }
   .modal-content .modal-body {
-    text-align: center; }
+    text-align: justify; }
   .modal-content .modal-footer {
     font-family: "Staatliches"; }
   .modal-content .botonExtra {
@@ -839,7 +886,8 @@ footer {
   grid-gap: 10px;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 #blog {
   grid-area: blog; }
@@ -957,7 +1005,8 @@ footer {
   grid-gap: 10px;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 #alimentacion {
   grid-area: ali; }
@@ -1096,7 +1145,7 @@ div.card.show {
   opacity: 1 !important;
   transform: scale(1) !important; }
   div.card.show div.card-title a.toggle-info {
-    background: #ff6666 !important; }
+    background: #EA7353 !important; }
     div.card.show div.card-title a.toggle-info span {
       top: 15px; }
     div.card.show div.card-title a.toggle-info span.left {

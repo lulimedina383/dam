@@ -39,13 +39,16 @@
 							<a href="#poesia" class="menu"><img src="../media/corazon.png">Lluvia</a>
 							<a href="#galeria" class="menu"><img src="../media/corazon.png">Galeria de Fotos Mías</a>	
 						</li>
+						<li class="menuD">
+							<a href="#yo" class="menu"><img src="../media/corazon.png">¿Quien soy?</a>
+							<a href="#poesia" class="menu"><img src="../media/corazon.png">Lluvia</a>
+							<a href="#galeria" class="menu"><img src="../media/corazon.png">Galeria de Fotos Mías</a>	
+						</li>
 						<li><a href="consulta.html"><img src="../media/consulta.png">Consulta</a></li>
 					</ul>
 				</nav>
 			</header>
 		
-			<!--  -->
-
 		<div class="margin">
 			<div id="index5">
 
@@ -93,7 +96,6 @@
 						<p class="final">Con amor, LU…. O mejor dicho, DE UNA ADOLESCENTE PARA EL MUNDO.</p>
 					</div>
 				</div>
-			</div>
 
 				<!-- GALERIA -->
 				<div class="row" id="galeria">
@@ -135,8 +137,8 @@
 				      onmousemove= "src='../media/expresiva.png';" 
 				      onmouseout= "src='../media/yo5.jpg';" />
 				  </div>
+				</div>
 				
-		
 				<!-- FOOTER -->
 				<footer>
 					<a href="../index.html">HOME</a>
@@ -145,8 +147,9 @@
 					<a href="consulta.html">CONSULTA</a>
 					<p>Copyright &reg;-<script type="text/javascript">document.write(new Date().getFullYear());</script> 	DAM - Todos los derechos reservados.</p>
 				</footer>
-			</div>
 		</div>
+	</div>
+
 
 		<!-- ICONO GMAIL EMERGENTE -->	
 		<a href="mailto:deunaadolescenteparaelmundo@gmail.com" class="logoFijo">
@@ -191,7 +194,7 @@
 		var contador = 1;
 
 		function main(){
-			$('.menu').click(function(){
+			$('.menuDesplegable').click(function(){
 				// $('nav').toggle(); 
 
 				if(contador == 1){

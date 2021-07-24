@@ -12,7 +12,6 @@
 	"op op op"
 	"footer footer footer";
 	@include grid;
-	overflow: hidden;
 }
 #item1{
 	grid-area: item1;
@@ -34,7 +33,25 @@
 }
 #formularioG{
 	grid-area: form;
-	.limite{
+	
+}
+
+#miOpinion{
+	grid-area: op;
+}
+
+
+@mixin margenes(){
+	margin-right: 35px;
+	margin-left:  35px;
+}
+
+.preg{
+	@include margenes;
+	
+}
+
+.limite{
 	width: 550px;
 	text-align: center;
 	display: inline-block;
@@ -53,22 +70,6 @@
 			left:0px;
 		}
 	}
-}
-
-}
-#miOpinion{
-	grid-area: op;
-}
-
-
-@mixin margenes(){
-	margin-right: 35px;
-	margin-left:  35px;
-}
-
-.preg{
-	@include margenes;
-	
 }
 
 .video{
@@ -120,6 +121,18 @@
 	}
 }
 
+
+.modal-footer .btn{
+    color: $colorAzul;
+    background-color: transparent;
+    background-image: none;
+    border-color: $colorAzul;
+    &:hover{
+    	color: $colorBlanco;
+    	background-color: $colorCeleste;
+    	border-color: $colorBlanco;
+    }
+}
 
 @media screen and (max-width: 1208px) {
 	.delimitador{
