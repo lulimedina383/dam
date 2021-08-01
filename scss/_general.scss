@@ -21,6 +21,8 @@ body{
 	align-items: $centro;
 }
 
+
+/** HEADER */
 header{
 	width: 100%;
 	.menu_bar {
@@ -132,6 +134,7 @@ h4{
 	}
 }
 
+/** PROPIEDADES TEXTOS */
 .textos{
 	font-family: $fontPrincipal;
 	text-align: justify;
@@ -231,6 +234,9 @@ h3.inline2{
 	color: $colorCrema;
 	padding: 20px;
 }
+
+
+/** LOGOS DE REDES SOCIALES FIXED */
 .logoFijo{
 	@include iconos;
 	margin-left: 50px;
@@ -239,6 +245,8 @@ h3.inline2{
 	@include iconos;
 	margin-left: 100px;
 }
+
+/** FOOTER */
 footer{
 	background-color: $colorAzul;
 	padding: 10px;
@@ -427,6 +435,11 @@ footer{
 		font-size: 0.8em;
 	}
 }
+
+
+
+
+/** PROPIEDADES VARIAS DE SASS */
 
 
 /** TAMAÑO TIPOGRAFIA */
