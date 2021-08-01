@@ -9,6 +9,7 @@
 #fondo{
 	background-image: url('../media/banner.jpg');
 	background-size: cover;
+	overflow: hidden;;
 	@include positionInfo;
 	&:before{
 		content:'';
@@ -147,15 +148,6 @@
 @media screen and (max-width: 992px) {
 	#fondo{
 		background-image: url('../media/bannerTablet.jpg');
-		&:before{
-			content:'';
-			position: absolute;
-	        top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: rgba(0,0,0,0.4);
-		}
 	}
 	#banner{
 		grid-template-areas: 
@@ -203,6 +195,11 @@
 }
 
 
+@media not all , (min-width: 577px){
+	#fondo{
+		height: 100vh;
+	}
+}
 
 /** MOBILE */
 @media screen and (max-width: 576px) {

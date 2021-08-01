@@ -438,6 +438,7 @@ footer {
 #fondo {
   background-image: url("../media/banner.jpg");
   background-size: cover;
+  overflow: hidden;
   position: relative; }
   #fondo:before {
     content: '';
@@ -543,14 +544,6 @@ footer {
 @media screen and (max-width: 992px) {
   #fondo {
     background-image: url("../media/bannerTablet.jpg"); }
-    #fondo:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.4); }
   #banner {
     grid-template-areas: "tit tit" "img img" "text text"; }
     #banner .imgBanner img {
@@ -575,6 +568,10 @@ footer {
     top: 260px; }
   #mySidenav #re {
     top: 320px; } }
+
+@media not all, (min-width: 577px) {
+  #fondo {
+    height: 100vh; } }
 
 /** MOBILE */
 @media screen and (max-width: 576px) {
