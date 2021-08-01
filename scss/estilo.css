@@ -74,7 +74,6 @@ header nav a {
   display: block;
   color: white;
   padding: 16px;
-  font-size: 1em;
 }
 
 header nav a.active {
@@ -107,10 +106,10 @@ header nav ul .menuD {
   padding-bottom: 5px;
   padding-top: 5px;
   font-weight: 200;
-  font-size: 0.8em;
 }
 
 header nav ul .menuD a {
+  font-size: 0.8em;
   padding: 2px;
 }
 
@@ -149,12 +148,6 @@ h4 {
   text-align: center;
 }
 
-.sectoresWeb a:hover {
-  background-color: #334A52;
-  color: #EDB78F;
-  text-decoration: none;
-}
-
 .sectoresWeb p {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -167,7 +160,7 @@ h4 {
   grid-area: banner;
 }
 
-.primeraParte h1 {
+.primeraParte #tituloBlog {
   color: #334A52;
   padding: 3px;
   font-size: 5em;
@@ -381,7 +374,7 @@ footer p {
 @media screen and (max-width: 992px) {
   header .menu_bar {
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     display: block;
     width: 100%;
     background: #334A52;
@@ -408,6 +401,7 @@ footer p {
     margin: 0;
     position: fixed;
     background: #334A52;
+    margin-top: 73px;
   }
   header nav ul li {
     display: block;
@@ -444,7 +438,7 @@ footer p {
     margin-right: 5px;
     width: 10px;
   }
-  .primeraParte h1 {
+  .primeraParte #tituloBlog {
     padding-right: 0;
     font-size: 3.2em;
     padding: 5px;
@@ -495,7 +489,7 @@ footer p {
     float: none;
     position: initial;
   }
-  .primeraParte h1 {
+  .primeraParte #tituloBlog {
     font-size: 2.3em;
     padding-right: 0;
     padding: 5px;
@@ -587,6 +581,7 @@ footer p {
 #fondo {
   background-image: url("../media/banner.jpg");
   background-size: cover;
+  overflow: hidden;
   position: relative;
 }
 
@@ -728,13 +723,15 @@ footer p {
   grid-area: tit;
 }
 
-.bannerTitulo h6 {
+.bannerTitulo h1 {
   font-family: "Staatliches";
   font-size: 5em;
   color: #EA7353;
   text-shadow: 2px 2px 2px #334A52;
   font-weight: bolder;
   text-align: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /** RESPONSIVE MOBILE y TABLET */
@@ -742,15 +739,6 @@ footer p {
 @media screen and (max-width: 992px) {
   #fondo {
     background-image: url("../media/bannerTablet.jpg");
-  }
-  #fondo:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
   }
   #banner {
         grid-template-areas: "tit tit" "img img" "text text";
@@ -769,7 +757,7 @@ footer p {
     font-size: 1.5em;
     margin-top: 5%;
   }
-  .bannerTitulo h6 {
+  .bannerTitulo h1 {
     font-size: 3em;
     padding-right: 15px;
     padding-left: 15px;
@@ -785,6 +773,12 @@ footer p {
   }
   #mySidenav #re {
     top: 320px;
+  }
+}
+
+@media not all, (min-width: 577px) {
+  #fondo {
+    height: 100vh;
   }
 }
 
@@ -815,7 +809,7 @@ footer p {
   #banner .bannerP {
     font-size: 0.8em;
   }
-  .bannerTitulo h6 {
+  .bannerTitulo h1 {
     font-size: 2em;
     color: #EDB78F;
   }
@@ -1005,6 +999,21 @@ footer p {
   color: white;
   background-color: #516266;
   border-color: white;
+}
+
+.pdf {
+  text-align: left;
+}
+
+.pdf a {
+  text-decoration: none;
+  color: #334A52;
+  text-transform: uppercase;
+}
+
+.pdf a:hover {
+  text-decoration: none;
+  color: #516266;
 }
 
 @media screen and (max-width: 1208px) {
@@ -1243,6 +1252,14 @@ footer p {
   }
 }
 
+/** TIPOGRAFIAS */
+/** COLORES */
+/** MEDIDAS */
+/** ALINEACION */
+/** MIXIN PARA GRID's DE LAS PAGINAS SECUNDARIAS */
+/* GROSOR DE LA TIPOGRAFIA Y TAMAÑOS */
+/** MIXIN PARA ICONOS FIXED **/
+/** MIXIN PARA TAMAÑO DE FUENTES*/
 #index5 {
       grid-template-areas: "blog blog blog" "img img img" "yo yo yo" "galeria galeria galeria" "footer footer footer";
   grid-gap: 10px;
@@ -1451,42 +1468,6 @@ footer p {
   grid-area: psico;
 }
 
-a.btn {
-  background: #334A52;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: white;
-  display: inline-block;
-  padding: 6px 30px 8px;
-  position: relative;
-  text-decoration: none;
-  -webkit-transition: all 0.1s 0s ease-out;
-  transition: all 0.1s 0s ease-out;
-}
-
-.no-touch a.btn:hover {
-  background: #38515a;
-  color: white;
-  -webkit-box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-          box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-  -webkit-transition: all 0.25s 0s ease-out;
-  transition: all 0.25s 0s ease-out;
-}
-
-.no-touch a.btn:active,
-a.btn:active {
-  background: #2e434a;
-  -webkit-box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-          box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-  -webkit-transform: translate3d(0, 1px, 0);
-          transform: translate3d(0, 1px, 0);
-  -webkit-transition: all 0.025s 0s ease-out;
-  transition: all 0.025s 0s ease-out;
-}
-
 div.cards {
   margin: 80px auto;
   max-width: 960px;
@@ -1502,9 +1483,9 @@ div.card {
           perspective: 1000;
   position: relative;
   text-align: left;
-  -webkit-transition: all 0.3s 0s ease-in;
-  transition: all 0.3s 0s ease-in;
   width: 300px;
+  margin-bottom: 500px;
+  overflow: hidden;
 }
 
 div.card img {
@@ -1539,8 +1520,6 @@ div.card div.card-title a.toggle-info span {
   height: 2px;
   position: absolute;
   top: 16px;
-  -webkit-transition: all 0.15s 0s ease-out;
-  transition: all 0.15s 0s ease-out;
   width: 12px;
 }
 
@@ -1565,23 +1544,7 @@ div.card div.card-title h2 {
   color: #334A52;
 }
 
-div.card div.card-title h2 small {
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  padding: 0;
-  font-family: "Raleway";
-  color: #334A52;
-}
-
-div.card div.card-title h2 small a:hover {
-  color: gray;
-  background-color: white;
-  border-radius: 3px;
-}
-
-div.card div.card-description {
+div.card-description {
   padding: 0 15px 10px;
   position: relative;
   font-size: 14px;
@@ -1589,81 +1552,145 @@ div.card div.card-description {
   font-family: "Raleway";
 }
 
-div.card div.card-actions {
+div.card-actions {
   -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
           box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
   padding: 10px 15px 20px;
   text-align: center;
 }
 
-div.card div.card-flap {
+div.card-flap {
   background: #d9d9d9;
   position: absolute;
   width: 100%;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
+  text-overflow: clip;
 }
 
-div.card div.flap1 {
-  -webkit-transition: all 0.3s 0.3s ease-out;
-  transition: all 0.3s 0.3s ease-out;
+.read-more-state {
+  display: none;
 }
 
-div.card div.flap2 {
-  -webkit-transition: all 0.3s 0s ease-out;
-  transition: all 0.3s 0s ease-out;
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
 }
 
-div.cards.showing div.card {
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
   cursor: pointer;
-  opacity: 0.6;
-  -webkit-transform: scale(0.88);
-          transform: scale(0.88);
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
 }
 
-.no-touch div.cards.showing div.card:hover {
-  opacity: 0.94;
-  -webkit-transform: scale(0.92);
-          transform: scale(0.92);
+.img-wrapper ul.read-more-state {
+  display: none;
 }
 
-div.card.show {
-  opacity: 1 !important;
-  -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
 }
 
-div.card.show div.card-title a.toggle-info {
-  background: #EA7353 !important;
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
 }
 
-div.card.show div.card-title a.toggle-info span {
-  top: 15px;
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
 }
 
-div.card.show div.card-title a.toggle-info span.left {
-  right: 10px;
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
 }
 
-div.card.show div.card-title a.toggle-info span.right {
-  left: 10px;
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
 }
 
-div.card.show div.card-flap {
-  background: white;
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
+.img-wrapper ul li {
+  background: #333;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transform: perspective(800px) rotateY(90deg);
+          transform: perspective(800px) rotateY(90deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
-div.card.show div.flap1 {
-  -webkit-transition: all 0.3s 0s ease-out;
-  transition: all 0.3s 0s ease-out;
+.img-wrapper:hover ul li {
+  -webkit-transform: perspective(800px) rotateY(0deg);
+          transform: perspective(800px) rotateY(0deg);
 }
 
-div.card.show div.flap2 {
-  -webkit-transition: all 0.3s 0.2s ease-out;
-  transition: all 0.3s 0.2s ease-out;
+.img-wrapper:hover ul li:nth-child(1) {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3) {
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.img-wrapper ul li a {
+  color: white;
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i {
+  color: white;
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i:hover {
+  color: #516266;
+  background: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=estilo.css.map */

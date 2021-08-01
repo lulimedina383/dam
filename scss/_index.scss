@@ -9,7 +9,7 @@
 #fondo{
 	background-image: url('../media/banner.jpg');
 	background-size: cover;
-	overflow: hidden;;
+	overflow: hidden;
 	@include positionInfo;
 	&:before{
 		content:'';

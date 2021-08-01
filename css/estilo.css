@@ -1112,18 +1112,6 @@ div.card {
       padding: 0;
       font-family: "Staatliches";
       color: #334A52; }
-      div.card div.card-title h2 small {
-        display: block;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: -0.025em;
-        padding: 0;
-        font-family: "Raleway";
-        color: #334A52; }
-        div.card div.card-title h2 small a:hover {
-          color: gray;
-          background-color: white;
-          border-radius: 3px; }
   div.card div.card-description {
     padding: 0 15px 10px;
     position: relative;
@@ -1142,10 +1130,8 @@ div.card {
     transform: rotateX(-90deg); }
   div.card div.flap1 {
     transition: all 0.3s 0.3s ease-out; }
-  div.card div.flap2 {
-    transition: all 0.3s 0s ease-out; }
 
-div.cards.showing div.cards {
+div.cards.showing div.card {
   cursor: pointer;
   opacity: 0.6;
   transform: scale(0.88); }
@@ -1157,64 +1143,16 @@ div.cards.showing div.cards {
 div.card.show {
   opacity: 1 !important;
   transform: scale(1) !important; }
-  div.card.show a.toggle-info {
+  div.card.show a.card-title.toggle-info {
     background: #EA7353; }
-    div.card.show a.toggle-info span {
+    div.card.show a.card-title.toggle-info span {
       top: 15px; }
-    div.card.show a.toggle-info span.left {
+    div.card.show a.card-title.toggle-info span.left {
       right: 10px; }
-    div.card.show a.toggle-info span.right {
+    div.card.show a.card-title.toggle-info span.right {
       left: 10px; }
   div.card.show div.card-flap {
     background: white;
     transform: rotateX(0deg); }
   div.card.show div.flap1 {
     transition: all 0.3s 0s ease-out; }
-  div.card.show div.flap2 {
-    transition: all 0.3s 0.2s ease-out; }
-
-.img-wrapper ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: rgba(255, 255, 255, 0); }
-
-.img-wrapper ul li {
-  background: #333;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 40px;
-  transform: perspective(800px) rotateY(90deg);
-  transition: .5s;
-  transform-origin: left; }
-
-.img-wrapper:hover ul li {
-  transform: perspective(800px) rotateY(0deg); }
-
-.img-wrapper:hover ul li:nth-child(1) {
-  transition-delay: .2s; }
-
-.img-wrapper:hover ul li:nth-child(2) {
-  transition-delay: .6s; }
-
-.img-wrapper:hover ul li:nth-child(3) {
-  transition-delay: .8s; }
-
-.img-wrapper:hover ul li:nth-child(4) {
-  transition-delay: 1s; }
-
-.img-wrapper ul li a {
-  color: white;
-  background: rgba(255, 255, 255, 0); }
-
-.img-wrapper ul li i {
-  color: white;
-  background: rgba(255, 255, 255, 0); }
-
-.img-wrapper ul li i:hover {
-  color: #516266;
-  background: rgba(255, 255, 255, 0); }
