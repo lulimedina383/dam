@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/06a3542c9d/UntitledProject/style-svg.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	
 	<!-- ETIQUETA META -->
 	<meta charset="utf-8">
@@ -66,12 +68,16 @@
 			<!-- EJERCITACION -->
 			<div class="sectoresWeb" id="ejercitacion">
 				<h3  class="inline2">EJERCITACIÓN Y MOVIMIENTO CORPORAL</h3>
+
 				<div class="cards">
-					  
 					  <!-- JULI PUENTE -->
-					  <div class="card">
-					    <div class="card__image-holder">
+					  <div class="card ">
+					    <div class="card__image-holder img-wrapper">
 					      <img class="card__image" src="../media/julieta.jpg" alt="Julieta Puente"/>
+					      <ul>
+							<li><a href="https://www.instagram.com/julieta_puente/?hl=es-la" target="blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://julipuente.com/" target="blank"><i class="fas fa-globe"></i></a></li>
+						</ul>
 					    </div>
 					    <div class="card-title">
 					      <a href="#" class="toggle-info btn">
@@ -80,25 +86,23 @@
 					      </a>
 					      <h2>
 					          Juli Puente
-					          <small><a href="https://julipuente.com/" target="blank">julipuente.com</a></small>
 					      </h2>
 					    </div>
 					    <div class="card-flap flap1">
 					      <div class="card-description">
 					        <p>Es <span>“La Reina de los Cardios de la Felicidad”.</span> Motiva a sus seguidores, arma rutinas de ejercicio para ellos, baila, se ríe y predica la superación personal. Sin embargo, no siempre brilló como lo hace hoy. En su adolescencia sufrió anorexia y hoy esta batalla ganada es su motor para ayudar a otros.</p>
 					      </div>
-					      <div class="card-flap flap2">
-					        <div class="card-actions">
-					          <a  href="https://www.instagram.com/julieta_puente/?hl=es-la" class="btn" target="blank">Ir a su perfil de Instagram</a>
-					        </div>
-					      </div>
 					    </div>
 					  </div>
 
 					  <!-- FAUSTO MURILLO -->
 					  <div class="card">
-					    <div class="card__image-holder">
+					    <div class="card__image-holder img-wrapper">
 					      <img class="card__image" src="../media/fausto.jpg" alt="Fausto Murillo"/>
+					      <ul>
+								<li><a href="https://www.instagram.com/turbofausto/" target="blank"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://turbosteps.com" target="blank"><i class="fas fa-globe"></i></a></li>
+							</ul>
 					    </div>
 					    <div class="card-title">
 					      <a src="#"  class="toggle-info btn">
@@ -106,25 +110,23 @@
 					        <span class="right"></span>
 					      </a>
 					      <h2>Fausto Murillo
-					      	<small><a href="https://turbosteps.com" target="blank">turbosteps.com</a></small>
 					      </h2>
 					    </div>
 					    <div class="card-flap flap1">
 					      <div class="card-description">
 					         	<p>El influencer fitness más grande de habla hispana. La mejor manera de empezar a llevar un estilo de vida saludable.</p>
 					      </div>
-					      <div class="card-flap flap2">
-					        <div class="card-actions">
-					          <a href="https://www.instagram.com/turbofausto/"   target="blank" class="btn">Ir al perfil de Instagram</a>
-					        </div>
-					      </div>
 					    </div>
 					  </div>
 
 					  <!-- EMANUEL CESTARO -->
 					  <div class="card">
-					    <div class="card__image-holder">
+					    <div class="card__image-holder img-wrapper">
 					      <img class="card__image" src="../media/emanuel.jpg" alt="Emanuel Cestaro"/>
+					      	<ul>
+								<li><a href="ttps://www.instagram.com/nutricion.cestaro/" target="blank"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://nutricioncestaro.com/" target="blank"><i class="fas fa-globe"></i></a></li>
+							</ul>
 					    </div>
 					    <div class="card-title">
 					      <a href="#" class="toggle-info btn">
@@ -132,17 +134,11 @@
 					        <span class="right"></span>
 					      </a>
 					      <h2>Emanuel Cestaro
-					      	<small><a href="https://nutricioncestaro.com/" target="blank">nutricioncestaro.com</a></small>
 					      </h2>
 					    </div>
 					    <div class="card-flap flap1">
 					      <div class="card-description">
 					       <p>Lic en Nutrición deportiva y estética (M.P:4353). Autor de: <span>"Más allá de la nutrición"</span>. Reto 21 días. Planes de alimentación a distancia.</p>
-					      </div>
-					      <div class="card-flap flap2">
-					        <div class="card-actions">
-					          <a href="https://www.instagram.com/nutricion.cestaro/"  target="blank" class="btn">Ir a su perfil de Instagram</a>
-					        </div>
 					      </div>
 					    </div>
 					  </div>
@@ -799,7 +795,7 @@
 			    
 			  });
 			});
-	</script>
+	</script> 
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script>
 		$(document).ready(main);
@@ -829,27 +825,28 @@
 	<script>
 		$(document).ready(main);
 
-		var contador = 1;
+				var contador = 1;
 
-		function main(){
-			$('.menuDesplegable').click(function(){
-				// $('nav').toggle(); 
+				function main(){
+					$('.menuDesplegable').click(function(){
+						// $('nav').toggle(); 
 
-				if(contador == 1){
-					$('nav').animate({
-						left: '0'
+						if(contador == 1){
+							$('nav').animate({
+								left: '0'
+							});
+							contador = 0;
+						} else {
+							contador = 1;
+							$('nav').animate({
+								left: '-100%'
+							});
+						}
+
 					});
-					contador = 0;
-				} else {
-					contador = 1;
-					$('nav').animate({
-						left: '-100%'
-					});
-				}
 
-			});
-
-		};
-	</script>
+				};
+			</script>
+			
 </body>
 </html>

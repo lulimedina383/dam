@@ -134,6 +134,18 @@
     }
 }
 
+.pdf{
+	text-align: left;
+	a{
+		text-decoration: none;
+		color: $colorAzul;
+		text-transform: uppercase;
+		&:hover{
+			text-decoration: none;
+			color: $colorCeleste;
+		}
+	}
+}
 @media screen and (max-width: 1208px) {
 	.delimitador{
 		width:200px;
