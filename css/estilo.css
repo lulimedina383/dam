@@ -80,7 +80,7 @@ header {
         padding-top: 5px;
         font-weight: 200; }
         header nav ul .menuD a {
-          font-size: 0.8em;
+          font-size: 0.7em;
           padding: 2px; }
           header nav ul .menuD a:hover {
             background-color: #334A52; }
@@ -322,7 +322,7 @@ footer {
       padding-bottom: 5px;
       padding-top: 5px;
       font-weight: 200;
-      font-size: 0.8em; }
+      font-size: 0.7em; }
       header nav ul .menuDesplegable a {
         padding: 2px; }
         header nav ul .menuDesplegable a:hover {
@@ -380,6 +380,8 @@ footer {
     height: 300px; }
   ul li {
     font-size: 0.8em; }
+    ul li a {
+      font-size: 0.6em; }
   .textos {
     font-size: 0.8em; } }
 

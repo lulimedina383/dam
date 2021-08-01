@@ -72,7 +72,7 @@ header{
 				font-weight: 200;
 				a{
 					
-					font-size: 0.8em;
+					font-size: 0.7em;
 					padding: 2px;
 					&:hover{
 						background-color: $colorAzul;
@@ -353,7 +353,7 @@ footer{
 					padding-bottom: 5px;
 					padding-top: 5px;
 					font-weight: 200;
-					font-size: 0.8em;
+					font-size: 0.7em;
 					a{
 						padding: 2px;
 						&:hover{
@@ -430,6 +430,9 @@ footer{
 	}
 	ul li{
 		font-size: 0.8em;
+		a{
+			font-size: 0.6em;
+		}
 	}
 	.textos{
 		font-size: 0.8em;
