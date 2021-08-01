@@ -42,7 +42,6 @@ header{
 			display: block;
 			color: white;
 			padding: 16px;
-			font-size: 1em;
 			&.active {
 		  		background-color: $colorCrema;
 		  		color: white;
@@ -319,6 +318,7 @@ footer{
 			margin:0;
 			position: fixed;
 			background: $colorAzul;
+			margin-top: 73px;
 			ul {
 				li {
 					display:block;

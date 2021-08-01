@@ -55,8 +55,7 @@ header {
     header nav a {
       display: block;
       color: white;
-      padding: 16px;
-      font-size: 1em; }
+      padding: 16px; }
       header nav a.active {
         background-color: #EDB78F;
         color: white;
@@ -298,7 +297,8 @@ footer {
     left: -100%;
     margin: 0;
     position: fixed;
-    background: #334A52; }
+    background: #334A52;
+    margin-top: 73px; }
     header nav ul li {
       display: block;
       float: none;
